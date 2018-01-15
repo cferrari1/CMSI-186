@@ -1,1 +1,1 @@
-# CMSI-186
+# CMSI-186_Projects
