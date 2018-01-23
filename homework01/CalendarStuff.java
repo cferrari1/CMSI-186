@@ -4,7 +4,7 @@
  *  Author        :  B.J. Johnson (prototype)
  *  Date          :  2017-01-02 (prototype)
  *  Author        :  Christopher Ferrari
- *  Date          :  2018-01-18
+ *  Date          :  2018-01-23
  *  Description   :  This file provides the supporting methods for the CountTheDays program which will
  *                   calculate the number of days between two dates.  It shows the use of modularization
  *                   when writing Java code, and how the Java compiler can "figure things out" on its
