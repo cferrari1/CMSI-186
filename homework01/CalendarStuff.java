@@ -17,27 +17,12 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  Revision History
  *  ----------------
- *            Rev      Date     Modified by:  Reason for change/modification
- *           -----  ----------  ------------  -----------------------------------------------------------
- *  @version 1.0.0  2017-01-02  B.J. Johnson  Initial writing and release
- *  @version 1.0.1  2017-12-25  B.J. Johnson  Updated for Spring 2018
+ *            Rev      Date         Modified by:     Reason for change/modification
+ *           -----  ----------  -------------------  -----------------------------------------------------------
+ *  @version 1.0.0  2017-01-23  Christopher Ferrari  Initial writing and release
  */
 public class CalendarStuff {
 
-  /**
-   * A listing of the days of the week, assigning numbers; Note that the week arbitrarily starts on Sunday
-   */
-   private static final int SUNDAY    = 0;
-   private static final int MONDAY    = SUNDAY    + 1;
-  // you can finish the rest on your own
-  
-  /**
-   * A listing of the months of the year, assigning numbers; I suppose these could be ENUMs instead, but whatever
-   */
-   private static final int JANUARY    = 0;
-   private static final int FEBRUARY   = JANUARY   + 1;
-  // you can finish these on your own, too
-  
   /**
    * An array containing the number of days in each month
    *  NOTE: this excludes leap years, so those will be handled as special cases

@@ -12,7 +12,7 @@
  *  ----------------
  *            Rev      Date         Modified by:     Reason for change/modification
  *           -----  ----------  -------------------  -----------------------------------------------------------
- *  @version 1.0.0  2017-01-28  Christopher Ferarri  Initial writing and release
+ *  @version 1.0.0  2017-01-23  Christopher Ferarri  Initial writing and release
  */
 
 public class CountTheDays {
