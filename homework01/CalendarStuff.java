@@ -265,7 +265,7 @@ public class CalendarStuff {
       } else
       {  
           
-          // If years are equal, counts days in year of first date, then counts days in year of second date, then returns the subtraction
+          // If years are equal, counts days in year of first date, then counts days in year of second date, then returns day count of the second date minus the day count of the first date
           
           long daysCount1 = 0;
           long daysCount2 = 0;
