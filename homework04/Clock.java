@@ -30,11 +30,9 @@ public class Clock {
    private double secondHand;
    private double timeSlice;
    private double angle;
-   private static final double DEFAULT_TIME_SLICE_IN_SECONDS = 60.0;
-   private static final double INVALID_ARGUMENT_VALUE = -1.0;
    private static final double MAXIMUM_DEGREE_VALUE = 360.0;
-   private static final double HOUR_HAND_DEGREES_PER_SECOND = 0.00834;
-   private static final double MINUTE_HAND_DEGREES_PER_SECOND = 0.1;
+   private static final double DEFAULT_TIME_SLICE_IN_SECONDS = 60.0;
+
 
    /**
    *  Constructor goes here
@@ -94,7 +92,7 @@ public class Clock {
 
       double val = Double.parseDouble(argValue);
 
-      if ( (val > 360) || (val < 0) )
+      if ( (val > MAXIMUM_DEGREE_VALUE) || (val < 0) )
          throw new IllegalArgumentException();
 
       return val; 
@@ -135,7 +133,7 @@ public class Clock {
    *  @return double-precision value of the hour hand location
    */
    public double getHourHandAngle() {
-      return (totalHours / 12) * 360; 
+      return ((totalSeconds / 3600) / 12) * 360; 
    }
 
    /**
@@ -314,7 +312,5 @@ public class Clock {
          System.out.println("Angle between hour and minute hand angle is " + clock6.getHandAngle());
          clock6.tick();
       }
-
-
    }
 }
