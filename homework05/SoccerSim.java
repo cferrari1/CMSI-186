@@ -36,9 +36,11 @@ public class SoccerSim {
     *   this sets up the variables for the simulation
     */
     private static void handleInitialArguments( String args[] ) {
-        // args[0] specifies the angle for which you are looking
-        //  your simulation will find all the angles in the 12-hour day at which those angles occur
-        // args[1] if present will specify a time slice value; if not present, defaults to 60 seconds
+        //args[0 + 4n] is the x location of the ball
+        //args[1 + 4n] is the y location of the ball
+        //args[2 + 4n] is the x velocity of the ball
+        //args[3 + 4n] is the y velocity of the ball
+        //args[4n] is the final arg and time slice; this is optional and defaults to 1 second
 
         System.out.println( "\n    Hello world, from the SoccerSim program!!\n\n" ) ;
 
@@ -92,6 +94,11 @@ public class SoccerSim {
 
     }
     
+    /**
+    *  Method to check if a ball is on the field or not
+    *  @param ball     ball to check if on the field
+    *  @return boolean value of whether the ball is on the field or not
+    */
     private static boolean checkInField(Ball ball) {
         if ( (Math.abs(ball.getXLocation()) <= Math.abs(fieldWidth / 2)) && (Math.abs(ball.getYLocation()) <= Math.abs(fieldLength / 2)) )
             return true;
@@ -113,11 +120,11 @@ public class SoccerSim {
     /**
     *  The main program starts here
     *  @param  args  String array of the arguments from the command line, where n is the number of balls
-    *                args[1 + 4n] is the x location of the ball
-    *                args[2 + 4n] is the y location of the ball
-    *                args[3 + 4n] is the x velocity of the ball
-    *                args[4 + 4n] is the y velocity of the ball
-    *                args[4n + 1] is the time slice; this is optional and defaults to 1 second
+    *                args[0 + 4n] is the x location of the ball
+    *                args[1 + 4n] is the y location of the ball
+    *                args[2 + 4n] is the x velocity of the ball
+    *                args[3 + 4n] is the y velocity of the ball
+    *                args[4n] is the final arg and time slice; this is optional and defaults to 1 second
     */
     public static void main( String args[] ) {
         handleInitialArguments(args);
@@ -130,13 +137,17 @@ public class SoccerSim {
             System.out.println("TIMESLICE VALUE IS " + timeSlice + " second");
         Timer timer = new Timer(timeSlice);
 
+        //Displays initial report
         System.out.println("\nINITIAL REPORT at " + timer.toString() );
         boolean initial = true;
 
+
         while (true) {
+            //Displays progress report if it has looped at least once
             if (!initial)
                 System.out.println("\nPROGRESS REPORT at " + timer.toString() );
 
+            //Checks if balls are out of field
             for (int i = 0; i < balls.length; i++) {
                 if ( !checkInField(balls[i]) )
                     balls[i].putOut();
@@ -144,6 +155,7 @@ public class SoccerSim {
                 System.out.println("Ball " + (i + 1) + ": " + balls[i].toString());
             }
 
+            //Checks if balls are in; if they are, check their collision and exits if there is one
             for (int i = 0; i < balls.length - 1; i++) {
                 if ( balls[i].checkIfIn() ) {                
                     for (int j = i+1; j < balls.length; j++)
@@ -156,6 +168,7 @@ public class SoccerSim {
                 }
             }
 
+            //Checks for any collisions between balls that are in and the pole
             for (int i = 0; i < balls.length; i++) {
                 if ( balls[i].checkIfIn() ) {
                     if ( balls[i].checkCollision(pole) ){
@@ -165,7 +178,7 @@ public class SoccerSim {
                 }
             }
 
-
+            //Checks if all balls are at rest; if they are, sim ends
             for (int i = 0; i < balls.length; i++) {
                 if ( balls[i].getXVelocity() != 0 || balls[i].getYVelocity() != 0 )
                     break;
@@ -175,16 +188,18 @@ public class SoccerSim {
                 }
             }
 
+            //Moves all balls and timer ticks
             for (int i = 0; i < balls.length; i++) {
                 balls[i].move(timeSlice);
             }
             timer.tick();
 
-
+            //Slows the balls down
             for (int i = 0; i < balls.length; i++){
                 balls[i].slow(timeSlice);
             }
 
+            //Show that the sim has gone through once
             initial = false;
 
         }

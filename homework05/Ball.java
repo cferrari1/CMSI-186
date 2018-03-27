@@ -160,7 +160,7 @@ public class Ball {
     *  @return String representation of the ball
     */
     public String toString() {
-        DecimalFormat deciFormat = new DecimalFormat("#0.000");
+        DecimalFormat deciFormat = new DecimalFormat("#0.0000");
 
         if (x_velocity != 0 || y_velocity != 0)
             return ("position: (" + deciFormat.format(x_location) + ", " + deciFormat.format(y_location) + ") \t velocity: <" + deciFormat.format(x_velocity) + ", " + deciFormat.format(y_velocity) + "> ft/sec");
