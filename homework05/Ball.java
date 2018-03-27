@@ -16,6 +16,7 @@
  *           -----  ----------  ------------  -----------------------------------------------------------
  *  @version 1.0.0  2018-03-15  C. Ferrari    Initial writing and release
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+import java.text.DecimalFormat;
 
 public class Ball {
 
@@ -47,30 +48,38 @@ public class Ball {
     *
     *  @return double-precision value of the ball's current velocity in the x-direction
     */
-    private double getVelocityX() {
+    public double getXVelocity() {
         return x_velocity;
     }
 
     /**
     *  @return double-precision value of the ball's current velocity in the y-direction
     */
-    private double getVelocityY() {
+    public double getYVelocity() {
         return y_velocity;
     }
 
     /**
     *  @return double-precision value of the ball's current x-coordinate
     */
-    private double getLocationX() {
+    public double getXLocation() {
         return x_location;
     }
 
     /**
     *  @return double-precision value of the ball's current y-coordinate
     */
-    private double getLocationY() {
+    public double getYLocation() {
         return y_location;
     }
+
+    /**
+    *  @return double-precision value of the ball's radius
+    */
+    public double getRadius() {
+        return radius;
+    }
+
 
     /**
     *  Method to move the ball over a certain time slice
@@ -151,9 +160,11 @@ public class Ball {
     *  @return String representation of the ball
     */
     public String toString() {
+        DecimalFormat deciFormat = new DecimalFormat("#0.000");
+
         if (x_velocity != 0 || y_velocity != 0)
-            return ("position: (" + x_location + ", " + y_location + ") \t velocity: <" + x_velocity + ", " + y_velocity + "> ft/sec");
-        return ("position: (" + x_location + ", " + y_location + ") \t <at rest>");
+            return ("position: (" + deciFormat.format(x_location) + ", " + deciFormat.format(y_location) + ") \t velocity: <" + deciFormat.format(x_velocity) + ", " + deciFormat.format(y_velocity) + "> ft/sec");
+        return ("position: (" + deciFormat.format(x_location) + ", " + deciFormat.format(y_location) + ") \t <at rest>");
     }
 
     /**

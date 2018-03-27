@@ -98,7 +98,6 @@ public class Timer {
 
     /**
     *  Method to fetch the total number of seconds
-    *   we can use this to tell when 12 hours have elapsed
     *  @return double-precision value the total seconds private variable
     */
     public double getTotalSeconds() {
