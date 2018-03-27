@@ -18,57 +18,75 @@
 
 public class SoccerSim {
 
-   /**
-   *  Method to handle all the input arguments from the command line
-   *   this sets up the variables for the simulation
-   */
-   public static void handleInitialArguments( String args[] ) {
-      // args[0] specifies the angle for which you are looking
-      //  your simulation will find all the angles in the 12-hour day at which those angles occur
-      // args[1] if present will specify a time slice value; if not present, defaults to 60 seconds
-      Clock clock    = new Clock();
+    /**
+    *  Class field definintions go here
+    */
+    private static double timeSlice;
+    private static Ball balls[];
+    private static double x_field = 1000 / 2;
+    private static double y_field = 1000 / 2;
+    private static final double DEFAULT_TIME_SLICE_IN_SECONDS = 1.0;
 
+    /**
+    *  Method to handle all the input arguments from the command line
+    *   this sets up the variables for the simulation
+    */
+    public static void handleInitialArguments( String args[] ) {
+        // args[0] specifies the angle for which you are looking
+        //  your simulation will find all the angles in the 12-hour day at which those angles occur
+        // args[1] if present will specify a time slice value; if not present, defaults to 60 seconds
 
-      System.out.println( "\n   Hello world, from the ClockSolver program!!\n\n" ) ;
-      if( 0 == args.length ) {
-         System.out.println( "   Sorry you must enter at least one argument\n" +
-                             "   Usage: java ClockSolver <angle> [timeSlice]\n" +
-                             "   Please try again..........." );
-         System.exit( 1 );
-      }
+        System.out.println( "\n    Hello world, from the SoccerSim program!!\n\n" ) ;
 
-      if( 3 <= args.length ) {
-         System.out.println( "   Sorry you entered too many arguments\n" +
-                             "   Usage: java ClockSolver <angle> [timeSlice]\n" +
-                             "   Please try again..........." );
-         System.exit( 1 );
-      }
-
-      try {
-         angle = clock.validateAngleArg(args[0]);
-      } catch (Exception e) {
-         System.out.println( "   Sorry you did not enter a valid angle value\n" +
-                             "   Use an angle that is non-negative and less than or equal to 360\n" +
-                             "   Please try again..........." );
-         System.exit( 1 );
-      }
-
-
-
-      if ( 1 == args.length ) {
-         timeSlice = DEFAULT_TIME_SLICE_SECONDS;
-      } else {
-
-         try {
-            timeSlice = clock.validateTimeSliceArg(args[1]);
-         } catch (Exception e) {
-            System.out.println( "   Sorry you did not enter a valid time slice value\n" +
-                                "   Use a time slice that is non-negative and less than or equal to 1800\n" +
-                                "   Please try again..........." );
+        if( args.length < 4 ) {
+            System.out.println( "    Sorry, you enter too few arguments\n" +
+                                "    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]\n" +
+                                "    Please try again..........." );
             System.exit( 1 );
-      }
+        }
 
-   }
+        if( (args.length % 4 != 0) && (args.length % 4 != 1) ) {
+            System.out.println( "    Sorry, you entered an incorrect number of arguments\n" +
+                                "    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]\n" +
+                                "    Please try again..........." );
+            System.exit( 1 );
+        }
+
+        try {
+            balls = new Ball[args.length / 4];
+            double ballArgs[] = new double[4];
+
+            for (int i = 0, j = 0; i < balls.length; i++) {
+                for (int k = 0; k < 4; k++) {
+                    ballArgs[k] = Ball.validateBallArgs(args[j]);
+                    j++;
+                }
+
+                balls[i] = new Ball(ballArgs[0],ballArgs[1],ballArgs[2],ballArgs[3]);
+                   
+            }
+
+        } catch (Exception e) {
+            System.out.println( "    Sorry, you did not enter a valid value for at least one of your ball arguments\n" +
+                                "    Use a number argument\n" +
+                                "    Please try again..........." );
+            System.exit( 1 );
+        }
+
+        if (args.length % 4 == 0)
+            timeSlice = DEFAULT_TIME_SLICE_IN_SECONDS;
+        else {
+            try { 
+                timeSlice = Timer.validateTimeSliceArg(args[args.length - 1]); 
+            } catch (Exception e) {  
+                System.out.println( "    Sorry, you did not enter a valid value for your time slice argument\n" +
+                                    "    Use a time slice that is non-negative\n" +
+                                    "    Please try again..........." );
+                System.exit( 1 );
+            }
+        }
+
+    }
     
     /**
     *  The main program starts here
@@ -80,8 +98,7 @@ public class SoccerSim {
     *                args[4n + 1] is the time slice; this is optional and defaults to 1 second
     */
     public static void main( String args[] ) {
-        SoccerSim.handleInit
-        //handle args
+        SoccerSim.handleInitialArguments(args);
         //create field
         //create pole
         //check if any balls are out

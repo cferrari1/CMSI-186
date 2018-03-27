@@ -97,6 +97,7 @@ public class Ball {
         }
 
         return Double.parseDouble(argValue);
+    }
 
 
     /**
