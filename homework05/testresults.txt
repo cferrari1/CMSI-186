@@ -1,0 +1,4288 @@
+.                                       
+.                                       
+======================================  
+... Testing Ball class ...              
+======================================  
+
+BALL CLASS TESTER PROGRAM
+--------------------------
+
+    Creating a new ball: 
+    position: (300.0000, 300.0000) 	 velocity: <-1.0000, -2.0000> ft/sec
+    Creating a new ball: 
+    position: (-20.0000, 100.0000) 	 velocity: <1.0000, 22.1000> ft/sec
+    Creating a new ball: 
+    position: (1000.7417, 100.0000) 	 velocity: <0.0840, 0.0000> ft/sec
+    Creating a new ball: 
+    position: (1000.0000, 100.7408) 	 velocity: <0.4000, 0.0000> ft/sec
+    Creating a new ball: 
+    position: (1000.0000, 100.0000) 	 <at rest>
+
+    Checking for collisions:
+    Ball 1 & Ball 2: false
+    Ball 1 & Ball 3: false
+    Ball 1 & Ball 4: false
+    Ball 1 & Ball 5: false
+    Ball 2 & Ball 3: false
+    Ball 2 & Ball 4: false
+    Ball 2 & Ball 5: false
+    Ball 3 & Ball 4: false
+    Ball 3 & Ball 5: false
+    Ball 4 & Ball 5: true
+
+    Moving balls w/ time slice of 1 second:
+    position: (299.0000, 298.0000) 	 velocity: <-1.0000, -2.0000> ft/sec
+    position: (-19.0000, 122.1000) 	 velocity: <1.0000, 22.1000> ft/sec
+    position: (1000.8257, 100.0000) 	 velocity: <0.0840, 0.0000> ft/sec
+    position: (1000.4000, 100.7408) 	 velocity: <0.4000, 0.0000> ft/sec
+    position: (1000.0000, 100.0000) 	 <at rest>
+
+    Slowing balls by 1 percent:
+    position: (299.0000, 298.0000) 	 velocity: <-0.9900, -1.9800> ft/sec
+    position: (-19.0000, 122.1000) 	 velocity: <0.9900, 21.8790> ft/sec
+    position: (1000.8257, 100.0000) 	 <at rest>
+    position: (1000.4000, 100.7408) 	 velocity: <0.3960, 0.0000> ft/sec
+    position: (1000.0000, 100.0000) 	 <at rest>
+.                                       
+.                                       
+.                                       
+.                                       
+======================================  
+... Testing Timer class ...                
+======================================  
+
+TIMER CLASS TESTER PROGRAM
+--------------------------
+
+  Creating a new timer: 
+    New timer created: 00:00:00.0000
+  Creating a new timer with default time slice of 1.0 seconds: 
+    00:00:00.0000
+    00:00:01.0000
+    00:00:02.0000
+    00:00:03.0000
+    00:00:04.0000
+    00:00:05.0000
+    00:00:06.0000
+    00:00:07.0000
+    00:00:08.0000
+    00:00:09.0000
+  Creating a new timer with time slice 101.38 seconds: 
+    00:00:00.0000
+    00:01:41.3800
+    00:03:22.7600
+    00:05:04.1400
+    00:06:45.5200
+    00:08:26.9000
+    00:10:08.2800
+    00:11:49.6600
+    00:13:31.0400
+    00:15:12.4200
+
+1.0
+java.lang.NumberFormatException
+java.lang.IllegalArgumentException
+java.lang.NumberFormatException
+9892829.0
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim no args...        
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you enter too few arguments
+    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim one arg...        
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you enter too few arguments
+    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim two args...       
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you enter too few arguments
+    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim three args...     
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you enter too few arguments
+    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim six args...       
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you entered an incorrect number of arguments
+    Usage: java SoccerSim [x location] [y location] <x velocity> <y velocity> ... [time slice]
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim out of bounds...  
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 1.0 second
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (1100.0000, 1100.0000) 	 <at rest>
+
+NO COLLISION IS POSSIBLE
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim negative time slice...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you did not enter a valid value for your time slice argument
+    Use a time slice that is non-negative
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim time slice too large...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 1800.1 seconds
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (10.0000, 10.0000) 	 velocity: <5.0000, 5.0000> ft/sec
+
+PROGRESS REPORT at 00:30:00.1000
+Ball 1: position: (9010.5000, 9010.5000) 	 <at rest>
+
+NO COLLISION IS POSSIBLE
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim time slice value of zero...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+    Sorry, you did not enter a valid value for your time slice argument
+    Use a time slice that is non-negative
+    Please try again...........
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim check for collision...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 1.0 second
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (10.0000, 10.0000) 	 velocity: <1.0000, 1.0000> ft/sec
+Ball 2: position: (20.0000, 20.0000) 	 velocity: <-1.0000, -1.0000> ft/sec
+
+PROGRESS REPORT at 00:00:01.0000
+Ball 1: position: (11.0000, 11.0000) 	 velocity: <0.9900, 0.9900> ft/sec
+Ball 2: position: (19.0000, 19.0000) 	 velocity: <-0.9900, -0.9900> ft/sec
+
+PROGRESS REPORT at 00:00:02.0000
+Ball 1: position: (11.9900, 11.9900) 	 velocity: <0.9801, 0.9801> ft/sec
+Ball 2: position: (18.0100, 18.0100) 	 velocity: <-0.9801, -0.9801> ft/sec
+
+PROGRESS REPORT at 00:00:03.0000
+Ball 1: position: (12.9701, 12.9701) 	 velocity: <0.9703, 0.9703> ft/sec
+Ball 2: position: (17.0299, 17.0299) 	 velocity: <-0.9703, -0.9703> ft/sec
+
+PROGRESS REPORT at 00:00:04.0000
+Ball 1: position: (13.9404, 13.9404) 	 velocity: <0.9606, 0.9606> ft/sec
+Ball 2: position: (16.0596, 16.0596) 	 velocity: <-0.9606, -0.9606> ft/sec
+
+PROGRESS REPORT at 00:00:05.0000
+Ball 1: position: (14.9010, 14.9010) 	 velocity: <0.9510, 0.9510> ft/sec
+Ball 2: position: (15.0990, 15.0990) 	 velocity: <-0.9510, -0.9510> ft/sec
+
+Collision occurred between ball 1 and ball 2
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim valid ball should come to rest...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 1.0 second
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (10.0000, 10.0000) 	 velocity: <1.0000, 1.0000> ft/sec
+
+PROGRESS REPORT at 00:00:01.0000
+Ball 1: position: (11.0000, 11.0000) 	 velocity: <0.9900, 0.9900> ft/sec
+
+PROGRESS REPORT at 00:00:02.0000
+Ball 1: position: (11.9900, 11.9900) 	 velocity: <0.9801, 0.9801> ft/sec
+
+PROGRESS REPORT at 00:00:03.0000
+Ball 1: position: (12.9701, 12.9701) 	 velocity: <0.9703, 0.9703> ft/sec
+
+PROGRESS REPORT at 00:00:04.0000
+Ball 1: position: (13.9404, 13.9404) 	 velocity: <0.9606, 0.9606> ft/sec
+
+PROGRESS REPORT at 00:00:05.0000
+Ball 1: position: (14.9010, 14.9010) 	 velocity: <0.9510, 0.9510> ft/sec
+
+PROGRESS REPORT at 00:00:06.0000
+Ball 1: position: (15.8520, 15.8520) 	 velocity: <0.9415, 0.9415> ft/sec
+
+PROGRESS REPORT at 00:00:07.0000
+Ball 1: position: (16.7935, 16.7935) 	 velocity: <0.9321, 0.9321> ft/sec
+
+PROGRESS REPORT at 00:00:08.0000
+Ball 1: position: (17.7255, 17.7255) 	 velocity: <0.9227, 0.9227> ft/sec
+
+PROGRESS REPORT at 00:00:09.0000
+Ball 1: position: (18.6483, 18.6483) 	 velocity: <0.9135, 0.9135> ft/sec
+
+PROGRESS REPORT at 00:00:10.0000
+Ball 1: position: (19.5618, 19.5618) 	 velocity: <0.9044, 0.9044> ft/sec
+
+PROGRESS REPORT at 00:00:11.0000
+Ball 1: position: (20.4662, 20.4662) 	 velocity: <0.8953, 0.8953> ft/sec
+
+PROGRESS REPORT at 00:00:12.0000
+Ball 1: position: (21.3615, 21.3615) 	 velocity: <0.8864, 0.8864> ft/sec
+
+PROGRESS REPORT at 00:00:13.0000
+Ball 1: position: (22.2479, 22.2479) 	 velocity: <0.8775, 0.8775> ft/sec
+
+PROGRESS REPORT at 00:00:14.0000
+Ball 1: position: (23.1254, 23.1254) 	 velocity: <0.8687, 0.8687> ft/sec
+
+PROGRESS REPORT at 00:00:15.0000
+Ball 1: position: (23.9942, 23.9942) 	 velocity: <0.8601, 0.8601> ft/sec
+
+PROGRESS REPORT at 00:00:16.0000
+Ball 1: position: (24.8542, 24.8542) 	 velocity: <0.8515, 0.8515> ft/sec
+
+PROGRESS REPORT at 00:00:17.0000
+Ball 1: position: (25.7057, 25.7057) 	 velocity: <0.8429, 0.8429> ft/sec
+
+PROGRESS REPORT at 00:00:18.0000
+Ball 1: position: (26.5486, 26.5486) 	 velocity: <0.8345, 0.8345> ft/sec
+
+PROGRESS REPORT at 00:00:19.0000
+Ball 1: position: (27.3831, 27.3831) 	 velocity: <0.8262, 0.8262> ft/sec
+
+PROGRESS REPORT at 00:00:20.0000
+Ball 1: position: (28.2093, 28.2093) 	 velocity: <0.8179, 0.8179> ft/sec
+
+PROGRESS REPORT at 00:00:21.0000
+Ball 1: position: (29.0272, 29.0272) 	 velocity: <0.8097, 0.8097> ft/sec
+
+PROGRESS REPORT at 00:00:22.0000
+Ball 1: position: (29.8369, 29.8369) 	 velocity: <0.8016, 0.8016> ft/sec
+
+PROGRESS REPORT at 00:00:23.0000
+Ball 1: position: (30.6386, 30.6386) 	 velocity: <0.7936, 0.7936> ft/sec
+
+PROGRESS REPORT at 00:00:24.0000
+Ball 1: position: (31.4322, 31.4322) 	 velocity: <0.7857, 0.7857> ft/sec
+
+PROGRESS REPORT at 00:00:25.0000
+Ball 1: position: (32.2179, 32.2179) 	 velocity: <0.7778, 0.7778> ft/sec
+
+PROGRESS REPORT at 00:00:26.0000
+Ball 1: position: (32.9957, 32.9957) 	 velocity: <0.7700, 0.7700> ft/sec
+
+PROGRESS REPORT at 00:00:27.0000
+Ball 1: position: (33.7657, 33.7657) 	 velocity: <0.7623, 0.7623> ft/sec
+
+PROGRESS REPORT at 00:00:28.0000
+Ball 1: position: (34.5281, 34.5281) 	 velocity: <0.7547, 0.7547> ft/sec
+
+PROGRESS REPORT at 00:00:29.0000
+Ball 1: position: (35.2828, 35.2828) 	 velocity: <0.7472, 0.7472> ft/sec
+
+PROGRESS REPORT at 00:00:30.0000
+Ball 1: position: (36.0300, 36.0300) 	 velocity: <0.7397, 0.7397> ft/sec
+
+PROGRESS REPORT at 00:00:31.0000
+Ball 1: position: (36.7697, 36.7697) 	 velocity: <0.7323, 0.7323> ft/sec
+
+PROGRESS REPORT at 00:00:32.0000
+Ball 1: position: (37.5020, 37.5020) 	 velocity: <0.7250, 0.7250> ft/sec
+
+PROGRESS REPORT at 00:00:33.0000
+Ball 1: position: (38.2269, 38.2269) 	 velocity: <0.7177, 0.7177> ft/sec
+
+PROGRESS REPORT at 00:00:34.0000
+Ball 1: position: (38.9447, 38.9447) 	 velocity: <0.7106, 0.7106> ft/sec
+
+PROGRESS REPORT at 00:00:35.0000
+Ball 1: position: (39.6552, 39.6552) 	 velocity: <0.7034, 0.7034> ft/sec
+
+PROGRESS REPORT at 00:00:36.0000
+Ball 1: position: (40.3587, 40.3587) 	 velocity: <0.6964, 0.6964> ft/sec
+
+PROGRESS REPORT at 00:00:37.0000
+Ball 1: position: (41.0551, 41.0551) 	 velocity: <0.6894, 0.6894> ft/sec
+
+PROGRESS REPORT at 00:00:38.0000
+Ball 1: position: (41.7445, 41.7445) 	 velocity: <0.6826, 0.6826> ft/sec
+
+PROGRESS REPORT at 00:00:39.0000
+Ball 1: position: (42.4271, 42.4271) 	 velocity: <0.6757, 0.6757> ft/sec
+
+PROGRESS REPORT at 00:00:40.0000
+Ball 1: position: (43.1028, 43.1028) 	 velocity: <0.6690, 0.6690> ft/sec
+
+PROGRESS REPORT at 00:00:41.0000
+Ball 1: position: (43.7718, 43.7718) 	 velocity: <0.6623, 0.6623> ft/sec
+
+PROGRESS REPORT at 00:00:42.0000
+Ball 1: position: (44.4341, 44.4341) 	 velocity: <0.6557, 0.6557> ft/sec
+
+PROGRESS REPORT at 00:00:43.0000
+Ball 1: position: (45.0897, 45.0897) 	 velocity: <0.6491, 0.6491> ft/sec
+
+PROGRESS REPORT at 00:00:44.0000
+Ball 1: position: (45.7388, 45.7388) 	 velocity: <0.6426, 0.6426> ft/sec
+
+PROGRESS REPORT at 00:00:45.0000
+Ball 1: position: (46.3815, 46.3815) 	 velocity: <0.6362, 0.6362> ft/sec
+
+PROGRESS REPORT at 00:00:46.0000
+Ball 1: position: (47.0176, 47.0176) 	 velocity: <0.6298, 0.6298> ft/sec
+
+PROGRESS REPORT at 00:00:47.0000
+Ball 1: position: (47.6475, 47.6475) 	 velocity: <0.6235, 0.6235> ft/sec
+
+PROGRESS REPORT at 00:00:48.0000
+Ball 1: position: (48.2710, 48.2710) 	 velocity: <0.6173, 0.6173> ft/sec
+
+PROGRESS REPORT at 00:00:49.0000
+Ball 1: position: (48.8883, 48.8883) 	 velocity: <0.6111, 0.6111> ft/sec
+
+PROGRESS REPORT at 00:00:50.0000
+Ball 1: position: (49.4994, 49.4994) 	 velocity: <0.6050, 0.6050> ft/sec
+
+PROGRESS REPORT at 00:00:51.0000
+Ball 1: position: (50.1044, 50.1044) 	 velocity: <0.5990, 0.5990> ft/sec
+
+PROGRESS REPORT at 00:00:52.0000
+Ball 1: position: (50.7034, 50.7034) 	 velocity: <0.5930, 0.5930> ft/sec
+
+PROGRESS REPORT at 00:00:53.0000
+Ball 1: position: (51.2963, 51.2963) 	 velocity: <0.5870, 0.5870> ft/sec
+
+PROGRESS REPORT at 00:00:54.0000
+Ball 1: position: (51.8834, 51.8834) 	 velocity: <0.5812, 0.5812> ft/sec
+
+PROGRESS REPORT at 00:00:55.0000
+Ball 1: position: (52.4645, 52.4645) 	 velocity: <0.5754, 0.5754> ft/sec
+
+PROGRESS REPORT at 00:00:56.0000
+Ball 1: position: (53.0399, 53.0399) 	 velocity: <0.5696, 0.5696> ft/sec
+
+PROGRESS REPORT at 00:00:57.0000
+Ball 1: position: (53.6095, 53.6095) 	 velocity: <0.5639, 0.5639> ft/sec
+
+PROGRESS REPORT at 00:00:58.0000
+Ball 1: position: (54.1734, 54.1734) 	 velocity: <0.5583, 0.5583> ft/sec
+
+PROGRESS REPORT at 00:00:59.0000
+Ball 1: position: (54.7317, 54.7317) 	 velocity: <0.5527, 0.5527> ft/sec
+
+PROGRESS REPORT at 00:01:00.0000
+Ball 1: position: (55.2843, 55.2843) 	 velocity: <0.5472, 0.5472> ft/sec
+
+PROGRESS REPORT at 00:01:01.0000
+Ball 1: position: (55.8315, 55.8315) 	 velocity: <0.5417, 0.5417> ft/sec
+
+PROGRESS REPORT at 00:01:02.0000
+Ball 1: position: (56.3732, 56.3732) 	 velocity: <0.5363, 0.5363> ft/sec
+
+PROGRESS REPORT at 00:01:03.0000
+Ball 1: position: (56.9094, 56.9094) 	 velocity: <0.5309, 0.5309> ft/sec
+
+PROGRESS REPORT at 00:01:04.0000
+Ball 1: position: (57.4404, 57.4404) 	 velocity: <0.5256, 0.5256> ft/sec
+
+PROGRESS REPORT at 00:01:05.0000
+Ball 1: position: (57.9659, 57.9659) 	 velocity: <0.5203, 0.5203> ft/sec
+
+PROGRESS REPORT at 00:01:06.0000
+Ball 1: position: (58.4863, 58.4863) 	 velocity: <0.5151, 0.5151> ft/sec
+
+PROGRESS REPORT at 00:01:07.0000
+Ball 1: position: (59.0014, 59.0014) 	 velocity: <0.5100, 0.5100> ft/sec
+
+PROGRESS REPORT at 00:01:08.0000
+Ball 1: position: (59.5114, 59.5114) 	 velocity: <0.5049, 0.5049> ft/sec
+
+PROGRESS REPORT at 00:01:09.0000
+Ball 1: position: (60.0163, 60.0163) 	 velocity: <0.4998, 0.4998> ft/sec
+
+PROGRESS REPORT at 00:01:10.0000
+Ball 1: position: (60.5161, 60.5161) 	 velocity: <0.4948, 0.4948> ft/sec
+
+PROGRESS REPORT at 00:01:11.0000
+Ball 1: position: (61.0110, 61.0110) 	 velocity: <0.4899, 0.4899> ft/sec
+
+PROGRESS REPORT at 00:01:12.0000
+Ball 1: position: (61.5009, 61.5009) 	 velocity: <0.4850, 0.4850> ft/sec
+
+PROGRESS REPORT at 00:01:13.0000
+Ball 1: position: (61.9859, 61.9859) 	 velocity: <0.4801, 0.4801> ft/sec
+
+PROGRESS REPORT at 00:01:14.0000
+Ball 1: position: (62.4660, 62.4660) 	 velocity: <0.4753, 0.4753> ft/sec
+
+PROGRESS REPORT at 00:01:15.0000
+Ball 1: position: (62.9413, 62.9413) 	 velocity: <0.4706, 0.4706> ft/sec
+
+PROGRESS REPORT at 00:01:16.0000
+Ball 1: position: (63.4119, 63.4119) 	 velocity: <0.4659, 0.4659> ft/sec
+
+PROGRESS REPORT at 00:01:17.0000
+Ball 1: position: (63.8778, 63.8778) 	 velocity: <0.4612, 0.4612> ft/sec
+
+PROGRESS REPORT at 00:01:18.0000
+Ball 1: position: (64.3390, 64.3390) 	 velocity: <0.4566, 0.4566> ft/sec
+
+PROGRESS REPORT at 00:01:19.0000
+Ball 1: position: (64.7956, 64.7956) 	 velocity: <0.4520, 0.4520> ft/sec
+
+PROGRESS REPORT at 00:01:20.0000
+Ball 1: position: (65.2477, 65.2477) 	 velocity: <0.4475, 0.4475> ft/sec
+
+PROGRESS REPORT at 00:01:21.0000
+Ball 1: position: (65.6952, 65.6952) 	 velocity: <0.4430, 0.4430> ft/sec
+
+PROGRESS REPORT at 00:01:22.0000
+Ball 1: position: (66.1382, 66.1382) 	 velocity: <0.4386, 0.4386> ft/sec
+
+PROGRESS REPORT at 00:01:23.0000
+Ball 1: position: (66.5769, 66.5769) 	 velocity: <0.4342, 0.4342> ft/sec
+
+PROGRESS REPORT at 00:01:24.0000
+Ball 1: position: (67.0111, 67.0111) 	 velocity: <0.4299, 0.4299> ft/sec
+
+PROGRESS REPORT at 00:01:25.0000
+Ball 1: position: (67.4410, 67.4410) 	 velocity: <0.4256, 0.4256> ft/sec
+
+PROGRESS REPORT at 00:01:26.0000
+Ball 1: position: (67.8666, 67.8666) 	 velocity: <0.4213, 0.4213> ft/sec
+
+PROGRESS REPORT at 00:01:27.0000
+Ball 1: position: (68.2879, 68.2879) 	 velocity: <0.4171, 0.4171> ft/sec
+
+PROGRESS REPORT at 00:01:28.0000
+Ball 1: position: (68.7050, 68.7050) 	 velocity: <0.4129, 0.4129> ft/sec
+
+PROGRESS REPORT at 00:01:29.0000
+Ball 1: position: (69.1180, 69.1180) 	 velocity: <0.4088, 0.4088> ft/sec
+
+PROGRESS REPORT at 00:01:30.0000
+Ball 1: position: (69.5268, 69.5268) 	 velocity: <0.4047, 0.4047> ft/sec
+
+PROGRESS REPORT at 00:01:31.0000
+Ball 1: position: (69.9315, 69.9315) 	 velocity: <0.4007, 0.4007> ft/sec
+
+PROGRESS REPORT at 00:01:32.0000
+Ball 1: position: (70.3322, 70.3322) 	 velocity: <0.3967, 0.3967> ft/sec
+
+PROGRESS REPORT at 00:01:33.0000
+Ball 1: position: (70.7289, 70.7289) 	 velocity: <0.3927, 0.3927> ft/sec
+
+PROGRESS REPORT at 00:01:34.0000
+Ball 1: position: (71.1216, 71.1216) 	 velocity: <0.3888, 0.3888> ft/sec
+
+PROGRESS REPORT at 00:01:35.0000
+Ball 1: position: (71.5104, 71.5104) 	 velocity: <0.3849, 0.3849> ft/sec
+
+PROGRESS REPORT at 00:01:36.0000
+Ball 1: position: (71.8953, 71.8953) 	 velocity: <0.3810, 0.3810> ft/sec
+
+PROGRESS REPORT at 00:01:37.0000
+Ball 1: position: (72.2763, 72.2763) 	 velocity: <0.3772, 0.3772> ft/sec
+
+PROGRESS REPORT at 00:01:38.0000
+Ball 1: position: (72.6536, 72.6536) 	 velocity: <0.3735, 0.3735> ft/sec
+
+PROGRESS REPORT at 00:01:39.0000
+Ball 1: position: (73.0270, 73.0270) 	 velocity: <0.3697, 0.3697> ft/sec
+
+PROGRESS REPORT at 00:01:40.0000
+Ball 1: position: (73.3968, 73.3968) 	 velocity: <0.3660, 0.3660> ft/sec
+
+PROGRESS REPORT at 00:01:41.0000
+Ball 1: position: (73.7628, 73.7628) 	 velocity: <0.3624, 0.3624> ft/sec
+
+PROGRESS REPORT at 00:01:42.0000
+Ball 1: position: (74.1252, 74.1252) 	 velocity: <0.3587, 0.3587> ft/sec
+
+PROGRESS REPORT at 00:01:43.0000
+Ball 1: position: (74.4839, 74.4839) 	 velocity: <0.3552, 0.3552> ft/sec
+
+PROGRESS REPORT at 00:01:44.0000
+Ball 1: position: (74.8391, 74.8391) 	 velocity: <0.3516, 0.3516> ft/sec
+
+PROGRESS REPORT at 00:01:45.0000
+Ball 1: position: (75.1907, 75.1907) 	 velocity: <0.3481, 0.3481> ft/sec
+
+PROGRESS REPORT at 00:01:46.0000
+Ball 1: position: (75.5388, 75.5388) 	 velocity: <0.3446, 0.3446> ft/sec
+
+PROGRESS REPORT at 00:01:47.0000
+Ball 1: position: (75.8834, 75.8834) 	 velocity: <0.3412, 0.3412> ft/sec
+
+PROGRESS REPORT at 00:01:48.0000
+Ball 1: position: (76.2246, 76.2246) 	 velocity: <0.3378, 0.3378> ft/sec
+
+PROGRESS REPORT at 00:01:49.0000
+Ball 1: position: (76.5623, 76.5623) 	 velocity: <0.3344, 0.3344> ft/sec
+
+PROGRESS REPORT at 00:01:50.0000
+Ball 1: position: (76.8967, 76.8967) 	 velocity: <0.3310, 0.3310> ft/sec
+
+PROGRESS REPORT at 00:01:51.0000
+Ball 1: position: (77.2277, 77.2277) 	 velocity: <0.3277, 0.3277> ft/sec
+
+PROGRESS REPORT at 00:01:52.0000
+Ball 1: position: (77.5554, 77.5554) 	 velocity: <0.3244, 0.3244> ft/sec
+
+PROGRESS REPORT at 00:01:53.0000
+Ball 1: position: (77.8799, 77.8799) 	 velocity: <0.3212, 0.3212> ft/sec
+
+PROGRESS REPORT at 00:01:54.0000
+Ball 1: position: (78.2011, 78.2011) 	 velocity: <0.3180, 0.3180> ft/sec
+
+PROGRESS REPORT at 00:01:55.0000
+Ball 1: position: (78.5191, 78.5191) 	 velocity: <0.3148, 0.3148> ft/sec
+
+PROGRESS REPORT at 00:01:56.0000
+Ball 1: position: (78.8339, 78.8339) 	 velocity: <0.3117, 0.3117> ft/sec
+
+PROGRESS REPORT at 00:01:57.0000
+Ball 1: position: (79.1456, 79.1456) 	 velocity: <0.3085, 0.3085> ft/sec
+
+PROGRESS REPORT at 00:01:58.0000
+Ball 1: position: (79.4541, 79.4541) 	 velocity: <0.3055, 0.3055> ft/sec
+
+PROGRESS REPORT at 00:01:59.0000
+Ball 1: position: (79.7596, 79.7596) 	 velocity: <0.3024, 0.3024> ft/sec
+
+PROGRESS REPORT at 00:02:00.0000
+Ball 1: position: (80.0620, 80.0620) 	 velocity: <0.2994, 0.2994> ft/sec
+
+PROGRESS REPORT at 00:02:01.0000
+Ball 1: position: (80.3613, 80.3613) 	 velocity: <0.2964, 0.2964> ft/sec
+
+PROGRESS REPORT at 00:02:02.0000
+Ball 1: position: (80.6577, 80.6577) 	 velocity: <0.2934, 0.2934> ft/sec
+
+PROGRESS REPORT at 00:02:03.0000
+Ball 1: position: (80.9512, 80.9512) 	 velocity: <0.2905, 0.2905> ft/sec
+
+PROGRESS REPORT at 00:02:04.0000
+Ball 1: position: (81.2416, 81.2416) 	 velocity: <0.2876, 0.2876> ft/sec
+
+PROGRESS REPORT at 00:02:05.0000
+Ball 1: position: (81.5292, 81.5292) 	 velocity: <0.2847, 0.2847> ft/sec
+
+PROGRESS REPORT at 00:02:06.0000
+Ball 1: position: (81.8139, 81.8139) 	 velocity: <0.2819, 0.2819> ft/sec
+
+PROGRESS REPORT at 00:02:07.0000
+Ball 1: position: (82.0958, 82.0958) 	 velocity: <0.2790, 0.2790> ft/sec
+
+PROGRESS REPORT at 00:02:08.0000
+Ball 1: position: (82.3748, 82.3748) 	 velocity: <0.2763, 0.2763> ft/sec
+
+PROGRESS REPORT at 00:02:09.0000
+Ball 1: position: (82.6511, 82.6511) 	 velocity: <0.2735, 0.2735> ft/sec
+
+PROGRESS REPORT at 00:02:10.0000
+Ball 1: position: (82.9246, 82.9246) 	 velocity: <0.2708, 0.2708> ft/sec
+
+PROGRESS REPORT at 00:02:11.0000
+Ball 1: position: (83.1953, 83.1953) 	 velocity: <0.2680, 0.2680> ft/sec
+
+PROGRESS REPORT at 00:02:12.0000
+Ball 1: position: (83.4634, 83.4634) 	 velocity: <0.2654, 0.2654> ft/sec
+
+PROGRESS REPORT at 00:02:13.0000
+Ball 1: position: (83.7287, 83.7287) 	 velocity: <0.2627, 0.2627> ft/sec
+
+PROGRESS REPORT at 00:02:14.0000
+Ball 1: position: (83.9915, 83.9915) 	 velocity: <0.2601, 0.2601> ft/sec
+
+PROGRESS REPORT at 00:02:15.0000
+Ball 1: position: (84.2515, 84.2515) 	 velocity: <0.2575, 0.2575> ft/sec
+
+PROGRESS REPORT at 00:02:16.0000
+Ball 1: position: (84.5090, 84.5090) 	 velocity: <0.2549, 0.2549> ft/sec
+
+PROGRESS REPORT at 00:02:17.0000
+Ball 1: position: (84.7639, 84.7639) 	 velocity: <0.2524, 0.2524> ft/sec
+
+PROGRESS REPORT at 00:02:18.0000
+Ball 1: position: (85.0163, 85.0163) 	 velocity: <0.2498, 0.2498> ft/sec
+
+PROGRESS REPORT at 00:02:19.0000
+Ball 1: position: (85.2661, 85.2661) 	 velocity: <0.2473, 0.2473> ft/sec
+
+PROGRESS REPORT at 00:02:20.0000
+Ball 1: position: (85.5135, 85.5135) 	 velocity: <0.2449, 0.2449> ft/sec
+
+PROGRESS REPORT at 00:02:21.0000
+Ball 1: position: (85.7583, 85.7583) 	 velocity: <0.2424, 0.2424> ft/sec
+
+PROGRESS REPORT at 00:02:22.0000
+Ball 1: position: (86.0008, 86.0008) 	 velocity: <0.2400, 0.2400> ft/sec
+
+PROGRESS REPORT at 00:02:23.0000
+Ball 1: position: (86.2407, 86.2407) 	 velocity: <0.2376, 0.2376> ft/sec
+
+PROGRESS REPORT at 00:02:24.0000
+Ball 1: position: (86.4783, 86.4783) 	 velocity: <0.2352, 0.2352> ft/sec
+
+PROGRESS REPORT at 00:02:25.0000
+Ball 1: position: (86.7136, 86.7136) 	 velocity: <0.2329, 0.2329> ft/sec
+
+PROGRESS REPORT at 00:02:26.0000
+Ball 1: position: (86.9464, 86.9464) 	 velocity: <0.2305, 0.2305> ft/sec
+
+PROGRESS REPORT at 00:02:27.0000
+Ball 1: position: (87.1770, 87.1770) 	 velocity: <0.2282, 0.2282> ft/sec
+
+PROGRESS REPORT at 00:02:28.0000
+Ball 1: position: (87.4052, 87.4052) 	 velocity: <0.2259, 0.2259> ft/sec
+
+PROGRESS REPORT at 00:02:29.0000
+Ball 1: position: (87.6311, 87.6311) 	 velocity: <0.2237, 0.2237> ft/sec
+
+PROGRESS REPORT at 00:02:30.0000
+Ball 1: position: (87.8548, 87.8548) 	 velocity: <0.2215, 0.2215> ft/sec
+
+PROGRESS REPORT at 00:02:31.0000
+Ball 1: position: (88.0763, 88.0763) 	 velocity: <0.2192, 0.2192> ft/sec
+
+PROGRESS REPORT at 00:02:32.0000
+Ball 1: position: (88.2955, 88.2955) 	 velocity: <0.2170, 0.2170> ft/sec
+
+PROGRESS REPORT at 00:02:33.0000
+Ball 1: position: (88.5126, 88.5126) 	 velocity: <0.2149, 0.2149> ft/sec
+
+PROGRESS REPORT at 00:02:34.0000
+Ball 1: position: (88.7274, 88.7274) 	 velocity: <0.2127, 0.2127> ft/sec
+
+PROGRESS REPORT at 00:02:35.0000
+Ball 1: position: (88.9402, 88.9402) 	 velocity: <0.2106, 0.2106> ft/sec
+
+PROGRESS REPORT at 00:02:36.0000
+Ball 1: position: (89.1508, 89.1508) 	 velocity: <0.2085, 0.2085> ft/sec
+
+PROGRESS REPORT at 00:02:37.0000
+Ball 1: position: (89.3592, 89.3592) 	 velocity: <0.2064, 0.2064> ft/sec
+
+PROGRESS REPORT at 00:02:38.0000
+Ball 1: position: (89.5657, 89.5657) 	 velocity: <0.2043, 0.2043> ft/sec
+
+PROGRESS REPORT at 00:02:39.0000
+Ball 1: position: (89.7700, 89.7700) 	 velocity: <0.2023, 0.2023> ft/sec
+
+PROGRESS REPORT at 00:02:40.0000
+Ball 1: position: (89.9723, 89.9723) 	 velocity: <0.2003, 0.2003> ft/sec
+
+PROGRESS REPORT at 00:02:41.0000
+Ball 1: position: (90.1726, 90.1726) 	 velocity: <0.1983, 0.1983> ft/sec
+
+PROGRESS REPORT at 00:02:42.0000
+Ball 1: position: (90.3708, 90.3708) 	 velocity: <0.1963, 0.1963> ft/sec
+
+PROGRESS REPORT at 00:02:43.0000
+Ball 1: position: (90.5671, 90.5671) 	 velocity: <0.1943, 0.1943> ft/sec
+
+PROGRESS REPORT at 00:02:44.0000
+Ball 1: position: (90.7615, 90.7615) 	 velocity: <0.1924, 0.1924> ft/sec
+
+PROGRESS REPORT at 00:02:45.0000
+Ball 1: position: (90.9539, 90.9539) 	 velocity: <0.1905, 0.1905> ft/sec
+
+PROGRESS REPORT at 00:02:46.0000
+Ball 1: position: (91.1443, 91.1443) 	 velocity: <0.1886, 0.1886> ft/sec
+
+PROGRESS REPORT at 00:02:47.0000
+Ball 1: position: (91.3329, 91.3329) 	 velocity: <0.1867, 0.1867> ft/sec
+
+PROGRESS REPORT at 00:02:48.0000
+Ball 1: position: (91.5195, 91.5195) 	 velocity: <0.1848, 0.1848> ft/sec
+
+PROGRESS REPORT at 00:02:49.0000
+Ball 1: position: (91.7043, 91.7043) 	 velocity: <0.1830, 0.1830> ft/sec
+
+PROGRESS REPORT at 00:02:50.0000
+Ball 1: position: (91.8873, 91.8873) 	 velocity: <0.1811, 0.1811> ft/sec
+
+PROGRESS REPORT at 00:02:51.0000
+Ball 1: position: (92.0684, 92.0684) 	 velocity: <0.1793, 0.1793> ft/sec
+
+PROGRESS REPORT at 00:02:52.0000
+Ball 1: position: (92.2477, 92.2477) 	 velocity: <0.1775, 0.1775> ft/sec
+
+PROGRESS REPORT at 00:02:53.0000
+Ball 1: position: (92.4253, 92.4253) 	 velocity: <0.1757, 0.1757> ft/sec
+
+PROGRESS REPORT at 00:02:54.0000
+Ball 1: position: (92.6010, 92.6010) 	 velocity: <0.1740, 0.1740> ft/sec
+
+PROGRESS REPORT at 00:02:55.0000
+Ball 1: position: (92.7750, 92.7750) 	 velocity: <0.1722, 0.1722> ft/sec
+
+PROGRESS REPORT at 00:02:56.0000
+Ball 1: position: (92.9473, 92.9473) 	 velocity: <0.1705, 0.1705> ft/sec
+
+PROGRESS REPORT at 00:02:57.0000
+Ball 1: position: (93.1178, 93.1178) 	 velocity: <0.1688, 0.1688> ft/sec
+
+PROGRESS REPORT at 00:02:58.0000
+Ball 1: position: (93.2866, 93.2866) 	 velocity: <0.1671, 0.1671> ft/sec
+
+PROGRESS REPORT at 00:02:59.0000
+Ball 1: position: (93.4537, 93.4537) 	 velocity: <0.1655, 0.1655> ft/sec
+
+PROGRESS REPORT at 00:03:00.0000
+Ball 1: position: (93.6192, 93.6192) 	 velocity: <0.1638, 0.1638> ft/sec
+
+PROGRESS REPORT at 00:03:01.0000
+Ball 1: position: (93.7830, 93.7830) 	 velocity: <0.1622, 0.1622> ft/sec
+
+PROGRESS REPORT at 00:03:02.0000
+Ball 1: position: (93.9452, 93.9452) 	 velocity: <0.1605, 0.1605> ft/sec
+
+PROGRESS REPORT at 00:03:03.0000
+Ball 1: position: (94.1057, 94.1057) 	 velocity: <0.1589, 0.1589> ft/sec
+
+PROGRESS REPORT at 00:03:04.0000
+Ball 1: position: (94.2647, 94.2647) 	 velocity: <0.1574, 0.1574> ft/sec
+
+PROGRESS REPORT at 00:03:05.0000
+Ball 1: position: (94.4220, 94.4220) 	 velocity: <0.1558, 0.1558> ft/sec
+
+PROGRESS REPORT at 00:03:06.0000
+Ball 1: position: (94.5778, 94.5778) 	 velocity: <0.1542, 0.1542> ft/sec
+
+PROGRESS REPORT at 00:03:07.0000
+Ball 1: position: (94.7320, 94.7320) 	 velocity: <0.1527, 0.1527> ft/sec
+
+PROGRESS REPORT at 00:03:08.0000
+Ball 1: position: (94.8847, 94.8847) 	 velocity: <0.1512, 0.1512> ft/sec
+
+PROGRESS REPORT at 00:03:09.0000
+Ball 1: position: (95.0359, 95.0359) 	 velocity: <0.1496, 0.1496> ft/sec
+
+PROGRESS REPORT at 00:03:10.0000
+Ball 1: position: (95.1855, 95.1855) 	 velocity: <0.1481, 0.1481> ft/sec
+
+PROGRESS REPORT at 00:03:11.0000
+Ball 1: position: (95.3336, 95.3336) 	 velocity: <0.1467, 0.1467> ft/sec
+
+PROGRESS REPORT at 00:03:12.0000
+Ball 1: position: (95.4803, 95.4803) 	 velocity: <0.1452, 0.1452> ft/sec
+
+PROGRESS REPORT at 00:03:13.0000
+Ball 1: position: (95.6255, 95.6255) 	 velocity: <0.1437, 0.1437> ft/sec
+
+PROGRESS REPORT at 00:03:14.0000
+Ball 1: position: (95.7693, 95.7693) 	 velocity: <0.1423, 0.1423> ft/sec
+
+PROGRESS REPORT at 00:03:15.0000
+Ball 1: position: (95.9116, 95.9116) 	 velocity: <0.1409, 0.1409> ft/sec
+
+PROGRESS REPORT at 00:03:16.0000
+Ball 1: position: (96.0524, 96.0524) 	 velocity: <0.1395, 0.1395> ft/sec
+
+PROGRESS REPORT at 00:03:17.0000
+Ball 1: position: (96.1919, 96.1919) 	 velocity: <0.1381, 0.1381> ft/sec
+
+PROGRESS REPORT at 00:03:18.0000
+Ball 1: position: (96.3300, 96.3300) 	 velocity: <0.1367, 0.1367> ft/sec
+
+PROGRESS REPORT at 00:03:19.0000
+Ball 1: position: (96.4667, 96.4667) 	 velocity: <0.1353, 0.1353> ft/sec
+
+PROGRESS REPORT at 00:03:20.0000
+Ball 1: position: (96.6020, 96.6020) 	 velocity: <0.1340, 0.1340> ft/sec
+
+PROGRESS REPORT at 00:03:21.0000
+Ball 1: position: (96.7360, 96.7360) 	 velocity: <0.1326, 0.1326> ft/sec
+
+PROGRESS REPORT at 00:03:22.0000
+Ball 1: position: (96.8687, 96.8687) 	 velocity: <0.1313, 0.1313> ft/sec
+
+PROGRESS REPORT at 00:03:23.0000
+Ball 1: position: (97.0000, 97.0000) 	 velocity: <0.1300, 0.1300> ft/sec
+
+PROGRESS REPORT at 00:03:24.0000
+Ball 1: position: (97.1300, 97.1300) 	 velocity: <0.1287, 0.1287> ft/sec
+
+PROGRESS REPORT at 00:03:25.0000
+Ball 1: position: (97.2587, 97.2587) 	 velocity: <0.1274, 0.1274> ft/sec
+
+PROGRESS REPORT at 00:03:26.0000
+Ball 1: position: (97.3861, 97.3861) 	 velocity: <0.1261, 0.1261> ft/sec
+
+PROGRESS REPORT at 00:03:27.0000
+Ball 1: position: (97.5122, 97.5122) 	 velocity: <0.1249, 0.1249> ft/sec
+
+PROGRESS REPORT at 00:03:28.0000
+Ball 1: position: (97.6371, 97.6371) 	 velocity: <0.1236, 0.1236> ft/sec
+
+PROGRESS REPORT at 00:03:29.0000
+Ball 1: position: (97.7607, 97.7607) 	 velocity: <0.1224, 0.1224> ft/sec
+
+PROGRESS REPORT at 00:03:30.0000
+Ball 1: position: (97.8831, 97.8831) 	 velocity: <0.1212, 0.1212> ft/sec
+
+PROGRESS REPORT at 00:03:31.0000
+Ball 1: position: (98.0043, 98.0043) 	 velocity: <0.1200, 0.1200> ft/sec
+
+PROGRESS REPORT at 00:03:32.0000
+Ball 1: position: (98.1242, 98.1242) 	 velocity: <0.1188, 0.1188> ft/sec
+
+PROGRESS REPORT at 00:03:33.0000
+Ball 1: position: (98.2430, 98.2430) 	 velocity: <0.1176, 0.1176> ft/sec
+
+PROGRESS REPORT at 00:03:34.0000
+Ball 1: position: (98.3606, 98.3606) 	 velocity: <0.1164, 0.1164> ft/sec
+
+PROGRESS REPORT at 00:03:35.0000
+Ball 1: position: (98.4770, 98.4770) 	 velocity: <0.1152, 0.1152> ft/sec
+
+PROGRESS REPORT at 00:03:36.0000
+Ball 1: position: (98.5922, 98.5922) 	 velocity: <0.1141, 0.1141> ft/sec
+
+PROGRESS REPORT at 00:03:37.0000
+Ball 1: position: (98.7063, 98.7063) 	 velocity: <0.1129, 0.1129> ft/sec
+
+PROGRESS REPORT at 00:03:38.0000
+Ball 1: position: (98.8192, 98.8192) 	 velocity: <0.1118, 0.1118> ft/sec
+
+PROGRESS REPORT at 00:03:39.0000
+Ball 1: position: (98.9310, 98.9310) 	 velocity: <0.1107, 0.1107> ft/sec
+
+PROGRESS REPORT at 00:03:40.0000
+Ball 1: position: (99.0417, 99.0417) 	 velocity: <0.1096, 0.1096> ft/sec
+
+PROGRESS REPORT at 00:03:41.0000
+Ball 1: position: (99.1513, 99.1513) 	 velocity: <0.1085, 0.1085> ft/sec
+
+PROGRESS REPORT at 00:03:42.0000
+Ball 1: position: (99.2598, 99.2598) 	 velocity: <0.1074, 0.1074> ft/sec
+
+PROGRESS REPORT at 00:03:43.0000
+Ball 1: position: (99.3672, 99.3672) 	 velocity: <0.1063, 0.1063> ft/sec
+
+PROGRESS REPORT at 00:03:44.0000
+Ball 1: position: (99.4735, 99.4735) 	 velocity: <0.1053, 0.1053> ft/sec
+
+PROGRESS REPORT at 00:03:45.0000
+Ball 1: position: (99.5788, 99.5788) 	 velocity: <0.1042, 0.1042> ft/sec
+
+PROGRESS REPORT at 00:03:46.0000
+Ball 1: position: (99.6830, 99.6830) 	 velocity: <0.1032, 0.1032> ft/sec
+
+PROGRESS REPORT at 00:03:47.0000
+Ball 1: position: (99.7862, 99.7862) 	 velocity: <0.1021, 0.1021> ft/sec
+
+PROGRESS REPORT at 00:03:48.0000
+Ball 1: position: (99.8883, 99.8883) 	 velocity: <0.1011, 0.1011> ft/sec
+
+PROGRESS REPORT at 00:03:49.0000
+Ball 1: position: (99.9894, 99.9894) 	 velocity: <0.1001, 0.1001> ft/sec
+
+PROGRESS REPORT at 00:03:50.0000
+Ball 1: position: (100.0895, 100.0895) 	 velocity: <0.0991, 0.0991> ft/sec
+
+PROGRESS REPORT at 00:03:51.0000
+Ball 1: position: (100.1886, 100.1886) 	 velocity: <0.0981, 0.0981> ft/sec
+
+PROGRESS REPORT at 00:03:52.0000
+Ball 1: position: (100.2867, 100.2867) 	 velocity: <0.0971, 0.0971> ft/sec
+
+PROGRESS REPORT at 00:03:53.0000
+Ball 1: position: (100.3839, 100.3839) 	 velocity: <0.0962, 0.0962> ft/sec
+
+PROGRESS REPORT at 00:03:54.0000
+Ball 1: position: (100.4800, 100.4800) 	 velocity: <0.0952, 0.0952> ft/sec
+
+PROGRESS REPORT at 00:03:55.0000
+Ball 1: position: (100.5752, 100.5752) 	 velocity: <0.0942, 0.0942> ft/sec
+
+PROGRESS REPORT at 00:03:56.0000
+Ball 1: position: (100.6695, 100.6695) 	 velocity: <0.0933, 0.0933> ft/sec
+
+PROGRESS REPORT at 00:03:57.0000
+Ball 1: position: (100.7628, 100.7628) 	 velocity: <0.0924, 0.0924> ft/sec
+
+PROGRESS REPORT at 00:03:58.0000
+Ball 1: position: (100.8552, 100.8552) 	 velocity: <0.0914, 0.0914> ft/sec
+
+PROGRESS REPORT at 00:03:59.0000
+Ball 1: position: (100.9466, 100.9466) 	 velocity: <0.0905, 0.0905> ft/sec
+
+PROGRESS REPORT at 00:04:00.0000
+Ball 1: position: (101.0371, 101.0371) 	 velocity: <0.0896, 0.0896> ft/sec
+
+PROGRESS REPORT at 00:04:01.0000
+Ball 1: position: (101.1268, 101.1268) 	 velocity: <0.0887, 0.0887> ft/sec
+
+PROGRESS REPORT at 00:04:02.0000
+Ball 1: position: (101.2155, 101.2155) 	 velocity: <0.0878, 0.0878> ft/sec
+
+PROGRESS REPORT at 00:04:03.0000
+Ball 1: position: (101.3033, 101.3033) 	 velocity: <0.0870, 0.0870> ft/sec
+
+PROGRESS REPORT at 00:04:04.0000
+Ball 1: position: (101.3903, 101.3903) 	 velocity: <0.0861, 0.0861> ft/sec
+
+PROGRESS REPORT at 00:04:05.0000
+Ball 1: position: (101.4764, 101.4764) 	 velocity: <0.0852, 0.0852> ft/sec
+
+PROGRESS REPORT at 00:04:06.0000
+Ball 1: position: (101.5616, 101.5616) 	 velocity: <0.0844, 0.0844> ft/sec
+
+PROGRESS REPORT at 00:04:07.0000
+Ball 1: position: (101.6460, 101.6460) 	 velocity: <0.0835, 0.0835> ft/sec
+
+PROGRESS REPORT at 00:04:08.0000
+Ball 1: position: (101.7296, 101.7296) 	 velocity: <0.0827, 0.0827> ft/sec
+
+PROGRESS REPORT at 00:04:09.0000
+Ball 1: position: (101.8123, 101.8123) 	 velocity: <0.0819, 0.0819> ft/sec
+
+PROGRESS REPORT at 00:04:10.0000
+Ball 1: position: (101.8941, 101.8941) 	 velocity: <0.0811, 0.0811> ft/sec
+
+PROGRESS REPORT at 00:04:11.0000
+Ball 1: position: (101.9752, 101.9752) 	 velocity: <0.0802, 0.0802> ft/sec
+
+PROGRESS REPORT at 00:04:12.0000
+Ball 1: position: (102.0555, 102.0555) 	 velocity: <0.0794, 0.0794> ft/sec
+
+PROGRESS REPORT at 00:04:13.0000
+Ball 1: position: (102.1349, 102.1349) 	 velocity: <0.0787, 0.0787> ft/sec
+
+PROGRESS REPORT at 00:04:14.0000
+Ball 1: position: (102.2136, 102.2136) 	 velocity: <0.0779, 0.0779> ft/sec
+
+PROGRESS REPORT at 00:04:15.0000
+Ball 1: position: (102.2914, 102.2914) 	 velocity: <0.0771, 0.0771> ft/sec
+
+PROGRESS REPORT at 00:04:16.0000
+Ball 1: position: (102.3685, 102.3685) 	 velocity: <0.0763, 0.0763> ft/sec
+
+PROGRESS REPORT at 00:04:17.0000
+Ball 1: position: (102.4448, 102.4448) 	 velocity: <0.0756, 0.0756> ft/sec
+
+PROGRESS REPORT at 00:04:18.0000
+Ball 1: position: (102.5204, 102.5204) 	 velocity: <0.0748, 0.0748> ft/sec
+
+PROGRESS REPORT at 00:04:19.0000
+Ball 1: position: (102.5952, 102.5952) 	 velocity: <0.0740, 0.0740> ft/sec
+
+PROGRESS REPORT at 00:04:20.0000
+Ball 1: position: (102.6692, 102.6692) 	 velocity: <0.0733, 0.0733> ft/sec
+
+PROGRESS REPORT at 00:04:21.0000
+Ball 1: position: (102.7425, 102.7425) 	 velocity: <0.0726, 0.0726> ft/sec
+
+PROGRESS REPORT at 00:04:22.0000
+Ball 1: position: (102.8151, 102.8151) 	 velocity: <0.0718, 0.0718> ft/sec
+
+PROGRESS REPORT at 00:04:23.0000
+Ball 1: position: (102.8869, 102.8869) 	 velocity: <0.0711, 0.0711> ft/sec
+
+PROGRESS REPORT at 00:04:24.0000
+Ball 1: position: (102.9581, 102.9581) 	 velocity: <0.0704, 0.0704> ft/sec
+
+PROGRESS REPORT at 00:04:25.0000
+Ball 1: position: (103.0285, 103.0285) 	 velocity: <0.0697, 0.0697> ft/sec
+
+PROGRESS REPORT at 00:04:26.0000
+Ball 1: position: (103.0982, 103.0982) 	 velocity: <0.0690, 0.0690> ft/sec
+
+PROGRESS REPORT at 00:04:27.0000
+Ball 1: position: (103.1672, 103.1672) 	 velocity: <0.0683, 0.0683> ft/sec
+
+PROGRESS REPORT at 00:04:28.0000
+Ball 1: position: (103.2356, 103.2356) 	 velocity: <0.0676, 0.0676> ft/sec
+
+PROGRESS REPORT at 00:04:29.0000
+Ball 1: position: (103.3032, 103.3032) 	 velocity: <0.0670, 0.0670> ft/sec
+
+PROGRESS REPORT at 00:04:30.0000
+Ball 1: position: (103.3702, 103.3702) 	 velocity: <0.0663, 0.0663> ft/sec
+
+PROGRESS REPORT at 00:04:31.0000
+Ball 1: position: (103.4365, 103.4365) 	 velocity: <0.0656, 0.0656> ft/sec
+
+PROGRESS REPORT at 00:04:32.0000
+Ball 1: position: (103.5021, 103.5021) 	 velocity: <0.0650, 0.0650> ft/sec
+
+PROGRESS REPORT at 00:04:33.0000
+Ball 1: position: (103.5671, 103.5671) 	 velocity: <0.0643, 0.0643> ft/sec
+
+PROGRESS REPORT at 00:04:34.0000
+Ball 1: position: (103.6314, 103.6314) 	 velocity: <0.0637, 0.0637> ft/sec
+
+PROGRESS REPORT at 00:04:35.0000
+Ball 1: position: (103.6951, 103.6951) 	 velocity: <0.0630, 0.0630> ft/sec
+
+PROGRESS REPORT at 00:04:36.0000
+Ball 1: position: (103.7581, 103.7581) 	 velocity: <0.0624, 0.0624> ft/sec
+
+PROGRESS REPORT at 00:04:37.0000
+Ball 1: position: (103.8206, 103.8206) 	 velocity: <0.0618, 0.0618> ft/sec
+
+PROGRESS REPORT at 00:04:38.0000
+Ball 1: position: (103.8824, 103.8824) 	 velocity: <0.0612, 0.0612> ft/sec
+
+PROGRESS REPORT at 00:04:39.0000
+Ball 1: position: (103.9435, 103.9435) 	 velocity: <0.0606, 0.0606> ft/sec
+
+PROGRESS REPORT at 00:04:40.0000
+Ball 1: position: (104.0041, 104.0041) 	 velocity: <0.0600, 0.0600> ft/sec
+
+PROGRESS REPORT at 00:04:41.0000
+Ball 1: position: (104.0641, 104.0641) 	 velocity: <0.0594, 0.0594> ft/sec
+
+PROGRESS REPORT at 00:04:42.0000
+Ball 1: position: (104.1234, 104.1234) 	 <at rest>
+
+NO COLLISION IS POSSIBLE
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim valid ball should go out of bounds...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 1.0 second
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (10.0000, 10.0000) 	 velocity: <1000.0000, 1000.0000> ft/sec
+
+PROGRESS REPORT at 00:00:01.0000
+Ball 1: position: (1010.0000, 1010.0000) 	 <at rest>
+
+NO COLLISION IS POSSIBLE
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim valid ball set six balls subsecond time slice...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 0.1 seconds
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (200.0000, 200.0000) 	 velocity: <10.0000, 10.0000> ft/sec
+Ball 2: position: (100.0000, 100.0000) 	 velocity: <-100.0000, -100.0000> ft/sec
+Ball 3: position: (150.0000, 150.0000) 	 velocity: <200.0000, 200.0000> ft/sec
+Ball 4: position: (175.0000, 175.0000) 	 velocity: <-110.0000, -110.0000> ft/sec
+Ball 5: position: (20.0000, 20.0000) 	 velocity: <1.0000, 1.0000> ft/sec
+Ball 6: position: (50.0000, 50.0000) 	 velocity: <-5.0000, -5.0000> ft/sec
+
+PROGRESS REPORT at 00:00:00.1000
+Ball 1: position: (201.0000, 201.0000) 	 velocity: <9.9900, 9.9900> ft/sec
+Ball 2: position: (90.0000, 90.0000) 	 velocity: <-99.9000, -99.9000> ft/sec
+Ball 3: position: (170.0000, 170.0000) 	 velocity: <199.8000, 199.8000> ft/sec
+Ball 4: position: (164.0000, 164.0000) 	 velocity: <-109.8900, -109.8900> ft/sec
+Ball 5: position: (20.1000, 20.1000) 	 velocity: <0.9990, 0.9990> ft/sec
+Ball 6: position: (49.5000, 49.5000) 	 velocity: <-4.9950, -4.9950> ft/sec
+
+PROGRESS REPORT at 00:00:00.2000
+Ball 1: position: (201.9990, 201.9990) 	 velocity: <9.9800, 9.9800> ft/sec
+Ball 2: position: (80.0100, 80.0100) 	 velocity: <-99.8001, -99.8001> ft/sec
+Ball 3: position: (189.9800, 189.9800) 	 velocity: <199.6002, 199.6002> ft/sec
+Ball 4: position: (153.0110, 153.0110) 	 velocity: <-109.7801, -109.7801> ft/sec
+Ball 5: position: (20.1999, 20.1999) 	 velocity: <0.9980, 0.9980> ft/sec
+Ball 6: position: (49.0005, 49.0005) 	 velocity: <-4.9900, -4.9900> ft/sec
+
+PROGRESS REPORT at 00:00:00.3000
+Ball 1: position: (202.9970, 202.9970) 	 velocity: <9.9700, 9.9700> ft/sec
+Ball 2: position: (70.0300, 70.0300) 	 velocity: <-99.7003, -99.7003> ft/sec
+Ball 3: position: (209.9400, 209.9400) 	 velocity: <199.4006, 199.4006> ft/sec
+Ball 4: position: (142.0330, 142.0330) 	 velocity: <-109.6703, -109.6703> ft/sec
+Ball 5: position: (20.2997, 20.2997) 	 velocity: <0.9970, 0.9970> ft/sec
+Ball 6: position: (48.5015, 48.5015) 	 velocity: <-4.9850, -4.9850> ft/sec
+
+PROGRESS REPORT at 00:00:00.4000
+Ball 1: position: (203.9940, 203.9940) 	 velocity: <9.9601, 9.9601> ft/sec
+Ball 2: position: (60.0600, 60.0600) 	 velocity: <-99.6006, -99.6006> ft/sec
+Ball 3: position: (229.8801, 229.8801) 	 velocity: <199.2012, 199.2012> ft/sec
+Ball 4: position: (131.0660, 131.0660) 	 velocity: <-109.5607, -109.5607> ft/sec
+Ball 5: position: (20.3994, 20.3994) 	 velocity: <0.9960, 0.9960> ft/sec
+Ball 6: position: (48.0030, 48.0030) 	 velocity: <-4.9800, -4.9800> ft/sec
+
+PROGRESS REPORT at 00:00:00.5000
+Ball 1: position: (204.9900, 204.9900) 	 velocity: <9.9501, 9.9501> ft/sec
+Ball 2: position: (50.0999, 50.0999) 	 velocity: <-99.5010, -99.5010> ft/sec
+Ball 3: position: (249.8002, 249.8002) 	 velocity: <199.0020, 199.0020> ft/sec
+Ball 4: position: (120.1099, 120.1099) 	 velocity: <-109.4511, -109.4511> ft/sec
+Ball 5: position: (20.4990, 20.4990) 	 velocity: <0.9950, 0.9950> ft/sec
+Ball 6: position: (47.5050, 47.5050) 	 velocity: <-4.9750, -4.9750> ft/sec
+
+PROGRESS REPORT at 00:00:00.6000
+Ball 1: position: (205.9850, 205.9850) 	 velocity: <9.9401, 9.9401> ft/sec
+Ball 2: position: (40.1498, 40.1498) 	 velocity: <-99.4015, -99.4015> ft/sec
+Ball 3: position: (269.7004, 269.7004) 	 velocity: <198.8030, 198.8030> ft/sec
+Ball 4: position: (109.1648, 109.1648) 	 velocity: <-109.3416, -109.3416> ft/sec
+Ball 5: position: (20.5985, 20.5985) 	 velocity: <0.9940, 0.9940> ft/sec
+Ball 6: position: (47.0075, 47.0075) 	 velocity: <-4.9701, -4.9701> ft/sec
+
+PROGRESS REPORT at 00:00:00.7000
+Ball 1: position: (206.9790, 206.9790) 	 velocity: <9.9302, 9.9302> ft/sec
+Ball 2: position: (30.2097, 30.2097) 	 velocity: <-99.3021, -99.3021> ft/sec
+Ball 3: position: (289.5807, 289.5807) 	 velocity: <198.6042, 198.6042> ft/sec
+Ball 4: position: (98.2306, 98.2306) 	 velocity: <-109.2323, -109.2323> ft/sec
+Ball 5: position: (20.6979, 20.6979) 	 velocity: <0.9930, 0.9930> ft/sec
+Ball 6: position: (46.5105, 46.5105) 	 velocity: <-4.9651, -4.9651> ft/sec
+
+PROGRESS REPORT at 00:00:00.8000
+Ball 1: position: (207.9721, 207.9721) 	 velocity: <9.9203, 9.9203> ft/sec
+Ball 2: position: (20.2794, 20.2794) 	 velocity: <-99.2028, -99.2028> ft/sec
+Ball 3: position: (309.4411, 309.4411) 	 velocity: <198.4056, 198.4056> ft/sec
+Ball 4: position: (87.3074, 87.3074) 	 velocity: <-109.1231, -109.1231> ft/sec
+Ball 5: position: (20.7972, 20.7972) 	 velocity: <0.9920, 0.9920> ft/sec
+Ball 6: position: (46.0140, 46.0140) 	 velocity: <-4.9601, -4.9601> ft/sec
+
+Collision occurred between ball 2 and ball 5
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim valid ball set five balls 1.234 second time slice...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 1.234 seconds
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (200.0000, 200.0000) 	 velocity: <10.0000, 10.0000> ft/sec
+Ball 2: position: (100.0000, 100.0000) 	 velocity: <-100.0000, -100.0000> ft/sec
+Ball 3: position: (175.0000, 175.0000) 	 velocity: <-110.0000, -110.0000> ft/sec
+Ball 4: position: (20.0000, 20.0000) 	 velocity: <1.0000, 1.0000> ft/sec
+Ball 5: position: (50.0000, 50.0000) 	 velocity: <-5.0000, -5.0000> ft/sec
+
+PROGRESS REPORT at 00:00:01.2340
+Ball 1: position: (212.3400, 212.3400) 	 velocity: <9.8766, 9.8766> ft/sec
+Ball 2: position: (-23.4000, -23.4000) 	 velocity: <-98.7660, -98.7660> ft/sec
+Ball 3: position: (39.2600, 39.2600) 	 velocity: <-108.6426, -108.6426> ft/sec
+Ball 4: position: (21.2340, 21.2340) 	 velocity: <0.9877, 0.9877> ft/sec
+Ball 5: position: (43.8300, 43.8300) 	 velocity: <-4.9383, -4.9383> ft/sec
+
+PROGRESS REPORT at 00:00:02.4680
+Ball 1: position: (224.5277, 224.5277) 	 velocity: <9.7547, 9.7547> ft/sec
+Ball 2: position: (-145.2772, -145.2772) 	 velocity: <-97.5472, -97.5472> ft/sec
+Ball 3: position: (-94.8050, -94.8050) 	 velocity: <-107.3020, -107.3020> ft/sec
+Ball 4: position: (22.4528, 22.4528) 	 velocity: <0.9755, 0.9755> ft/sec
+Ball 5: position: (37.7361, 37.7361) 	 velocity: <-4.8774, -4.8774> ft/sec
+
+PROGRESS REPORT at 00:00:03.7020
+Ball 1: position: (236.5651, 236.5651) 	 velocity: <9.6343, 9.6343> ft/sec
+Ball 2: position: (-265.6505, -265.6505) 	 velocity: <-96.3435, -96.3435> ft/sec
+Ball 3: position: (-227.2156, -227.2156) 	 velocity: <-105.9778, -105.9778> ft/sec
+Ball 4: position: (23.6565, 23.6565) 	 velocity: <0.9634, 0.9634> ft/sec
+Ball 5: position: (31.7175, 31.7175) 	 velocity: <-4.8172, -4.8172> ft/sec
+
+PROGRESS REPORT at 00:00:04.9360
+Ball 1: position: (248.4538, 248.4538) 	 velocity: <9.5155, 9.5155> ft/sec
+Ball 2: position: (-384.5384, -384.5384) 	 velocity: <-95.1546, -95.1546> ft/sec
+Ball 3: position: (-357.9922, -357.9922) 	 velocity: <-104.6701, -104.6701> ft/sec
+Ball 4: position: (24.8454, 24.8454) 	 velocity: <0.9515, 0.9515> ft/sec
+Ball 5: position: (25.7731, 25.7731) 	 velocity: <-4.7577, -4.7577> ft/sec
+
+PROGRESS REPORT at 00:00:06.1700
+Ball 1: position: (260.1959, 260.1959) 	 velocity: <9.3980, 9.3980> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-487.1551, -487.1551) 	 velocity: <-103.3784, -103.3784> ft/sec
+Ball 4: position: (26.0196, 26.0196) 	 velocity: <0.9398, 0.9398> ft/sec
+Ball 5: position: (19.9020, 19.9020) 	 velocity: <-4.6990, -4.6990> ft/sec
+
+PROGRESS REPORT at 00:00:07.4040
+Ball 1: position: (271.7931, 271.7931) 	 velocity: <9.2821, 9.2821> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (27.1793, 27.1793) 	 velocity: <0.9282, 0.9282> ft/sec
+Ball 5: position: (14.1034, 14.1034) 	 velocity: <-4.6410, -4.6410> ft/sec
+
+PROGRESS REPORT at 00:00:08.6380
+Ball 1: position: (283.2472, 283.2472) 	 velocity: <9.1675, 9.1675> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (28.3247, 28.3247) 	 velocity: <0.9168, 0.9168> ft/sec
+Ball 5: position: (8.3764, 8.3764) 	 velocity: <-4.5838, -4.5838> ft/sec
+
+PROGRESS REPORT at 00:00:09.8720
+Ball 1: position: (294.5599, 294.5599) 	 velocity: <9.0544, 9.0544> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (29.4560, 29.4560) 	 velocity: <0.9054, 0.9054> ft/sec
+Ball 5: position: (2.7200, 2.7200) 	 velocity: <-4.5272, -4.5272> ft/sec
+
+PROGRESS REPORT at 00:00:11.1060
+Ball 1: position: (305.7330, 305.7330) 	 velocity: <8.9427, 8.9427> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (30.5733, 30.5733) 	 velocity: <0.8943, 0.8943> ft/sec
+Ball 5: position: (-2.8665, -2.8665) 	 velocity: <-4.4713, -4.4713> ft/sec
+
+PROGRESS REPORT at 00:00:12.3400
+Ball 1: position: (316.7683, 316.7683) 	 velocity: <8.8323, 8.8323> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (31.6768, 31.6768) 	 velocity: <0.8832, 0.8832> ft/sec
+Ball 5: position: (-8.3841, -8.3841) 	 velocity: <-4.4162, -4.4162> ft/sec
+
+PROGRESS REPORT at 00:00:13.5740
+Ball 1: position: (327.6674, 327.6674) 	 velocity: <8.7233, 8.7233> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (32.7667, 32.7667) 	 velocity: <0.8723, 0.8723> ft/sec
+Ball 5: position: (-13.8337, -13.8337) 	 velocity: <-4.3617, -4.3617> ft/sec
+
+PROGRESS REPORT at 00:00:14.8080
+Ball 1: position: (338.4320, 338.4320) 	 velocity: <8.6157, 8.6157> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (33.8432, 33.8432) 	 velocity: <0.8616, 0.8616> ft/sec
+Ball 5: position: (-19.2160, -19.2160) 	 velocity: <-4.3078, -4.3078> ft/sec
+
+PROGRESS REPORT at 00:00:16.0420
+Ball 1: position: (349.0637, 349.0637) 	 velocity: <8.5094, 8.5094> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (34.9064, 34.9064) 	 velocity: <0.8509, 0.8509> ft/sec
+Ball 5: position: (-24.5319, -24.5319) 	 velocity: <-4.2547, -4.2547> ft/sec
+
+PROGRESS REPORT at 00:00:17.2760
+Ball 1: position: (359.5643, 359.5643) 	 velocity: <8.4044, 8.4044> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (35.9564, 35.9564) 	 velocity: <0.8404, 0.8404> ft/sec
+Ball 5: position: (-29.7821, -29.7821) 	 velocity: <-4.2022, -4.2022> ft/sec
+
+PROGRESS REPORT at 00:00:18.5100
+Ball 1: position: (369.9352, 369.9352) 	 velocity: <8.3006, 8.3006> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (36.9935, 36.9935) 	 velocity: <0.8301, 0.8301> ft/sec
+Ball 5: position: (-34.9676, -34.9676) 	 velocity: <-4.1503, -4.1503> ft/sec
+
+PROGRESS REPORT at 00:00:19.7440
+Ball 1: position: (380.1782, 380.1782) 	 velocity: <8.1982, 8.1982> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (38.0178, 38.0178) 	 velocity: <0.8198, 0.8198> ft/sec
+Ball 5: position: (-40.0891, -40.0891) 	 velocity: <-4.0991, -4.0991> ft/sec
+
+PROGRESS REPORT at 00:00:20.9780
+Ball 1: position: (390.2948, 390.2948) 	 velocity: <8.0971, 8.0971> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (39.0295, 39.0295) 	 velocity: <0.8097, 0.8097> ft/sec
+Ball 5: position: (-45.1474, -45.1474) 	 velocity: <-4.0485, -4.0485> ft/sec
+
+PROGRESS REPORT at 00:00:22.2120
+Ball 1: position: (400.2866, 400.2866) 	 velocity: <7.9971, 7.9971> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (40.0287, 40.0287) 	 velocity: <0.7997, 0.7997> ft/sec
+Ball 5: position: (-50.1433, -50.1433) 	 velocity: <-3.9986, -3.9986> ft/sec
+
+PROGRESS REPORT at 00:00:23.4460
+Ball 1: position: (410.1551, 410.1551) 	 velocity: <7.8984, 7.8984> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (41.0155, 41.0155) 	 velocity: <0.7898, 0.7898> ft/sec
+Ball 5: position: (-55.0775, -55.0775) 	 velocity: <-3.9492, -3.9492> ft/sec
+
+PROGRESS REPORT at 00:00:24.6800
+Ball 1: position: (419.9017, 419.9017) 	 velocity: <7.8010, 7.8010> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (41.9902, 41.9902) 	 velocity: <0.7801, 0.7801> ft/sec
+Ball 5: position: (-59.9509, -59.9509) 	 velocity: <-3.9005, -3.9005> ft/sec
+
+PROGRESS REPORT at 00:00:25.9140
+Ball 1: position: (429.5282, 429.5282) 	 velocity: <7.7047, 7.7047> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (42.9528, 42.9528) 	 velocity: <0.7705, 0.7705> ft/sec
+Ball 5: position: (-64.7641, -64.7641) 	 velocity: <-3.8524, -3.8524> ft/sec
+
+PROGRESS REPORT at 00:00:27.1480
+Ball 1: position: (439.0358, 439.0358) 	 velocity: <7.6096, 7.6096> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (43.9036, 43.9036) 	 velocity: <0.7610, 0.7610> ft/sec
+Ball 5: position: (-69.5179, -69.5179) 	 velocity: <-3.8048, -3.8048> ft/sec
+
+PROGRESS REPORT at 00:00:28.3820
+Ball 1: position: (448.4261, 448.4261) 	 velocity: <7.5157, 7.5157> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (44.8426, 44.8426) 	 velocity: <0.7516, 0.7516> ft/sec
+Ball 5: position: (-74.2130, -74.2130) 	 velocity: <-3.7579, -3.7579> ft/sec
+
+PROGRESS REPORT at 00:00:29.6160
+Ball 1: position: (457.7005, 457.7005) 	 velocity: <7.4230, 7.4230> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (45.7701, 45.7701) 	 velocity: <0.7423, 0.7423> ft/sec
+Ball 5: position: (-78.8503, -78.8503) 	 velocity: <-3.7115, -3.7115> ft/sec
+
+PROGRESS REPORT at 00:00:30.8500
+Ball 1: position: (466.8605, 466.8605) 	 velocity: <7.3314, 7.3314> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (46.6860, 46.6860) 	 velocity: <0.7331, 0.7331> ft/sec
+Ball 5: position: (-83.4302, -83.4302) 	 velocity: <-3.6657, -3.6657> ft/sec
+
+PROGRESS REPORT at 00:00:32.0840
+Ball 1: position: (475.9074, 475.9074) 	 velocity: <7.2409, 7.2409> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (47.5907, 47.5907) 	 velocity: <0.7241, 0.7241> ft/sec
+Ball 5: position: (-87.9537, -87.9537) 	 velocity: <-3.6205, -3.6205> ft/sec
+
+PROGRESS REPORT at 00:00:33.3180
+Ball 1: position: (484.8427, 484.8427) 	 velocity: <7.1516, 7.1516> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (48.4843, 48.4843) 	 velocity: <0.7152, 0.7152> ft/sec
+Ball 5: position: (-92.4214, -92.4214) 	 velocity: <-3.5758, -3.5758> ft/sec
+
+PROGRESS REPORT at 00:00:34.5520
+Ball 1: position: (493.6678, 493.6678) 	 velocity: <7.0633, 7.0633> ft/sec
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (49.3668, 49.3668) 	 velocity: <0.7063, 0.7063> ft/sec
+Ball 5: position: (-96.8339, -96.8339) 	 velocity: <-3.5317, -3.5317> ft/sec
+
+PROGRESS REPORT at 00:00:35.7860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (50.2384, 50.2384) 	 velocity: <0.6976, 0.6976> ft/sec
+Ball 5: position: (-101.1920, -101.1920) 	 velocity: <-3.4881, -3.4881> ft/sec
+
+PROGRESS REPORT at 00:00:37.0200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (51.0992, 51.0992) 	 velocity: <0.6890, 0.6890> ft/sec
+Ball 5: position: (-105.4962, -105.4962) 	 velocity: <-3.4450, -3.4450> ft/sec
+
+PROGRESS REPORT at 00:00:38.2540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (51.9495, 51.9495) 	 velocity: <0.6805, 0.6805> ft/sec
+Ball 5: position: (-109.7474, -109.7474) 	 velocity: <-3.4025, -3.4025> ft/sec
+
+PROGRESS REPORT at 00:00:39.4880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (52.7892, 52.7892) 	 velocity: <0.6721, 0.6721> ft/sec
+Ball 5: position: (-113.9461, -113.9461) 	 velocity: <-3.3605, -3.3605> ft/sec
+
+PROGRESS REPORT at 00:00:40.7220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (53.6186, 53.6186) 	 velocity: <0.6638, 0.6638> ft/sec
+Ball 5: position: (-118.0930, -118.0930) 	 velocity: <-3.3191, -3.3191> ft/sec
+
+PROGRESS REPORT at 00:00:41.9560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (54.4378, 54.4378) 	 velocity: <0.6556, 0.6556> ft/sec
+Ball 5: position: (-122.1888, -122.1888) 	 velocity: <-3.2781, -3.2781> ft/sec
+
+PROGRESS REPORT at 00:00:43.1900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (55.2468, 55.2468) 	 velocity: <0.6475, 0.6475> ft/sec
+Ball 5: position: (-126.2340, -126.2340) 	 velocity: <-3.2377, -3.2377> ft/sec
+
+PROGRESS REPORT at 00:00:44.4240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (56.0458, 56.0458) 	 velocity: <0.6395, 0.6395> ft/sec
+Ball 5: position: (-130.2292, -130.2292) 	 velocity: <-3.1977, -3.1977> ft/sec
+
+PROGRESS REPORT at 00:00:45.6580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (56.8350, 56.8350) 	 velocity: <0.6316, 0.6316> ft/sec
+Ball 5: position: (-134.1752, -134.1752) 	 velocity: <-3.1582, -3.1582> ft/sec
+
+PROGRESS REPORT at 00:00:46.8920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (57.6145, 57.6145) 	 velocity: <0.6239, 0.6239> ft/sec
+Ball 5: position: (-138.0725, -138.0725) 	 velocity: <-3.1193, -3.1193> ft/sec
+
+PROGRESS REPORT at 00:00:48.1260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (58.3843, 58.3843) 	 velocity: <0.6162, 0.6162> ft/sec
+Ball 5: position: (-141.9217, -141.9217) 	 velocity: <-3.0808, -3.0808> ft/sec
+
+PROGRESS REPORT at 00:00:49.3600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (59.1447, 59.1447) 	 velocity: <0.6086, 0.6086> ft/sec
+Ball 5: position: (-145.7234, -145.7234) 	 velocity: <-3.0428, -3.0428> ft/sec
+
+PROGRESS REPORT at 00:00:50.5940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (59.8956, 59.8956) 	 velocity: <0.6010, 0.6010> ft/sec
+Ball 5: position: (-149.4781, -149.4781) 	 velocity: <-3.0052, -3.0052> ft/sec
+
+PROGRESS REPORT at 00:00:51.8280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (60.6373, 60.6373) 	 velocity: <0.5936, 0.5936> ft/sec
+Ball 5: position: (-153.1866, -153.1866) 	 velocity: <-2.9681, -2.9681> ft/sec
+
+PROGRESS REPORT at 00:00:53.0620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (61.3698, 61.3698) 	 velocity: <0.5863, 0.5863> ft/sec
+Ball 5: position: (-156.8492, -156.8492) 	 velocity: <-2.9315, -2.9315> ft/sec
+
+PROGRESS REPORT at 00:00:54.2960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (62.0933, 62.0933) 	 velocity: <0.5791, 0.5791> ft/sec
+Ball 5: position: (-160.4667, -160.4667) 	 velocity: <-2.8953, -2.8953> ft/sec
+
+PROGRESS REPORT at 00:00:55.5300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (62.8079, 62.8079) 	 velocity: <0.5719, 0.5719> ft/sec
+Ball 5: position: (-164.0396, -164.0396) 	 velocity: <-2.8596, -2.8596> ft/sec
+
+PROGRESS REPORT at 00:00:56.7640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (63.5137, 63.5137) 	 velocity: <0.5649, 0.5649> ft/sec
+Ball 5: position: (-167.5683, -167.5683) 	 velocity: <-2.8243, -2.8243> ft/sec
+
+PROGRESS REPORT at 00:00:57.9980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (64.2107, 64.2107) 	 velocity: <0.5579, 0.5579> ft/sec
+Ball 5: position: (-171.0535, -171.0535) 	 velocity: <-2.7895, -2.7895> ft/sec
+
+PROGRESS REPORT at 00:00:59.2320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (64.8991, 64.8991) 	 velocity: <0.5510, 0.5510> ft/sec
+Ball 5: position: (-174.4957, -174.4957) 	 velocity: <-2.7550, -2.7550> ft/sec
+
+PROGRESS REPORT at 00:01:00.4660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (65.5791, 65.5791) 	 velocity: <0.5442, 0.5442> ft/sec
+Ball 5: position: (-177.8954, -177.8954) 	 velocity: <-2.7210, -2.7210> ft/sec
+
+PROGRESS REPORT at 00:01:01.7000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (66.2506, 66.2506) 	 velocity: <0.5375, 0.5375> ft/sec
+Ball 5: position: (-181.2532, -181.2532) 	 velocity: <-2.6875, -2.6875> ft/sec
+
+PROGRESS REPORT at 00:01:02.9340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (66.9139, 66.9139) 	 velocity: <0.5309, 0.5309> ft/sec
+Ball 5: position: (-184.5696, -184.5696) 	 velocity: <-2.6543, -2.6543> ft/sec
+
+PROGRESS REPORT at 00:01:04.1680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (67.5690, 67.5690) 	 velocity: <0.5243, 0.5243> ft/sec
+Ball 5: position: (-187.8450, -187.8450) 	 velocity: <-2.6216, -2.6216> ft/sec
+
+PROGRESS REPORT at 00:01:05.4020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (68.2160, 68.2160) 	 velocity: <0.5178, 0.5178> ft/sec
+Ball 5: position: (-191.0800, -191.0800) 	 velocity: <-2.5892, -2.5892> ft/sec
+
+PROGRESS REPORT at 00:01:06.6360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (68.8550, 68.8550) 	 velocity: <0.5114, 0.5114> ft/sec
+Ball 5: position: (-194.2750, -194.2750) 	 velocity: <-2.5572, -2.5572> ft/sec
+
+PROGRESS REPORT at 00:01:07.8700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (69.4861, 69.4861) 	 velocity: <0.5051, 0.5051> ft/sec
+Ball 5: position: (-197.4307, -197.4307) 	 velocity: <-2.5257, -2.5257> ft/sec
+
+PROGRESS REPORT at 00:01:09.1040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (70.1095, 70.1095) 	 velocity: <0.4989, 0.4989> ft/sec
+Ball 5: position: (-200.5474, -200.5474) 	 velocity: <-2.4945, -2.4945> ft/sec
+
+PROGRESS REPORT at 00:01:10.3380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (70.7251, 70.7251) 	 velocity: <0.4927, 0.4927> ft/sec
+Ball 5: position: (-203.6256, -203.6256) 	 velocity: <-2.4637, -2.4637> ft/sec
+
+PROGRESS REPORT at 00:01:11.5720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (71.3332, 71.3332) 	 velocity: <0.4867, 0.4867> ft/sec
+Ball 5: position: (-206.6659, -206.6659) 	 velocity: <-2.4333, -2.4333> ft/sec
+
+PROGRESS REPORT at 00:01:12.8060
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (71.9337, 71.9337) 	 velocity: <0.4807, 0.4807> ft/sec
+Ball 5: position: (-209.6686, -209.6686) 	 velocity: <-2.4033, -2.4033> ft/sec
+
+PROGRESS REPORT at 00:01:14.0400
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (72.5269, 72.5269) 	 velocity: <0.4747, 0.4747> ft/sec
+Ball 5: position: (-212.6343, -212.6343) 	 velocity: <-2.3737, -2.3737> ft/sec
+
+PROGRESS REPORT at 00:01:15.2740
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (73.1127, 73.1127) 	 velocity: <0.4689, 0.4689> ft/sec
+Ball 5: position: (-215.5634, -215.5634) 	 velocity: <-2.3444, -2.3444> ft/sec
+
+PROGRESS REPORT at 00:01:16.5080
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (73.6913, 73.6913) 	 velocity: <0.4631, 0.4631> ft/sec
+Ball 5: position: (-218.4564, -218.4564) 	 velocity: <-2.3154, -2.3154> ft/sec
+
+PROGRESS REPORT at 00:01:17.7420
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (74.2627, 74.2627) 	 velocity: <0.4574, 0.4574> ft/sec
+Ball 5: position: (-221.3136, -221.3136) 	 velocity: <-2.2869, -2.2869> ft/sec
+
+PROGRESS REPORT at 00:01:18.9760
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (74.8271, 74.8271) 	 velocity: <0.4517, 0.4517> ft/sec
+Ball 5: position: (-224.1356, -224.1356) 	 velocity: <-2.2586, -2.2586> ft/sec
+
+PROGRESS REPORT at 00:01:20.2100
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (75.3846, 75.3846) 	 velocity: <0.4462, 0.4462> ft/sec
+Ball 5: position: (-226.9228, -226.9228) 	 velocity: <-2.2308, -2.2308> ft/sec
+
+PROGRESS REPORT at 00:01:21.4440
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (75.9351, 75.9351) 	 velocity: <0.4406, 0.4406> ft/sec
+Ball 5: position: (-229.6755, -229.6755) 	 velocity: <-2.2032, -2.2032> ft/sec
+
+PROGRESS REPORT at 00:01:22.6780
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (76.4789, 76.4789) 	 velocity: <0.4352, 0.4352> ft/sec
+Ball 5: position: (-232.3943, -232.3943) 	 velocity: <-2.1761, -2.1761> ft/sec
+
+PROGRESS REPORT at 00:01:23.9120
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (77.0159, 77.0159) 	 velocity: <0.4298, 0.4298> ft/sec
+Ball 5: position: (-235.0796, -235.0796) 	 velocity: <-2.1492, -2.1492> ft/sec
+
+PROGRESS REPORT at 00:01:25.1460
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (77.5463, 77.5463) 	 velocity: <0.4245, 0.4245> ft/sec
+Ball 5: position: (-237.7317, -237.7317) 	 velocity: <-2.1227, -2.1227> ft/sec
+
+PROGRESS REPORT at 00:01:26.3800
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (78.0702, 78.0702) 	 velocity: <0.4193, 0.4193> ft/sec
+Ball 5: position: (-240.3511, -240.3511) 	 velocity: <-2.0965, -2.0965> ft/sec
+
+PROGRESS REPORT at 00:01:27.6140
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (78.5876, 78.5876) 	 velocity: <0.4141, 0.4141> ft/sec
+Ball 5: position: (-242.9382, -242.9382) 	 velocity: <-2.0706, -2.0706> ft/sec
+
+PROGRESS REPORT at 00:01:28.8480
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (79.0987, 79.0987) 	 velocity: <0.4090, 0.4090> ft/sec
+Ball 5: position: (-245.4933, -245.4933) 	 velocity: <-2.0451, -2.0451> ft/sec
+
+PROGRESS REPORT at 00:01:30.0820
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (79.6034, 79.6034) 	 velocity: <0.4040, 0.4040> ft/sec
+Ball 5: position: (-248.0169, -248.0169) 	 velocity: <-2.0198, -2.0198> ft/sec
+
+PROGRESS REPORT at 00:01:31.3160
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (80.1019, 80.1019) 	 velocity: <0.3990, 0.3990> ft/sec
+Ball 5: position: (-250.5094, -250.5094) 	 velocity: <-1.9949, -1.9949> ft/sec
+
+PROGRESS REPORT at 00:01:32.5500
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (80.5942, 80.5942) 	 velocity: <0.3941, 0.3941> ft/sec
+Ball 5: position: (-252.9711, -252.9711) 	 velocity: <-1.9703, -1.9703> ft/sec
+
+PROGRESS REPORT at 00:01:33.7840
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (81.0805, 81.0805) 	 velocity: <0.3892, 0.3892> ft/sec
+Ball 5: position: (-255.4025, -255.4025) 	 velocity: <-1.9460, -1.9460> ft/sec
+
+PROGRESS REPORT at 00:01:35.0180
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (81.5608, 81.5608) 	 velocity: <0.3844, 0.3844> ft/sec
+Ball 5: position: (-257.8038, -257.8038) 	 velocity: <-1.9220, -1.9220> ft/sec
+
+PROGRESS REPORT at 00:01:36.2520
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (82.0351, 82.0351) 	 velocity: <0.3796, 0.3796> ft/sec
+Ball 5: position: (-260.1755, -260.1755) 	 velocity: <-1.8982, -1.8982> ft/sec
+
+PROGRESS REPORT at 00:01:37.4860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (82.5036, 82.5036) 	 velocity: <0.3750, 0.3750> ft/sec
+Ball 5: position: (-262.5179, -262.5179) 	 velocity: <-1.8748, -1.8748> ft/sec
+
+PROGRESS REPORT at 00:01:38.7200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (82.9663, 82.9663) 	 velocity: <0.3703, 0.3703> ft/sec
+Ball 5: position: (-264.8314, -264.8314) 	 velocity: <-1.8517, -1.8517> ft/sec
+
+PROGRESS REPORT at 00:01:39.9540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (83.4233, 83.4233) 	 velocity: <0.3658, 0.3658> ft/sec
+Ball 5: position: (-267.1164, -267.1164) 	 velocity: <-1.8288, -1.8288> ft/sec
+
+PROGRESS REPORT at 00:01:41.1880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (83.8746, 83.8746) 	 velocity: <0.3613, 0.3613> ft/sec
+Ball 5: position: (-269.3732, -269.3732) 	 velocity: <-1.8063, -1.8063> ft/sec
+
+PROGRESS REPORT at 00:01:42.4220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (84.3204, 84.3204) 	 velocity: <0.3568, 0.3568> ft/sec
+Ball 5: position: (-271.6021, -271.6021) 	 velocity: <-1.7840, -1.7840> ft/sec
+
+PROGRESS REPORT at 00:01:43.6560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (84.7607, 84.7607) 	 velocity: <0.3524, 0.3524> ft/sec
+Ball 5: position: (-273.8036, -273.8036) 	 velocity: <-1.7620, -1.7620> ft/sec
+
+PROGRESS REPORT at 00:01:44.8900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (85.1956, 85.1956) 	 velocity: <0.3480, 0.3480> ft/sec
+Ball 5: position: (-275.9778, -275.9778) 	 velocity: <-1.7402, -1.7402> ft/sec
+
+PROGRESS REPORT at 00:01:46.1240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (85.6251, 85.6251) 	 velocity: <0.3437, 0.3437> ft/sec
+Ball 5: position: (-278.1253, -278.1253) 	 velocity: <-1.7187, -1.7187> ft/sec
+
+PROGRESS REPORT at 00:01:47.3580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (86.0492, 86.0492) 	 velocity: <0.3395, 0.3395> ft/sec
+Ball 5: position: (-280.2462, -280.2462) 	 velocity: <-1.6975, -1.6975> ft/sec
+
+PROGRESS REPORT at 00:01:48.5920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (86.4682, 86.4682) 	 velocity: <0.3353, 0.3353> ft/sec
+Ball 5: position: (-282.3410, -282.3410) 	 velocity: <-1.6766, -1.6766> ft/sec
+
+PROGRESS REPORT at 00:01:49.8260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (86.8820, 86.8820) 	 velocity: <0.3312, 0.3312> ft/sec
+Ball 5: position: (-284.4099, -284.4099) 	 velocity: <-1.6559, -1.6559> ft/sec
+
+PROGRESS REPORT at 00:01:51.0600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (87.2907, 87.2907) 	 velocity: <0.3271, 0.3271> ft/sec
+Ball 5: position: (-286.4533, -286.4533) 	 velocity: <-1.6355, -1.6355> ft/sec
+
+PROGRESS REPORT at 00:01:52.2940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (87.6943, 87.6943) 	 velocity: <0.3231, 0.3231> ft/sec
+Ball 5: position: (-288.4714, -288.4714) 	 velocity: <-1.6153, -1.6153> ft/sec
+
+PROGRESS REPORT at 00:01:53.5280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (88.0929, 88.0929) 	 velocity: <0.3191, 0.3191> ft/sec
+Ball 5: position: (-290.4647, -290.4647) 	 velocity: <-1.5954, -1.5954> ft/sec
+
+PROGRESS REPORT at 00:01:54.7620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (88.4867, 88.4867) 	 velocity: <0.3151, 0.3151> ft/sec
+Ball 5: position: (-292.4334, -292.4334) 	 velocity: <-1.5757, -1.5757> ft/sec
+
+PROGRESS REPORT at 00:01:55.9960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (88.8755, 88.8755) 	 velocity: <0.3112, 0.3112> ft/sec
+Ball 5: position: (-294.3777, -294.3777) 	 velocity: <-1.5562, -1.5562> ft/sec
+
+PROGRESS REPORT at 00:01:57.2300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (89.2596, 89.2596) 	 velocity: <0.3074, 0.3074> ft/sec
+Ball 5: position: (-296.2981, -296.2981) 	 velocity: <-1.5370, -1.5370> ft/sec
+
+PROGRESS REPORT at 00:01:58.4640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (89.6390, 89.6390) 	 velocity: <0.3036, 0.3036> ft/sec
+Ball 5: position: (-298.1948, -298.1948) 	 velocity: <-1.5181, -1.5181> ft/sec
+
+PROGRESS REPORT at 00:01:59.6980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (90.0136, 90.0136) 	 velocity: <0.2999, 0.2999> ft/sec
+Ball 5: position: (-300.0681, -300.0681) 	 velocity: <-1.4993, -1.4993> ft/sec
+
+PROGRESS REPORT at 00:02:00.9320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (90.3836, 90.3836) 	 velocity: <0.2962, 0.2962> ft/sec
+Ball 5: position: (-301.9182, -301.9182) 	 velocity: <-1.4808, -1.4808> ft/sec
+
+PROGRESS REPORT at 00:02:02.1660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (90.7491, 90.7491) 	 velocity: <0.2925, 0.2925> ft/sec
+Ball 5: position: (-303.7456, -303.7456) 	 velocity: <-1.4625, -1.4625> ft/sec
+
+PROGRESS REPORT at 00:02:03.4000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (91.1101, 91.1101) 	 velocity: <0.2889, 0.2889> ft/sec
+Ball 5: position: (-305.5503, -305.5503) 	 velocity: <-1.4445, -1.4445> ft/sec
+
+PROGRESS REPORT at 00:02:04.6340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (91.4666, 91.4666) 	 velocity: <0.2853, 0.2853> ft/sec
+Ball 5: position: (-307.3328, -307.3328) 	 velocity: <-1.4267, -1.4267> ft/sec
+
+PROGRESS REPORT at 00:02:05.8680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (91.8187, 91.8187) 	 velocity: <0.2818, 0.2818> ft/sec
+Ball 5: position: (-309.0934, -309.0934) 	 velocity: <-1.4091, -1.4091> ft/sec
+
+PROGRESS REPORT at 00:02:07.1020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (92.1664, 92.1664) 	 velocity: <0.2783, 0.2783> ft/sec
+Ball 5: position: (-310.8321, -310.8321) 	 velocity: <-1.3917, -1.3917> ft/sec
+
+PROGRESS REPORT at 00:02:08.3360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (92.5099, 92.5099) 	 velocity: <0.2749, 0.2749> ft/sec
+Ball 5: position: (-312.5495, -312.5495) 	 velocity: <-1.3745, -1.3745> ft/sec
+
+PROGRESS REPORT at 00:02:09.5700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (92.8491, 92.8491) 	 velocity: <0.2715, 0.2715> ft/sec
+Ball 5: position: (-314.2456, -314.2456) 	 velocity: <-1.3575, -1.3575> ft/sec
+
+PROGRESS REPORT at 00:02:10.8040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (93.1842, 93.1842) 	 velocity: <0.2682, 0.2682> ft/sec
+Ball 5: position: (-315.9208, -315.9208) 	 velocity: <-1.3408, -1.3408> ft/sec
+
+PROGRESS REPORT at 00:02:12.0380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (93.5151, 93.5151) 	 velocity: <0.2648, 0.2648> ft/sec
+Ball 5: position: (-317.5754, -317.5754) 	 velocity: <-1.3242, -1.3242> ft/sec
+
+PROGRESS REPORT at 00:02:13.2720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (93.8419, 93.8419) 	 velocity: <0.2616, 0.2616> ft/sec
+Ball 5: position: (-319.2095, -319.2095) 	 velocity: <-1.3079, -1.3079> ft/sec
+
+PROGRESS REPORT at 00:02:14.5060
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (94.1647, 94.1647) 	 velocity: <0.2584, 0.2584> ft/sec
+Ball 5: position: (-320.8234, -320.8234) 	 velocity: <-1.2918, -1.2918> ft/sec
+
+PROGRESS REPORT at 00:02:15.7400
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (94.4835, 94.4835) 	 velocity: <0.2552, 0.2552> ft/sec
+Ball 5: position: (-322.4175, -322.4175) 	 velocity: <-1.2758, -1.2758> ft/sec
+
+PROGRESS REPORT at 00:02:16.9740
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (94.7984, 94.7984) 	 velocity: <0.2520, 0.2520> ft/sec
+Ball 5: position: (-323.9918, -323.9918) 	 velocity: <-1.2601, -1.2601> ft/sec
+
+PROGRESS REPORT at 00:02:18.2080
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (95.1094, 95.1094) 	 velocity: <0.2489, 0.2489> ft/sec
+Ball 5: position: (-325.5468, -325.5468) 	 velocity: <-1.2445, -1.2445> ft/sec
+
+PROGRESS REPORT at 00:02:19.4420
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (95.4165, 95.4165) 	 velocity: <0.2458, 0.2458> ft/sec
+Ball 5: position: (-327.0825, -327.0825) 	 velocity: <-1.2292, -1.2292> ft/sec
+
+PROGRESS REPORT at 00:02:20.6760
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (95.7199, 95.7199) 	 velocity: <0.2428, 0.2428> ft/sec
+Ball 5: position: (-328.5993, -328.5993) 	 velocity: <-1.2140, -1.2140> ft/sec
+
+PROGRESS REPORT at 00:02:21.9100
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (96.0195, 96.0195) 	 velocity: <0.2398, 0.2398> ft/sec
+Ball 5: position: (-330.0974, -330.0974) 	 velocity: <-1.1990, -1.1990> ft/sec
+
+PROGRESS REPORT at 00:02:23.1440
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (96.3154, 96.3154) 	 velocity: <0.2368, 0.2368> ft/sec
+Ball 5: position: (-331.5770, -331.5770) 	 velocity: <-1.1842, -1.1842> ft/sec
+
+PROGRESS REPORT at 00:02:24.3780
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (96.6077, 96.6077) 	 velocity: <0.2339, 0.2339> ft/sec
+Ball 5: position: (-333.0384, -333.0384) 	 velocity: <-1.1696, -1.1696> ft/sec
+
+PROGRESS REPORT at 00:02:25.6120
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (96.8963, 96.8963) 	 velocity: <0.2310, 0.2310> ft/sec
+Ball 5: position: (-334.4817, -334.4817) 	 velocity: <-1.1552, -1.1552> ft/sec
+
+PROGRESS REPORT at 00:02:26.8460
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (97.1814, 97.1814) 	 velocity: <0.2282, 0.2282> ft/sec
+Ball 5: position: (-335.9072, -335.9072) 	 velocity: <-1.1409, -1.1409> ft/sec
+
+PROGRESS REPORT at 00:02:28.0800
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (97.4630, 97.4630) 	 velocity: <0.2254, 0.2254> ft/sec
+Ball 5: position: (-337.3151, -337.3151) 	 velocity: <-1.1268, -1.1268> ft/sec
+
+PROGRESS REPORT at 00:02:29.3140
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (97.7411, 97.7411) 	 velocity: <0.2226, 0.2226> ft/sec
+Ball 5: position: (-338.7056, -338.7056) 	 velocity: <-1.1129, -1.1129> ft/sec
+
+PROGRESS REPORT at 00:02:30.5480
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (98.0158, 98.0158) 	 velocity: <0.2198, 0.2198> ft/sec
+Ball 5: position: (-340.0790, -340.0790) 	 velocity: <-1.0992, -1.0992> ft/sec
+
+PROGRESS REPORT at 00:02:31.7820
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (98.2871, 98.2871) 	 velocity: <0.2171, 0.2171> ft/sec
+Ball 5: position: (-341.4354, -341.4354) 	 velocity: <-1.0856, -1.0856> ft/sec
+
+PROGRESS REPORT at 00:02:33.0160
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (98.5550, 98.5550) 	 velocity: <0.2144, 0.2144> ft/sec
+Ball 5: position: (-342.7751, -342.7751) 	 velocity: <-1.0722, -1.0722> ft/sec
+
+PROGRESS REPORT at 00:02:34.2500
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (98.8196, 98.8196) 	 velocity: <0.2118, 0.2118> ft/sec
+Ball 5: position: (-344.0982, -344.0982) 	 velocity: <-1.0590, -1.0590> ft/sec
+
+PROGRESS REPORT at 00:02:35.4840
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (99.0810, 99.0810) 	 velocity: <0.2092, 0.2092> ft/sec
+Ball 5: position: (-345.4051, -345.4051) 	 velocity: <-1.0459, -1.0459> ft/sec
+
+PROGRESS REPORT at 00:02:36.7180
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (99.3392, 99.3392) 	 velocity: <0.2066, 0.2066> ft/sec
+Ball 5: position: (-346.6958, -346.6958) 	 velocity: <-1.0330, -1.0330> ft/sec
+
+PROGRESS REPORT at 00:02:37.9520
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (99.5941, 99.5941) 	 velocity: <0.2041, 0.2041> ft/sec
+Ball 5: position: (-347.9705, -347.9705) 	 velocity: <-1.0203, -1.0203> ft/sec
+
+PROGRESS REPORT at 00:02:39.1860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (99.8459, 99.8459) 	 velocity: <0.2015, 0.2015> ft/sec
+Ball 5: position: (-349.2296, -349.2296) 	 velocity: <-1.0077, -1.0077> ft/sec
+
+PROGRESS REPORT at 00:02:40.4200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (100.0946, 100.0946) 	 velocity: <0.1991, 0.1991> ft/sec
+Ball 5: position: (-350.4731, -350.4731) 	 velocity: <-0.9953, -0.9953> ft/sec
+
+PROGRESS REPORT at 00:02:41.6540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (100.3403, 100.3403) 	 velocity: <0.1966, 0.1966> ft/sec
+Ball 5: position: (-351.7013, -351.7013) 	 velocity: <-0.9830, -0.9830> ft/sec
+
+PROGRESS REPORT at 00:02:42.8880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (100.5829, 100.5829) 	 velocity: <0.1942, 0.1942> ft/sec
+Ball 5: position: (-352.9143, -352.9143) 	 velocity: <-0.9709, -0.9709> ft/sec
+
+PROGRESS REPORT at 00:02:44.1220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (100.8225, 100.8225) 	 velocity: <0.1918, 0.1918> ft/sec
+Ball 5: position: (-354.1123, -354.1123) 	 velocity: <-0.9589, -0.9589> ft/sec
+
+PROGRESS REPORT at 00:02:45.3560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (101.0591, 101.0591) 	 velocity: <0.1894, 0.1894> ft/sec
+Ball 5: position: (-355.2956, -355.2956) 	 velocity: <-0.9470, -0.9470> ft/sec
+
+PROGRESS REPORT at 00:02:46.5900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (101.2928, 101.2928) 	 velocity: <0.1871, 0.1871> ft/sec
+Ball 5: position: (-356.4642, -356.4642) 	 velocity: <-0.9354, -0.9354> ft/sec
+
+PROGRESS REPORT at 00:02:47.8240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (101.5237, 101.5237) 	 velocity: <0.1848, 0.1848> ft/sec
+Ball 5: position: (-357.6184, -357.6184) 	 velocity: <-0.9238, -0.9238> ft/sec
+
+PROGRESS REPORT at 00:02:49.0580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (101.7517, 101.7517) 	 velocity: <0.1825, 0.1825> ft/sec
+Ball 5: position: (-358.7584, -358.7584) 	 velocity: <-0.9124, -0.9124> ft/sec
+
+PROGRESS REPORT at 00:02:50.2920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (101.9769, 101.9769) 	 velocity: <0.1802, 0.1802> ft/sec
+Ball 5: position: (-359.8844, -359.8844) 	 velocity: <-0.9012, -0.9012> ft/sec
+
+PROGRESS REPORT at 00:02:51.5260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (102.1993, 102.1993) 	 velocity: <0.1780, 0.1780> ft/sec
+Ball 5: position: (-360.9964, -360.9964) 	 velocity: <-0.8900, -0.8900> ft/sec
+
+PROGRESS REPORT at 00:02:52.7600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (102.4189, 102.4189) 	 velocity: <0.1758, 0.1758> ft/sec
+Ball 5: position: (-362.0947, -362.0947) 	 velocity: <-0.8791, -0.8791> ft/sec
+
+PROGRESS REPORT at 00:02:53.9940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (102.6359, 102.6359) 	 velocity: <0.1736, 0.1736> ft/sec
+Ball 5: position: (-363.1794, -363.1794) 	 velocity: <-0.8682, -0.8682> ft/sec
+
+PROGRESS REPORT at 00:02:55.2280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (102.8502, 102.8502) 	 velocity: <0.1715, 0.1715> ft/sec
+Ball 5: position: (-364.2508, -364.2508) 	 velocity: <-0.8575, -0.8575> ft/sec
+
+PROGRESS REPORT at 00:02:56.4620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (103.0618, 103.0618) 	 velocity: <0.1694, 0.1694> ft/sec
+Ball 5: position: (-365.3089, -365.3089) 	 velocity: <-0.8469, -0.8469> ft/sec
+
+PROGRESS REPORT at 00:02:57.6960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (103.2708, 103.2708) 	 velocity: <0.1673, 0.1673> ft/sec
+Ball 5: position: (-366.3540, -366.3540) 	 velocity: <-0.8365, -0.8365> ft/sec
+
+PROGRESS REPORT at 00:02:58.9300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (103.4772, 103.4772) 	 velocity: <0.1652, 0.1652> ft/sec
+Ball 5: position: (-367.3862, -367.3862) 	 velocity: <-0.8261, -0.8261> ft/sec
+
+PROGRESS REPORT at 00:03:00.1640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (103.6811, 103.6811) 	 velocity: <0.1632, 0.1632> ft/sec
+Ball 5: position: (-368.4057, -368.4057) 	 velocity: <-0.8159, -0.8159> ft/sec
+
+PROGRESS REPORT at 00:03:01.3980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (103.8825, 103.8825) 	 velocity: <0.1612, 0.1612> ft/sec
+Ball 5: position: (-369.4126, -369.4126) 	 velocity: <-0.8059, -0.8059> ft/sec
+
+PROGRESS REPORT at 00:03:02.6320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (104.0814, 104.0814) 	 velocity: <0.1592, 0.1592> ft/sec
+Ball 5: position: (-370.4070, -370.4070) 	 velocity: <-0.7959, -0.7959> ft/sec
+
+PROGRESS REPORT at 00:03:03.8660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (104.2778, 104.2778) 	 velocity: <0.1572, 0.1572> ft/sec
+Ball 5: position: (-371.3892, -371.3892) 	 velocity: <-0.7861, -0.7861> ft/sec
+
+PROGRESS REPORT at 00:03:05.1000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (104.4718, 104.4718) 	 velocity: <0.1553, 0.1553> ft/sec
+Ball 5: position: (-372.3592, -372.3592) 	 velocity: <-0.7764, -0.7764> ft/sec
+
+PROGRESS REPORT at 00:03:06.3340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (104.6635, 104.6635) 	 velocity: <0.1534, 0.1534> ft/sec
+Ball 5: position: (-373.3173, -373.3173) 	 velocity: <-0.7668, -0.7668> ft/sec
+
+PROGRESS REPORT at 00:03:07.5680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (104.8527, 104.8527) 	 velocity: <0.1515, 0.1515> ft/sec
+Ball 5: position: (-374.2636, -374.2636) 	 velocity: <-0.7574, -0.7574> ft/sec
+
+PROGRESS REPORT at 00:03:08.8020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (105.0396, 105.0396) 	 velocity: <0.1496, 0.1496> ft/sec
+Ball 5: position: (-375.1982, -375.1982) 	 velocity: <-0.7480, -0.7480> ft/sec
+
+PROGRESS REPORT at 00:03:10.0360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (105.2242, 105.2242) 	 velocity: <0.1478, 0.1478> ft/sec
+Ball 5: position: (-376.1212, -376.1212) 	 velocity: <-0.7388, -0.7388> ft/sec
+
+PROGRESS REPORT at 00:03:11.2700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (105.4066, 105.4066) 	 velocity: <0.1459, 0.1459> ft/sec
+Ball 5: position: (-377.0329, -377.0329) 	 velocity: <-0.7297, -0.7297> ft/sec
+
+PROGRESS REPORT at 00:03:12.5040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (105.5867, 105.5867) 	 velocity: <0.1441, 0.1441> ft/sec
+Ball 5: position: (-377.9333, -377.9333) 	 velocity: <-0.7207, -0.7207> ft/sec
+
+PROGRESS REPORT at 00:03:13.7380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (105.7645, 105.7645) 	 velocity: <0.1424, 0.1424> ft/sec
+Ball 5: position: (-378.8226, -378.8226) 	 velocity: <-0.7118, -0.7118> ft/sec
+
+PROGRESS REPORT at 00:03:14.9720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (105.9402, 105.9402) 	 velocity: <0.1406, 0.1406> ft/sec
+Ball 5: position: (-379.7009, -379.7009) 	 velocity: <-0.7030, -0.7030> ft/sec
+
+PROGRESS REPORT at 00:03:16.2060
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (106.1137, 106.1137) 	 velocity: <0.1389, 0.1389> ft/sec
+Ball 5: position: (-380.5684, -380.5684) 	 velocity: <-0.6943, -0.6943> ft/sec
+
+PROGRESS REPORT at 00:03:17.4400
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (106.2850, 106.2850) 	 velocity: <0.1371, 0.1371> ft/sec
+Ball 5: position: (-381.4252, -381.4252) 	 velocity: <-0.6857, -0.6857> ft/sec
+
+PROGRESS REPORT at 00:03:18.6740
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (106.4543, 106.4543) 	 velocity: <0.1355, 0.1355> ft/sec
+Ball 5: position: (-382.2714, -382.2714) 	 velocity: <-0.6773, -0.6773> ft/sec
+
+PROGRESS REPORT at 00:03:19.9080
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (106.6214, 106.6214) 	 velocity: <0.1338, 0.1338> ft/sec
+Ball 5: position: (-383.1072, -383.1072) 	 velocity: <-0.6689, -0.6689> ft/sec
+
+PROGRESS REPORT at 00:03:21.1420
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (106.7865, 106.7865) 	 velocity: <0.1321, 0.1321> ft/sec
+Ball 5: position: (-383.9327, -383.9327) 	 velocity: <-0.6607, -0.6607> ft/sec
+
+PROGRESS REPORT at 00:03:22.3760
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (106.9496, 106.9496) 	 velocity: <0.1305, 0.1305> ft/sec
+Ball 5: position: (-384.7479, -384.7479) 	 velocity: <-0.6525, -0.6525> ft/sec
+
+PROGRESS REPORT at 00:03:23.6100
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (107.1106, 107.1106) 	 velocity: <0.1289, 0.1289> ft/sec
+Ball 5: position: (-385.5531, -385.5531) 	 velocity: <-0.6445, -0.6445> ft/sec
+
+PROGRESS REPORT at 00:03:24.8440
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (107.2697, 107.2697) 	 velocity: <0.1273, 0.1273> ft/sec
+Ball 5: position: (-386.3484, -386.3484) 	 velocity: <-0.6365, -0.6365> ft/sec
+
+PROGRESS REPORT at 00:03:26.0780
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (107.4268, 107.4268) 	 velocity: <0.1257, 0.1257> ft/sec
+Ball 5: position: (-387.1339, -387.1339) 	 velocity: <-0.6287, -0.6287> ft/sec
+
+PROGRESS REPORT at 00:03:27.3120
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (107.5819, 107.5819) 	 velocity: <0.1242, 0.1242> ft/sec
+Ball 5: position: (-387.9096, -387.9096) 	 velocity: <-0.6209, -0.6209> ft/sec
+
+PROGRESS REPORT at 00:03:28.5460
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (107.7352, 107.7352) 	 velocity: <0.1226, 0.1226> ft/sec
+Ball 5: position: (-388.6758, -388.6758) 	 velocity: <-0.6132, -0.6132> ft/sec
+
+PROGRESS REPORT at 00:03:29.7800
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (107.8865, 107.8865) 	 velocity: <0.1211, 0.1211> ft/sec
+Ball 5: position: (-389.4326, -389.4326) 	 velocity: <-0.6057, -0.6057> ft/sec
+
+PROGRESS REPORT at 00:03:31.0140
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.0360, 108.0360) 	 velocity: <0.1196, 0.1196> ft/sec
+Ball 5: position: (-390.1800, -390.1800) 	 velocity: <-0.5982, -0.5982> ft/sec
+
+PROGRESS REPORT at 00:03:32.2480
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.1836, 108.1836) 	 velocity: <0.1182, 0.1182> ft/sec
+Ball 5: position: (-390.9182, -390.9182) 	 velocity: <-0.5908, -0.5908> ft/sec
+
+PROGRESS REPORT at 00:03:33.4820
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.3294, 108.3294) 	 velocity: <0.1167, 0.1167> ft/sec
+Ball 5: position: (-391.6472, -391.6472) 	 velocity: <-0.5835, -0.5835> ft/sec
+
+PROGRESS REPORT at 00:03:34.7160
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.4735, 108.4735) 	 velocity: <0.1153, 0.1153> ft/sec
+Ball 5: position: (-392.3673, -392.3673) 	 velocity: <-0.5763, -0.5763> ft/sec
+
+PROGRESS REPORT at 00:03:35.9500
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.6157, 108.6157) 	 velocity: <0.1138, 0.1138> ft/sec
+Ball 5: position: (-393.0785, -393.0785) 	 velocity: <-0.5692, -0.5692> ft/sec
+
+PROGRESS REPORT at 00:03:37.1840
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.7562, 108.7562) 	 velocity: <0.1124, 0.1124> ft/sec
+Ball 5: position: (-393.7809, -393.7809) 	 velocity: <-0.5622, -0.5622> ft/sec
+
+PROGRESS REPORT at 00:03:38.4180
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (108.8949, 108.8949) 	 velocity: <0.1111, 0.1111> ft/sec
+Ball 5: position: (-394.4746, -394.4746) 	 velocity: <-0.5553, -0.5553> ft/sec
+
+PROGRESS REPORT at 00:03:39.6520
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.0320, 109.0320) 	 velocity: <0.1097, 0.1097> ft/sec
+Ball 5: position: (-395.1598, -395.1598) 	 velocity: <-0.5484, -0.5484> ft/sec
+
+PROGRESS REPORT at 00:03:40.8860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.1673, 109.1673) 	 velocity: <0.1083, 0.1083> ft/sec
+Ball 5: position: (-395.8366, -395.8366) 	 velocity: <-0.5416, -0.5416> ft/sec
+
+PROGRESS REPORT at 00:03:42.1200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.3010, 109.3010) 	 velocity: <0.1070, 0.1070> ft/sec
+Ball 5: position: (-396.5049, -396.5049) 	 velocity: <-0.5350, -0.5350> ft/sec
+
+PROGRESS REPORT at 00:03:43.3540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.4330, 109.4330) 	 velocity: <0.1057, 0.1057> ft/sec
+Ball 5: position: (-397.1651, -397.1651) 	 velocity: <-0.5283, -0.5283> ft/sec
+
+PROGRESS REPORT at 00:03:44.5880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.5634, 109.5634) 	 velocity: <0.1044, 0.1044> ft/sec
+Ball 5: position: (-397.8170, -397.8170) 	 velocity: <-0.5218, -0.5218> ft/sec
+
+PROGRESS REPORT at 00:03:45.8220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.6922, 109.6922) 	 velocity: <0.1031, 0.1031> ft/sec
+Ball 5: position: (-398.4610, -398.4610) 	 velocity: <-0.5154, -0.5154> ft/sec
+
+PROGRESS REPORT at 00:03:47.0560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.8194, 109.8194) 	 velocity: <0.1018, 0.1018> ft/sec
+Ball 5: position: (-399.0970, -399.0970) 	 velocity: <-0.5090, -0.5090> ft/sec
+
+PROGRESS REPORT at 00:03:48.2900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (109.9450, 109.9450) 	 velocity: <0.1005, 0.1005> ft/sec
+Ball 5: position: (-399.7251, -399.7251) 	 velocity: <-0.5027, -0.5027> ft/sec
+
+PROGRESS REPORT at 00:03:49.5240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.0691, 110.0691) 	 velocity: <0.0993, 0.0993> ft/sec
+Ball 5: position: (-400.3455, -400.3455) 	 velocity: <-0.4965, -0.4965> ft/sec
+
+PROGRESS REPORT at 00:03:50.7580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.1916, 110.1916) 	 velocity: <0.0981, 0.0981> ft/sec
+Ball 5: position: (-400.9582, -400.9582) 	 velocity: <-0.4904, -0.4904> ft/sec
+
+PROGRESS REPORT at 00:03:51.9920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.3127, 110.3127) 	 velocity: <0.0969, 0.0969> ft/sec
+Ball 5: position: (-401.5634, -401.5634) 	 velocity: <-0.4844, -0.4844> ft/sec
+
+PROGRESS REPORT at 00:03:53.2260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.4322, 110.4322) 	 velocity: <0.0957, 0.0957> ft/sec
+Ball 5: position: (-402.1611, -402.1611) 	 velocity: <-0.4784, -0.4784> ft/sec
+
+PROGRESS REPORT at 00:03:54.4600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.5503, 110.5503) 	 velocity: <0.0945, 0.0945> ft/sec
+Ball 5: position: (-402.7515, -402.7515) 	 velocity: <-0.4725, -0.4725> ft/sec
+
+PROGRESS REPORT at 00:03:55.6940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.6669, 110.6669) 	 velocity: <0.0933, 0.0933> ft/sec
+Ball 5: position: (-403.3345, -403.3345) 	 velocity: <-0.4667, -0.4667> ft/sec
+
+PROGRESS REPORT at 00:03:56.9280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.7821, 110.7821) 	 velocity: <0.0922, 0.0922> ft/sec
+Ball 5: position: (-403.9104, -403.9104) 	 velocity: <-0.4609, -0.4609> ft/sec
+
+PROGRESS REPORT at 00:03:58.1620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (110.8958, 110.8958) 	 velocity: <0.0910, 0.0910> ft/sec
+Ball 5: position: (-404.4791, -404.4791) 	 velocity: <-0.4552, -0.4552> ft/sec
+
+PROGRESS REPORT at 00:03:59.3960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.0082, 111.0082) 	 velocity: <0.0899, 0.0899> ft/sec
+Ball 5: position: (-405.0408, -405.0408) 	 velocity: <-0.4496, -0.4496> ft/sec
+
+PROGRESS REPORT at 00:04:00.6300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.1191, 111.1191) 	 velocity: <0.0888, 0.0888> ft/sec
+Ball 5: position: (-405.5956, -405.5956) 	 velocity: <-0.4440, -0.4440> ft/sec
+
+PROGRESS REPORT at 00:04:01.8640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.2287, 111.2287) 	 velocity: <0.0877, 0.0877> ft/sec
+Ball 5: position: (-406.1436, -406.1436) 	 velocity: <-0.4386, -0.4386> ft/sec
+
+PROGRESS REPORT at 00:04:03.0980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.3370, 111.3370) 	 velocity: <0.0866, 0.0866> ft/sec
+Ball 5: position: (-406.6848, -406.6848) 	 velocity: <-0.4332, -0.4332> ft/sec
+
+PROGRESS REPORT at 00:04:04.3320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.4439, 111.4439) 	 velocity: <0.0856, 0.0856> ft/sec
+Ball 5: position: (-407.2193, -407.2193) 	 velocity: <-0.4278, -0.4278> ft/sec
+
+PROGRESS REPORT at 00:04:05.5660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.5494, 111.5494) 	 velocity: <0.0845, 0.0845> ft/sec
+Ball 5: position: (-407.7472, -407.7472) 	 velocity: <-0.4225, -0.4225> ft/sec
+
+PROGRESS REPORT at 00:04:06.8000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.6537, 111.6537) 	 velocity: <0.0835, 0.0835> ft/sec
+Ball 5: position: (-408.2686, -408.2686) 	 velocity: <-0.4173, -0.4173> ft/sec
+
+PROGRESS REPORT at 00:04:08.0340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.7567, 111.7567) 	 velocity: <0.0824, 0.0824> ft/sec
+Ball 5: position: (-408.7836, -408.7836) 	 velocity: <-0.4122, -0.4122> ft/sec
+
+PROGRESS REPORT at 00:04:09.2680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.8584, 111.8584) 	 velocity: <0.0814, 0.0814> ft/sec
+Ball 5: position: (-409.2922, -409.2922) 	 velocity: <-0.4071, -0.4071> ft/sec
+
+PROGRESS REPORT at 00:04:10.5020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (111.9589, 111.9589) 	 velocity: <0.0804, 0.0804> ft/sec
+Ball 5: position: (-409.7945, -409.7945) 	 velocity: <-0.4021, -0.4021> ft/sec
+
+PROGRESS REPORT at 00:04:11.7360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.0581, 112.0581) 	 velocity: <0.0794, 0.0794> ft/sec
+Ball 5: position: (-410.2906, -410.2906) 	 velocity: <-0.3971, -0.3971> ft/sec
+
+PROGRESS REPORT at 00:04:12.9700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.1561, 112.1561) 	 velocity: <0.0784, 0.0784> ft/sec
+Ball 5: position: (-410.7807, -410.7807) 	 velocity: <-0.3922, -0.3922> ft/sec
+
+PROGRESS REPORT at 00:04:14.2040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.2529, 112.2529) 	 velocity: <0.0775, 0.0775> ft/sec
+Ball 5: position: (-411.2646, -411.2646) 	 velocity: <-0.3874, -0.3874> ft/sec
+
+PROGRESS REPORT at 00:04:15.4380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.3485, 112.3485) 	 velocity: <0.0765, 0.0765> ft/sec
+Ball 5: position: (-411.7426, -411.7426) 	 velocity: <-0.3826, -0.3826> ft/sec
+
+PROGRESS REPORT at 00:04:16.6720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.4429, 112.4429) 	 velocity: <0.0756, 0.0756> ft/sec
+Ball 5: position: (-412.2147, -412.2147) 	 velocity: <-0.3779, -0.3779> ft/sec
+
+PROGRESS REPORT at 00:04:17.9060
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.5362, 112.5362) 	 velocity: <0.0746, 0.0746> ft/sec
+Ball 5: position: (-412.6810, -412.6810) 	 velocity: <-0.3732, -0.3732> ft/sec
+
+PROGRESS REPORT at 00:04:19.1400
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.6283, 112.6283) 	 velocity: <0.0737, 0.0737> ft/sec
+Ball 5: position: (-413.1415, -413.1415) 	 velocity: <-0.3686, -0.3686> ft/sec
+
+PROGRESS REPORT at 00:04:20.3740
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.7193, 112.7193) 	 velocity: <0.0728, 0.0728> ft/sec
+Ball 5: position: (-413.5963, -413.5963) 	 velocity: <-0.3640, -0.3640> ft/sec
+
+PROGRESS REPORT at 00:04:21.6080
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.8091, 112.8091) 	 velocity: <0.0719, 0.0719> ft/sec
+Ball 5: position: (-414.0456, -414.0456) 	 velocity: <-0.3595, -0.3595> ft/sec
+
+PROGRESS REPORT at 00:04:22.8420
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.8978, 112.8978) 	 velocity: <0.0710, 0.0710> ft/sec
+Ball 5: position: (-414.4892, -414.4892) 	 velocity: <-0.3551, -0.3551> ft/sec
+
+PROGRESS REPORT at 00:04:24.0760
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (112.9855, 112.9855) 	 velocity: <0.0701, 0.0701> ft/sec
+Ball 5: position: (-414.9274, -414.9274) 	 velocity: <-0.3507, -0.3507> ft/sec
+
+PROGRESS REPORT at 00:04:25.3100
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.0720, 113.0720) 	 velocity: <0.0693, 0.0693> ft/sec
+Ball 5: position: (-415.3602, -415.3602) 	 velocity: <-0.3464, -0.3464> ft/sec
+
+PROGRESS REPORT at 00:04:26.5440
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.1575, 113.1575) 	 velocity: <0.0684, 0.0684> ft/sec
+Ball 5: position: (-415.7877, -415.7877) 	 velocity: <-0.3421, -0.3421> ft/sec
+
+PROGRESS REPORT at 00:04:27.7780
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.2420, 113.2420) 	 velocity: <0.0676, 0.0676> ft/sec
+Ball 5: position: (-416.2099, -416.2099) 	 velocity: <-0.3379, -0.3379> ft/sec
+
+PROGRESS REPORT at 00:04:29.0120
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.3254, 113.3254) 	 velocity: <0.0667, 0.0667> ft/sec
+Ball 5: position: (-416.6268, -416.6268) 	 velocity: <-0.3337, -0.3337> ft/sec
+
+PROGRESS REPORT at 00:04:30.2460
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.4077, 113.4077) 	 velocity: <0.0659, 0.0659> ft/sec
+Ball 5: position: (-417.0387, -417.0387) 	 velocity: <-0.3296, -0.3296> ft/sec
+
+PROGRESS REPORT at 00:04:31.4800
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.4891, 113.4891) 	 velocity: <0.0651, 0.0651> ft/sec
+Ball 5: position: (-417.4454, -417.4454) 	 velocity: <-0.3255, -0.3255> ft/sec
+
+PROGRESS REPORT at 00:04:32.7140
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.5694, 113.5694) 	 velocity: <0.0643, 0.0643> ft/sec
+Ball 5: position: (-417.8471, -417.8471) 	 velocity: <-0.3215, -0.3215> ft/sec
+
+PROGRESS REPORT at 00:04:33.9480
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.6488, 113.6488) 	 velocity: <0.0635, 0.0635> ft/sec
+Ball 5: position: (-418.2439, -418.2439) 	 velocity: <-0.3176, -0.3176> ft/sec
+
+PROGRESS REPORT at 00:04:35.1820
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.7272, 113.7272) 	 velocity: <0.0627, 0.0627> ft/sec
+Ball 5: position: (-418.6358, -418.6358) 	 velocity: <-0.3136, -0.3136> ft/sec
+
+PROGRESS REPORT at 00:04:36.4160
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.8046, 113.8046) 	 velocity: <0.0620, 0.0620> ft/sec
+Ball 5: position: (-419.0228, -419.0228) 	 velocity: <-0.3098, -0.3098> ft/sec
+
+PROGRESS REPORT at 00:04:37.6500
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.8810, 113.8810) 	 velocity: <0.0612, 0.0612> ft/sec
+Ball 5: position: (-419.4051, -419.4051) 	 velocity: <-0.3059, -0.3059> ft/sec
+
+PROGRESS REPORT at 00:04:38.8840
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (113.9565, 113.9565) 	 velocity: <0.0604, 0.0604> ft/sec
+Ball 5: position: (-419.7826, -419.7826) 	 velocity: <-0.3022, -0.3022> ft/sec
+
+PROGRESS REPORT at 00:04:40.1180
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.0311, 114.0311) 	 velocity: <0.0597, 0.0597> ft/sec
+Ball 5: position: (-420.1555, -420.1555) 	 velocity: <-0.2984, -0.2984> ft/sec
+
+PROGRESS REPORT at 00:04:41.3520
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1048, 114.1048) 	 velocity: <0.0590, 0.0590> ft/sec
+Ball 5: position: (-420.5238, -420.5238) 	 velocity: <-0.2948, -0.2948> ft/sec
+
+PROGRESS REPORT at 00:04:42.5860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-420.8875, -420.8875) 	 velocity: <-0.2911, -0.2911> ft/sec
+
+PROGRESS REPORT at 00:04:43.8200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-421.2467, -421.2467) 	 velocity: <-0.2875, -0.2875> ft/sec
+
+PROGRESS REPORT at 00:04:45.0540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-421.6016, -421.6016) 	 velocity: <-0.2840, -0.2840> ft/sec
+
+PROGRESS REPORT at 00:04:46.2880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-421.9520, -421.9520) 	 velocity: <-0.2805, -0.2805> ft/sec
+
+PROGRESS REPORT at 00:04:47.5220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-422.2981, -422.2981) 	 velocity: <-0.2770, -0.2770> ft/sec
+
+PROGRESS REPORT at 00:04:48.7560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-422.6400, -422.6400) 	 velocity: <-0.2736, -0.2736> ft/sec
+
+PROGRESS REPORT at 00:04:49.9900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-422.9776, -422.9776) 	 velocity: <-0.2702, -0.2702> ft/sec
+
+PROGRESS REPORT at 00:04:51.2240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-423.3110, -423.3110) 	 velocity: <-0.2669, -0.2669> ft/sec
+
+PROGRESS REPORT at 00:04:52.4580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-423.6404, -423.6404) 	 velocity: <-0.2636, -0.2636> ft/sec
+
+PROGRESS REPORT at 00:04:53.6920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-423.9656, -423.9656) 	 velocity: <-0.2603, -0.2603> ft/sec
+
+PROGRESS REPORT at 00:04:54.9260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-424.2869, -424.2869) 	 velocity: <-0.2571, -0.2571> ft/sec
+
+PROGRESS REPORT at 00:04:56.1600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-424.6042, -424.6042) 	 velocity: <-0.2540, -0.2540> ft/sec
+
+PROGRESS REPORT at 00:04:57.3940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-424.9176, -424.9176) 	 velocity: <-0.2508, -0.2508> ft/sec
+
+PROGRESS REPORT at 00:04:58.6280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-425.2271, -425.2271) 	 velocity: <-0.2477, -0.2477> ft/sec
+
+PROGRESS REPORT at 00:04:59.8620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-425.5328, -425.5328) 	 velocity: <-0.2447, -0.2447> ft/sec
+
+PROGRESS REPORT at 00:05:01.0960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-425.8347, -425.8347) 	 velocity: <-0.2417, -0.2417> ft/sec
+
+PROGRESS REPORT at 00:05:02.3300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-426.1329, -426.1329) 	 velocity: <-0.2387, -0.2387> ft/sec
+
+PROGRESS REPORT at 00:05:03.5640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-426.4275, -426.4275) 	 velocity: <-0.2357, -0.2357> ft/sec
+
+PROGRESS REPORT at 00:05:04.7980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-426.7183, -426.7183) 	 velocity: <-0.2328, -0.2328> ft/sec
+
+PROGRESS REPORT at 00:05:06.0320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-427.0056, -427.0056) 	 velocity: <-0.2299, -0.2299> ft/sec
+
+PROGRESS REPORT at 00:05:07.2660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-427.2894, -427.2894) 	 velocity: <-0.2271, -0.2271> ft/sec
+
+PROGRESS REPORT at 00:05:08.5000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-427.5696, -427.5696) 	 velocity: <-0.2243, -0.2243> ft/sec
+
+PROGRESS REPORT at 00:05:09.7340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-427.8464, -427.8464) 	 velocity: <-0.2215, -0.2215> ft/sec
+
+PROGRESS REPORT at 00:05:10.9680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-428.1198, -428.1198) 	 velocity: <-0.2188, -0.2188> ft/sec
+
+PROGRESS REPORT at 00:05:12.2020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-428.3898, -428.3898) 	 velocity: <-0.2161, -0.2161> ft/sec
+
+PROGRESS REPORT at 00:05:13.4360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-428.6565, -428.6565) 	 velocity: <-0.2134, -0.2134> ft/sec
+
+PROGRESS REPORT at 00:05:14.6700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-428.9199, -428.9199) 	 velocity: <-0.2108, -0.2108> ft/sec
+
+PROGRESS REPORT at 00:05:15.9040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-429.1800, -429.1800) 	 velocity: <-0.2082, -0.2082> ft/sec
+
+PROGRESS REPORT at 00:05:17.1380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-429.4369, -429.4369) 	 velocity: <-0.2056, -0.2056> ft/sec
+
+PROGRESS REPORT at 00:05:18.3720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-429.6906, -429.6906) 	 velocity: <-0.2031, -0.2031> ft/sec
+
+PROGRESS REPORT at 00:05:19.6060
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-429.9413, -429.9413) 	 velocity: <-0.2006, -0.2006> ft/sec
+
+PROGRESS REPORT at 00:05:20.8400
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-430.1888, -430.1888) 	 velocity: <-0.1981, -0.1981> ft/sec
+
+PROGRESS REPORT at 00:05:22.0740
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-430.4333, -430.4333) 	 velocity: <-0.1957, -0.1957> ft/sec
+
+PROGRESS REPORT at 00:05:23.3080
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-430.6747, -430.6747) 	 velocity: <-0.1933, -0.1933> ft/sec
+
+PROGRESS REPORT at 00:05:24.5420
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-430.9132, -430.9132) 	 velocity: <-0.1909, -0.1909> ft/sec
+
+PROGRESS REPORT at 00:05:25.7760
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-431.1487, -431.1487) 	 velocity: <-0.1885, -0.1885> ft/sec
+
+PROGRESS REPORT at 00:05:27.0100
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-431.3813, -431.3813) 	 velocity: <-0.1862, -0.1862> ft/sec
+
+PROGRESS REPORT at 00:05:28.2440
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-431.6111, -431.6111) 	 velocity: <-0.1839, -0.1839> ft/sec
+
+PROGRESS REPORT at 00:05:29.4780
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-431.8380, -431.8380) 	 velocity: <-0.1816, -0.1816> ft/sec
+
+PROGRESS REPORT at 00:05:30.7120
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-432.0621, -432.0621) 	 velocity: <-0.1794, -0.1794> ft/sec
+
+PROGRESS REPORT at 00:05:31.9460
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-432.2835, -432.2835) 	 velocity: <-0.1772, -0.1772> ft/sec
+
+PROGRESS REPORT at 00:05:33.1800
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-432.5021, -432.5021) 	 velocity: <-0.1750, -0.1750> ft/sec
+
+PROGRESS REPORT at 00:05:34.4140
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-432.7180, -432.7180) 	 velocity: <-0.1728, -0.1728> ft/sec
+
+PROGRESS REPORT at 00:05:35.6480
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-432.9313, -432.9313) 	 velocity: <-0.1707, -0.1707> ft/sec
+
+PROGRESS REPORT at 00:05:36.8820
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-433.1419, -433.1419) 	 velocity: <-0.1686, -0.1686> ft/sec
+
+PROGRESS REPORT at 00:05:38.1160
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-433.3500, -433.3500) 	 velocity: <-0.1665, -0.1665> ft/sec
+
+PROGRESS REPORT at 00:05:39.3500
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-433.5554, -433.5554) 	 velocity: <-0.1644, -0.1644> ft/sec
+
+PROGRESS REPORT at 00:05:40.5840
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-433.7583, -433.7583) 	 velocity: <-0.1624, -0.1624> ft/sec
+
+PROGRESS REPORT at 00:05:41.8180
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-433.9588, -433.9588) 	 velocity: <-0.1604, -0.1604> ft/sec
+
+PROGRESS REPORT at 00:05:43.0520
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-434.1567, -434.1567) 	 velocity: <-0.1584, -0.1584> ft/sec
+
+PROGRESS REPORT at 00:05:44.2860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-434.3522, -434.3522) 	 velocity: <-0.1565, -0.1565> ft/sec
+
+PROGRESS REPORT at 00:05:45.5200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-434.5453, -434.5453) 	 velocity: <-0.1545, -0.1545> ft/sec
+
+PROGRESS REPORT at 00:05:46.7540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-434.7360, -434.7360) 	 velocity: <-0.1526, -0.1526> ft/sec
+
+PROGRESS REPORT at 00:05:47.9880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-434.9244, -434.9244) 	 velocity: <-0.1508, -0.1508> ft/sec
+
+PROGRESS REPORT at 00:05:49.2220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-435.1104, -435.1104) 	 velocity: <-0.1489, -0.1489> ft/sec
+
+PROGRESS REPORT at 00:05:50.4560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-435.2941, -435.2941) 	 velocity: <-0.1471, -0.1471> ft/sec
+
+PROGRESS REPORT at 00:05:51.6900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-435.4756, -435.4756) 	 velocity: <-0.1452, -0.1452> ft/sec
+
+PROGRESS REPORT at 00:05:52.9240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-435.6549, -435.6549) 	 velocity: <-0.1435, -0.1435> ft/sec
+
+PROGRESS REPORT at 00:05:54.1580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-435.8319, -435.8319) 	 velocity: <-0.1417, -0.1417> ft/sec
+
+PROGRESS REPORT at 00:05:55.3920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-436.0067, -436.0067) 	 velocity: <-0.1399, -0.1399> ft/sec
+
+PROGRESS REPORT at 00:05:56.6260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-436.1794, -436.1794) 	 velocity: <-0.1382, -0.1382> ft/sec
+
+PROGRESS REPORT at 00:05:57.8600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-436.3499, -436.3499) 	 velocity: <-0.1365, -0.1365> ft/sec
+
+PROGRESS REPORT at 00:05:59.0940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-436.5184, -436.5184) 	 velocity: <-0.1348, -0.1348> ft/sec
+
+PROGRESS REPORT at 00:06:00.3280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-436.6847, -436.6847) 	 velocity: <-0.1332, -0.1332> ft/sec
+
+PROGRESS REPORT at 00:06:01.5620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-436.8490, -436.8490) 	 velocity: <-0.1315, -0.1315> ft/sec
+
+PROGRESS REPORT at 00:06:02.7960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.0113, -437.0113) 	 velocity: <-0.1299, -0.1299> ft/sec
+
+PROGRESS REPORT at 00:06:04.0300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.1716, -437.1716) 	 velocity: <-0.1283, -0.1283> ft/sec
+
+PROGRESS REPORT at 00:06:05.2640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.3299, -437.3299) 	 velocity: <-0.1267, -0.1267> ft/sec
+
+PROGRESS REPORT at 00:06:06.4980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.4863, -437.4863) 	 velocity: <-0.1251, -0.1251> ft/sec
+
+PROGRESS REPORT at 00:06:07.7320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.6407, -437.6407) 	 velocity: <-0.1236, -0.1236> ft/sec
+
+PROGRESS REPORT at 00:06:08.9660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.7932, -437.7932) 	 velocity: <-0.1221, -0.1221> ft/sec
+
+PROGRESS REPORT at 00:06:10.2000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-437.9438, -437.9438) 	 velocity: <-0.1206, -0.1206> ft/sec
+
+PROGRESS REPORT at 00:06:11.4340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.0926, -438.0926) 	 velocity: <-0.1191, -0.1191> ft/sec
+
+PROGRESS REPORT at 00:06:12.6680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.2395, -438.2395) 	 velocity: <-0.1176, -0.1176> ft/sec
+
+PROGRESS REPORT at 00:06:13.9020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.3847, -438.3847) 	 velocity: <-0.1162, -0.1162> ft/sec
+
+PROGRESS REPORT at 00:06:15.1360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.5280, -438.5280) 	 velocity: <-0.1147, -0.1147> ft/sec
+
+PROGRESS REPORT at 00:06:16.3700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.6696, -438.6696) 	 velocity: <-0.1133, -0.1133> ft/sec
+
+PROGRESS REPORT at 00:06:17.6040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.8094, -438.8094) 	 velocity: <-0.1119, -0.1119> ft/sec
+
+PROGRESS REPORT at 00:06:18.8380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-438.9475, -438.9475) 	 velocity: <-0.1105, -0.1105> ft/sec
+
+PROGRESS REPORT at 00:06:20.0720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.0839, -439.0839) 	 velocity: <-0.1092, -0.1092> ft/sec
+
+PROGRESS REPORT at 00:06:21.3060
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.2186, -439.2186) 	 velocity: <-0.1078, -0.1078> ft/sec
+
+PROGRESS REPORT at 00:06:22.5400
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.3516, -439.3516) 	 velocity: <-0.1065, -0.1065> ft/sec
+
+PROGRESS REPORT at 00:06:23.7740
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.4830, -439.4830) 	 velocity: <-0.1052, -0.1052> ft/sec
+
+PROGRESS REPORT at 00:06:25.0080
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.6128, -439.6128) 	 velocity: <-0.1039, -0.1039> ft/sec
+
+PROGRESS REPORT at 00:06:26.2420
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.7410, -439.7410) 	 velocity: <-0.1026, -0.1026> ft/sec
+
+PROGRESS REPORT at 00:06:27.4760
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.8676, -439.8676) 	 velocity: <-0.1013, -0.1013> ft/sec
+
+PROGRESS REPORT at 00:06:28.7100
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-439.9926, -439.9926) 	 velocity: <-0.1001, -0.1001> ft/sec
+
+PROGRESS REPORT at 00:06:29.9440
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.1161, -440.1161) 	 velocity: <-0.0988, -0.0988> ft/sec
+
+PROGRESS REPORT at 00:06:31.1780
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.2381, -440.2381) 	 velocity: <-0.0976, -0.0976> ft/sec
+
+PROGRESS REPORT at 00:06:32.4120
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.3585, -440.3585) 	 velocity: <-0.0964, -0.0964> ft/sec
+
+PROGRESS REPORT at 00:06:33.6460
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.4775, -440.4775) 	 velocity: <-0.0952, -0.0952> ft/sec
+
+PROGRESS REPORT at 00:06:34.8800
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.5950, -440.5950) 	 velocity: <-0.0941, -0.0941> ft/sec
+
+PROGRESS REPORT at 00:06:36.1140
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.7111, -440.7111) 	 velocity: <-0.0929, -0.0929> ft/sec
+
+PROGRESS REPORT at 00:06:37.3480
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.8257, -440.8257) 	 velocity: <-0.0917, -0.0917> ft/sec
+
+PROGRESS REPORT at 00:06:38.5820
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-440.9389, -440.9389) 	 velocity: <-0.0906, -0.0906> ft/sec
+
+PROGRESS REPORT at 00:06:39.8160
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.0507, -441.0507) 	 velocity: <-0.0895, -0.0895> ft/sec
+
+PROGRESS REPORT at 00:06:41.0500
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.1611, -441.1611) 	 velocity: <-0.0884, -0.0884> ft/sec
+
+PROGRESS REPORT at 00:06:42.2840
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.2702, -441.2702) 	 velocity: <-0.0873, -0.0873> ft/sec
+
+PROGRESS REPORT at 00:06:43.5180
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.3779, -441.3779) 	 velocity: <-0.0862, -0.0862> ft/sec
+
+PROGRESS REPORT at 00:06:44.7520
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.4843, -441.4843) 	 velocity: <-0.0852, -0.0852> ft/sec
+
+PROGRESS REPORT at 00:06:45.9860
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.5894, -441.5894) 	 velocity: <-0.0841, -0.0841> ft/sec
+
+PROGRESS REPORT at 00:06:47.2200
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.6932, -441.6932) 	 velocity: <-0.0831, -0.0831> ft/sec
+
+PROGRESS REPORT at 00:06:48.4540
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.7957, -441.7957) 	 velocity: <-0.0820, -0.0820> ft/sec
+
+PROGRESS REPORT at 00:06:49.6880
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.8970, -441.8970) 	 velocity: <-0.0810, -0.0810> ft/sec
+
+PROGRESS REPORT at 00:06:50.9220
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-441.9969, -441.9969) 	 velocity: <-0.0800, -0.0800> ft/sec
+
+PROGRESS REPORT at 00:06:52.1560
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.0957, -442.0957) 	 velocity: <-0.0790, -0.0790> ft/sec
+
+PROGRESS REPORT at 00:06:53.3900
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.1932, -442.1932) 	 velocity: <-0.0781, -0.0781> ft/sec
+
+PROGRESS REPORT at 00:06:54.6240
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.2896, -442.2896) 	 velocity: <-0.0771, -0.0771> ft/sec
+
+PROGRESS REPORT at 00:06:55.8580
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.3847, -442.3847) 	 velocity: <-0.0762, -0.0762> ft/sec
+
+PROGRESS REPORT at 00:06:57.0920
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.4787, -442.4787) 	 velocity: <-0.0752, -0.0752> ft/sec
+
+PROGRESS REPORT at 00:06:58.3260
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.5715, -442.5715) 	 velocity: <-0.0743, -0.0743> ft/sec
+
+PROGRESS REPORT at 00:06:59.5600
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.6632, -442.6632) 	 velocity: <-0.0734, -0.0734> ft/sec
+
+PROGRESS REPORT at 00:07:00.7940
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.7537, -442.7537) 	 velocity: <-0.0725, -0.0725> ft/sec
+
+PROGRESS REPORT at 00:07:02.0280
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.8431, -442.8431) 	 velocity: <-0.0716, -0.0716> ft/sec
+
+PROGRESS REPORT at 00:07:03.2620
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-442.9314, -442.9314) 	 velocity: <-0.0707, -0.0707> ft/sec
+
+PROGRESS REPORT at 00:07:04.4960
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.0187, -443.0187) 	 velocity: <-0.0698, -0.0698> ft/sec
+
+PROGRESS REPORT at 00:07:05.7300
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.1048, -443.1048) 	 velocity: <-0.0690, -0.0690> ft/sec
+
+PROGRESS REPORT at 00:07:06.9640
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.1899, -443.1899) 	 velocity: <-0.0681, -0.0681> ft/sec
+
+PROGRESS REPORT at 00:07:08.1980
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.2739, -443.2739) 	 velocity: <-0.0673, -0.0673> ft/sec
+
+PROGRESS REPORT at 00:07:09.4320
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.3569, -443.3569) 	 velocity: <-0.0664, -0.0664> ft/sec
+
+PROGRESS REPORT at 00:07:10.6660
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.4389, -443.4389) 	 velocity: <-0.0656, -0.0656> ft/sec
+
+PROGRESS REPORT at 00:07:11.9000
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.5199, -443.5199) 	 velocity: <-0.0648, -0.0648> ft/sec
+
+PROGRESS REPORT at 00:07:13.1340
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.5998, -443.5998) 	 velocity: <-0.0640, -0.0640> ft/sec
+
+PROGRESS REPORT at 00:07:14.3680
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.6788, -443.6788) 	 velocity: <-0.0632, -0.0632> ft/sec
+
+PROGRESS REPORT at 00:07:15.6020
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.7568, -443.7568) 	 velocity: <-0.0624, -0.0624> ft/sec
+
+PROGRESS REPORT at 00:07:16.8360
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.8339, -443.8339) 	 velocity: <-0.0617, -0.0617> ft/sec
+
+PROGRESS REPORT at 00:07:18.0700
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.9100, -443.9100) 	 velocity: <-0.0609, -0.0609> ft/sec
+
+PROGRESS REPORT at 00:07:19.3040
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-443.9851, -443.9851) 	 velocity: <-0.0601, -0.0601> ft/sec
+
+PROGRESS REPORT at 00:07:20.5380
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-444.0593, -444.0593) 	 velocity: <-0.0594, -0.0594> ft/sec
+
+PROGRESS REPORT at 00:07:21.7720
+Ball 1: position: (502.3839, 502.3839) 	 <at rest>
+Ball 2: position: (-501.9592, -501.9592) 	 <at rest>
+Ball 3: position: (-614.7241, -614.7241) 	 <at rest>
+Ball 4: position: (114.1775, 114.1775) 	 <at rest>
+Ball 5: position: (-444.1326, -444.1326) 	 <at rest>
+
+NO COLLISION IS POSSIBLE
+.                                       
+.                                       
+======================================  
+... Testing SoccerSim valid ball set ten balls 10 second time slice...
+======================================  
+
+    Hello world, from the SoccerSim program!!
+
+
+FIELD SIZE IS 1000.0 BY 1000.0
+POLE LOCATION @ (226.0, 72.0)
+TIMESLICE VALUE IS 10.0 seconds
+
+INITIAL REPORT at 00:00:00.0000
+Ball 1: position: (150.0000, 150.0000) 	 velocity: <10.0000, 10.0000> ft/sec
+Ball 2: position: (100.0000, 100.0000) 	 velocity: <-100.0000, -100.0000> ft/sec
+Ball 3: position: (200.0000, 200.0000) 	 velocity: <200.0000, 200.0000> ft/sec
+Ball 4: position: (250.0000, 250.0000) 	 velocity: <-110.0000, -110.0000> ft/sec
+Ball 5: position: (20.0000, 20.0000) 	 velocity: <1.0000, 1.0000> ft/sec
+Ball 6: position: (50.0000, 50.0000) 	 velocity: <-5.0000, -5.0000> ft/sec
+Ball 7: position: (-100.0000, -100.0000) 	 velocity: <200.0000, 200.0000> ft/sec
+Ball 8: position: (-200.0000, -200.0000) 	 velocity: <300.0000, 300.0000> ft/sec
+Ball 9: position: (-110.0000, -110.0000) 	 velocity: <20.0000, 20.0000> ft/sec
+Ball 10: position: (1.0000, 1.0000) 	 velocity: <50.0000, 50.0000> ft/sec
+
+PROGRESS REPORT at 00:00:10.0000
+Ball 1: position: (250.0000, 250.0000) 	 velocity: <9.0000, 9.0000> ft/sec
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (30.0000, 30.0000) 	 velocity: <0.9000, 0.9000> ft/sec
+Ball 6: position: (0.0000, 0.0000) 	 velocity: <-4.5000, -4.5000> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (90.0000, 90.0000) 	 velocity: <18.0000, 18.0000> ft/sec
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:00:20.0000
+Ball 1: position: (340.0000, 340.0000) 	 velocity: <8.1000, 8.1000> ft/sec
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (39.0000, 39.0000) 	 velocity: <0.8100, 0.8100> ft/sec
+Ball 6: position: (-45.0000, -45.0000) 	 velocity: <-4.0500, -4.0500> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (270.0000, 270.0000) 	 velocity: <16.2000, 16.2000> ft/sec
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:00:30.0000
+Ball 1: position: (421.0000, 421.0000) 	 velocity: <7.2900, 7.2900> ft/sec
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (47.1000, 47.1000) 	 velocity: <0.7290, 0.7290> ft/sec
+Ball 6: position: (-85.5000, -85.5000) 	 velocity: <-3.6450, -3.6450> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (432.0000, 432.0000) 	 velocity: <14.5800, 14.5800> ft/sec
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:00:40.0000
+Ball 1: position: (493.9000, 493.9000) 	 velocity: <6.5610, 6.5610> ft/sec
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (54.3900, 54.3900) 	 velocity: <0.6561, 0.6561> ft/sec
+Ball 6: position: (-121.9500, -121.9500) 	 velocity: <-3.2805, -3.2805> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:00:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (60.9510, 60.9510) 	 velocity: <0.5905, 0.5905> ft/sec
+Ball 6: position: (-154.7550, -154.7550) 	 velocity: <-2.9525, -2.9525> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:01:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (66.8559, 66.8559) 	 velocity: <0.5314, 0.5314> ft/sec
+Ball 6: position: (-184.2795, -184.2795) 	 velocity: <-2.6572, -2.6572> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:01:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (72.1703, 72.1703) 	 velocity: <0.4783, 0.4783> ft/sec
+Ball 6: position: (-210.8515, -210.8515) 	 velocity: <-2.3915, -2.3915> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:01:20.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (76.9533, 76.9533) 	 velocity: <0.4305, 0.4305> ft/sec
+Ball 6: position: (-234.7664, -234.7664) 	 velocity: <-2.1523, -2.1523> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:01:30.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (81.2580, 81.2580) 	 velocity: <0.3874, 0.3874> ft/sec
+Ball 6: position: (-256.2898, -256.2898) 	 velocity: <-1.9371, -1.9371> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:01:40.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (85.1322, 85.1322) 	 velocity: <0.3487, 0.3487> ft/sec
+Ball 6: position: (-275.6608, -275.6608) 	 velocity: <-1.7434, -1.7434> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:01:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (88.6189, 88.6189) 	 velocity: <0.3138, 0.3138> ft/sec
+Ball 6: position: (-293.0947, -293.0947) 	 velocity: <-1.5691, -1.5691> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:02:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (91.7570, 91.7570) 	 velocity: <0.2824, 0.2824> ft/sec
+Ball 6: position: (-308.7852, -308.7852) 	 velocity: <-1.4121, -1.4121> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:02:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (94.5813, 94.5813) 	 velocity: <0.2542, 0.2542> ft/sec
+Ball 6: position: (-322.9067, -322.9067) 	 velocity: <-1.2709, -1.2709> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:02:20.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (97.1232, 97.1232) 	 velocity: <0.2288, 0.2288> ft/sec
+Ball 6: position: (-335.6160, -335.6160) 	 velocity: <-1.1438, -1.1438> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:02:30.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (99.4109, 99.4109) 	 velocity: <0.2059, 0.2059> ft/sec
+Ball 6: position: (-347.0544, -347.0544) 	 velocity: <-1.0295, -1.0295> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:02:40.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (101.4698, 101.4698) 	 velocity: <0.1853, 0.1853> ft/sec
+Ball 6: position: (-357.3490, -357.3490) 	 velocity: <-0.9265, -0.9265> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:02:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (103.3228, 103.3228) 	 velocity: <0.1668, 0.1668> ft/sec
+Ball 6: position: (-366.6141, -366.6141) 	 velocity: <-0.8339, -0.8339> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:03:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (104.9905, 104.9905) 	 velocity: <0.1501, 0.1501> ft/sec
+Ball 6: position: (-374.9527, -374.9527) 	 velocity: <-0.7505, -0.7505> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:03:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (106.4915, 106.4915) 	 velocity: <0.1351, 0.1351> ft/sec
+Ball 6: position: (-382.4574, -382.4574) 	 velocity: <-0.6754, -0.6754> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:03:20.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (107.8423, 107.8423) 	 velocity: <0.1216, 0.1216> ft/sec
+Ball 6: position: (-389.2117, -389.2117) 	 velocity: <-0.6079, -0.6079> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:03:30.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (109.0581, 109.0581) 	 velocity: <0.1094, 0.1094> ft/sec
+Ball 6: position: (-395.2905, -395.2905) 	 velocity: <-0.5471, -0.5471> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:03:40.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (110.1523, 110.1523) 	 velocity: <0.0985, 0.0985> ft/sec
+Ball 6: position: (-400.7615, -400.7615) 	 velocity: <-0.4924, -0.4924> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:03:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (111.1371, 111.1371) 	 velocity: <0.0886, 0.0886> ft/sec
+Ball 6: position: (-405.6853, -405.6853) 	 velocity: <-0.4431, -0.4431> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:04:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (112.0234, 112.0234) 	 velocity: <0.0798, 0.0798> ft/sec
+Ball 6: position: (-410.1168, -410.1168) 	 velocity: <-0.3988, -0.3988> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:04:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (112.8210, 112.8210) 	 velocity: <0.0718, 0.0718> ft/sec
+Ball 6: position: (-414.1051, -414.1051) 	 velocity: <-0.3589, -0.3589> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:04:20.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (113.5389, 113.5389) 	 velocity: <0.0646, 0.0646> ft/sec
+Ball 6: position: (-417.6946, -417.6946) 	 velocity: <-0.3231, -0.3231> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:04:30.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-420.9251, -420.9251) 	 velocity: <-0.2907, -0.2907> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:04:40.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-423.8326, -423.8326) 	 velocity: <-0.2617, -0.2617> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:04:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-426.4494, -426.4494) 	 velocity: <-0.2355, -0.2355> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:05:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-428.8044, -428.8044) 	 velocity: <-0.2120, -0.2120> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:05:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-430.9240, -430.9240) 	 velocity: <-0.1908, -0.1908> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:05:20.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-432.8316, -432.8316) 	 velocity: <-0.1717, -0.1717> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:05:30.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-434.5484, -434.5484) 	 velocity: <-0.1545, -0.1545> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:05:40.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-436.0936, -436.0936) 	 velocity: <-0.1391, -0.1391> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:05:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-437.4842, -437.4842) 	 velocity: <-0.1252, -0.1252> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:06:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-438.7358, -438.7358) 	 velocity: <-0.1126, -0.1126> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:06:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-439.8622, -439.8622) 	 velocity: <-0.1014, -0.1014> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:06:20.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-440.8760, -440.8760) 	 velocity: <-0.0912, -0.0912> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:06:30.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-441.7884, -441.7884) 	 velocity: <-0.0821, -0.0821> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:06:40.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-442.6096, -442.6096) 	 velocity: <-0.0739, -0.0739> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:06:50.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-443.3486, -443.3486) 	 velocity: <-0.0665, -0.0665> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:07:00.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-444.0137, -444.0137) 	 velocity: <-0.0599, -0.0599> ft/sec
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+PROGRESS REPORT at 00:07:10.0000
+Ball 1: position: (559.5100, 559.5100) 	 <at rest>
+Ball 2: position: (-900.0000, -900.0000) 	 <at rest>
+Ball 3: position: (2200.0000, 2200.0000) 	 <at rest>
+Ball 4: position: (-850.0000, -850.0000) 	 <at rest>
+Ball 5: position: (114.1850, 114.1850) 	 <at rest>
+Ball 6: position: (-444.6124, -444.6124) 	 <at rest>
+Ball 7: position: (1900.0000, 1900.0000) 	 <at rest>
+Ball 8: position: (2800.0000, 2800.0000) 	 <at rest>
+Ball 9: position: (577.8000, 577.8000) 	 <at rest>
+Ball 10: position: (501.0000, 501.0000) 	 <at rest>
+
+NO COLLISION IS POSSIBLE
+.                                       
+.                                       
+======================================  
+... End of SoccerSim Testing...         
+======================================  
