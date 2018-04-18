@@ -97,7 +97,7 @@ public class BrobInt {
         }
         byteVersionOutput = new String( new StringBuffer( byteVersionOutput ).reverse() );
 
-        if (byteVersionOutput == "0") {
+        if (byteVersionOutput.equals("0")) {
             sign = 0;
         }
 
@@ -235,27 +235,80 @@ public class BrobInt {
 
         // - 18 - 17 = -35, -17 - 18 = -35
         if (this.sign == 1 && g2.sign == 0) {
-            return this.add(new BrobInt("-" + g2));
+            return this.add(new BrobInt("-" + g2.toString() ));
         }
 
         // 18 - (-17) = 35       
         if (this.sign == 0 && g2.sign == 1) {
-            return this.add( new BrobInt( g2.internalValue.substring(1) ) );
+            return this.add( new BrobInt( g2.toString().substring(1) ) );
         }
 
 
+        byte topArray[];
+        byte botArray[];
+        byte subbedArray[];
+        byte carry = 0;
+        String stringVer = "";
+        BrobInt top;
+        BrobInt bot;
+
+        if ( this.sign == 0 && g2.sign == 0 ) {
+            if (this.compareTo(g2) > 0) {
+                top = this;
+                bot = g2;
+            } else {
+                top = g2;
+                bot = this;
+            }
+        } else {
+
+            if (this.compareTo(g2) > 0) {
+                top = g2;
+                bot = this;
+            } else {
+                top = this;
+                bot = g2;
+            }
 
 
+        }
 
-        return ZERO;
+        topArray = new byte[top.byteVersion.length];
+        botArray = new byte[top.byteVersion.length];
+        subbedArray = new byte[top.byteVersion.length];
 
-        // this - g2
+        for (int i = 0; i < top.byteVersion.length; i++) {
+            topArray[i] = top.byteVersion[i];
+        }
 
-        // 18-17 
-        // 17-18
-        // -18 - (-19)
-        // -18 - (-17)
+        for (int i = 0; i < bot.byteVersion.length; i++) {
+            botArray[i] = bot.byteVersion[i];
+        }
 
+
+        for (int i = 0; i < subbedArray.length; i++) {
+            
+            if ( (topArray[i] - botArray[i] + carry) < 0) {
+                carry = -1;
+                subbedArray[i] = (byte)((topArray[i] + 10) - botArray[i] + carry);
+            } else {
+                carry = 0;
+                subbedArray[i] = (byte)(topArray[i] - botArray[i] + carry);
+            }
+
+        }
+
+
+        for( int i = 0; i < subbedArray.length; i++ ) {
+            stringVer = stringVer.concat( Byte.toString( subbedArray[i] ) );
+        }
+        stringVer = new String( new StringBuffer( stringVer ).reverse() );
+
+        if (this.compareTo(g2) < 0) {
+            stringVer = "-" + stringVer;
+        }
+
+        return new BrobInt(stringVer);
     }
 
     /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -293,7 +346,12 @@ public class BrobInt {
     *        THAT was easy.....
     *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     public int compareTo( BrobInt g2 ) {
+        if (this.sign != 0 && g2.sign != 0) {
+            return (toString().compareTo( g2.toString() )) * (-1);
+        }
+
         return (toString().compareTo( g2.toString() ));
+
     }
 
     /**
