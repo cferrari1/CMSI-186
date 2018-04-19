@@ -2,6 +2,7 @@
  * File name  :  Fibonacci.java
  * Purpose    :  Find the "nth" Fibonacci number given an argument, using BrobInt class
  * @author    :  B.J. Johnson
+ * @author    :  Christopher Ferrari
  * Date       :  2017-04-17
  * Description:  @see <a href='http://bjohnson.lmu.build/cmsi186web/homework06.html'>Assignment Page</a>
  * Notes      :  None
@@ -13,6 +14,7 @@
  *   Ver      Date     Modified by:  Reason for change or modification
  *  -----  ----------  ------------  ---------------------------------------------------------------------
  *  1.0.0  2017-04-17  B.J. Johnson  Initial writing and begin coding
+ *  1.1.0  2018-04-18  C. Ferrari    Added actual Fibonacci code
  *
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 

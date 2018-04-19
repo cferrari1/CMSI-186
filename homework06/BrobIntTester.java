@@ -2,6 +2,7 @@
  * File name  :  BrobIntTester.java
  * Purpose    :  Test Harness for the BrobInt java class
  * @author    :  B.J. Johnson
+ * @author    :  C. Ferrari
  * Date       :  2017-04-05
  * Description:  @see <a href='http://bjohnson.lmu.build/cmsi186web/homework06.html'>Assignment Page</a>
  * Notes      :  None
@@ -18,6 +19,7 @@
  *                                     additions work for both small and large numbers, as well as for
  *                                     values of different lengths and including same-sign negative value
  *                                     additions; ready to start subtractByte and subtractInt methods
+ *  1.2.0  2018-04-19  C. Ferrari    Added new tests and removed all addInt and subtractInt tests
  *
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 

@@ -1,4 +1,4 @@
-/**
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * File name  :  BrobInt.java
  * Purpose    :  Learning exercise to implement arbitrarily large numbers and their operations
  * @author    :  Christopher Ferrari
@@ -14,7 +14,7 @@
  *  -----  ----------  ------------  ---------------------------------------------------------------------
  *  1.0.0  2017-04-18  C. Ferrari    Initial writing and begin coding
  *
-*/
+ *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 import java.util.Arrays;
 
