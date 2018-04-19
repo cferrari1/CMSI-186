@@ -2,7 +2,7 @@
  * File name  :  BrobIntTester.java
  * Purpose    :  Test Harness for the BrobInt java class
  * @author    :  B.J. Johnson
- * @author    :  C. Ferrari
+ * @author    :  Christopher Ferrari
  * Date       :  2017-04-05
  * Description:  @see <a href='http://bjohnson.lmu.build/cmsi186web/homework06.html'>Assignment Page</a>
  * Notes      :  None
@@ -642,38 +642,52 @@ public class BrobIntTester {
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 
-      System.out.println( "\n      Test 054a: Modding -g19 by g20 [-56789 % 37]: " );
+      System.out.println( "\n      Test 055: Modding -g19 by g20 [-56789 % 37]: " );
       try {
-         System.out.println( "      expecting: 31\n" +
+         System.out.println( "      expecting: -31\n" +
                              "        and got: " + ( new BrobInt("-" + g19String) ).remainder( g20 ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 
-      System.out.println( "\n      Test 054b: Modding g19 by -g20 [56789 % -37]: " );
+      System.out.println( "\n      Test 056: Modding g19 by -g20 [56789 % -37]: " );
       try {
          System.out.println( "      expecting: 31\n" +
                              "        and got: " + g19.remainder( new BrobInt("-" + g20String) ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 
-      System.out.println( "\n      Test 054c: Modding -g19 by -g20 [-56789 % -37]: " );
+      System.out.println( "\n      Test 057: Modding -g19 by -g20 [-56789 % -37]: " );
       try {
-         System.out.println( "      expecting: 31\n" +
+         System.out.println( "      expecting: -31\n" +
                              "        and got: " + ( new BrobInt("-" + g19String) ).remainder( new BrobInt("-" + g20String) ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 
-      System.out.println( "\n      Test 054d: Modding 0 by -g20 [0 % -37]: " );
+      System.out.println( "\n      Test 058: Modding 20622 by 982 [20622 % 982]: " );
+      try {
+         System.out.println( "      expecting: 0\n" +
+                             "        and got: " + ( new BrobInt("20622") ).remainder( new BrobInt("982") ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 059: Modding 36 by -g20 [36 % -37]: " );
+      try {
+         System.out.println( "      expecting: 36\n" +
+                             "        and got: " + ( new BrobInt("36") ).remainder( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 060: Modding 0 by -g20 [0 % -37]: " );
       try {
          System.out.println( "      expecting: 0\n" +
                              "        and got: " + ( new BrobInt("0") ).remainder( new BrobInt("-" + g20String) ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 
-      System.out.println( "\n      Test 054e: Modding 36 by -g20 [36 % -37]: " );
+      System.out.println( "\n      Test 061: Modding -202387827382872 by 0 [-202387827382872 % 0]: " );
       try {
-         System.out.println( "      expecting: 0\n" +
-                             "        and got: " + ( new BrobInt("36") ).remainder( new BrobInt("-" + g20String) ) );
+         System.out.println( "      expecting: ERROR\n" +
+                             "        and got: " + ( new BrobInt("-202387827382872") ).remainder( new BrobInt("0") ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 

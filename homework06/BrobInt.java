@@ -427,7 +427,6 @@ public class BrobInt {
 
     /**
     *  Method to get the remainder of division of this BrobInt by the one passed as argument
-    *  NOTE: This method will only return positive values for the remainder
     *
     *  @param  g2         BrobInt to divide this one by
     *  @return BrobInt that is the remainder of division of this BrobInt by the one passed in
@@ -456,9 +455,14 @@ public class BrobInt {
         }
 
         if (first.compareTo(second) < 0) {
-            return first;
+            return this;
         }
 
+
+        if ( this.sign == 1 ) {
+            return new BrobInt("-" + first.subtract( second.multiply( first.divide(second) ) ).toString());
+
+        }
 
         return first.subtract( second.multiply( first.divide(second) ) );
 
@@ -506,8 +510,6 @@ public class BrobInt {
     *  Method to check if a BrobInt passed as argument is equal to this BrobInt
     *  @param  g2     BrobInt to compare to this
     *  @return boolean  that is true if they are equal and false otherwise
-    *  NOTE: this method performs a similar lexicographical comparison as the "compareTo()" method above
-    *        also using the java String "equals()" method -- THAT was easy, too..........
     */
     public boolean equals( BrobInt g2 ) {
         if ( !toString().equals( g2.toString() ) ) {
