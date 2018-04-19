@@ -78,12 +78,12 @@ public class BrobIntTester {
          System.out.println( "    Test 001: Making a new BrobInt: " );
          g1 = new BrobInt( g01String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
       try {
          System.out.println( "      expecting: " + g01String + "\n" +
                              "        and got: " + g1.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 002: Making a second new BrobInt [same as first]: " );
       try {
@@ -91,87 +91,87 @@ public class BrobIntTester {
          System.out.println( "      expecting: " + g02String + "\n" +
                              "        and got: " + g2.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 003: Comparing equality of g1 and g2 with 'equals()': " );
          System.out.println( "      expecting: true\n" + "        and got: " + g1.equals( g2 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 004: Making a third new BrobInt [differs at position 47    |]: " +
                              "\n           [position indicated by down arrow]                  v   " );
          g3 = new BrobInt( g03String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + g03String + "\n" +
                              "        and got: " + g3.toString() );
          System.out.println( "          g1 is: " + g1.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 005: Comparing equality of g1 and g3 [detect different digit]: " );
          System.out.println( "      expecting: false\n" + "        and got: " + g1.equals( g3 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 006: Making a fourth new BrobInt [same as g3 but truncated]: "  );
          g4 = new BrobInt( g04String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + g04String + "\n" +
                              "        and got: " + g4.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 007: Comparing equality of g3 and g4 [detect different length prior to detecting different digit]: " );
          System.out.println( "      expecting: false\n" + "        and got: " + g3.equals( g4 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 008: Making a fifth new BrobInt, checking BrobInt.ZERO: "  );
          g5 = new BrobInt( "-00000000" );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + BrobInt.ZERO + "\n" +
                              "        and got: " + g5.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 009: Making a sixth new BrobInt, checking BrobInt.ONE: "  );
          g6 = new BrobInt( "1" );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + BrobInt.ONE + "\n" +
                              "        and got: " + g6.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 010: Making a seventh new BrobInt, checking BrobInt.TEN: "  );
          g7 = new BrobInt( g07String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + BrobInt.TEN + "\n" +
                              "        and got: " + g7.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n\n    TESTING VALUEOF( LONG ) METHOD:\n" +
                           "    ===============================" );
@@ -183,19 +183,19 @@ public class BrobIntTester {
          System.out.println( "      expecting: " + Long.MAX_VALUE + "\n" +
                              "        and got: " + long01 );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + Long.MIN_VALUE + "\n" +
                              "        and got: " + long02 );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: 1234567890\n" +
                              "        and got: " + long03 );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 012: Now testing 'valueOf()' method: " );
@@ -203,25 +203,25 @@ public class BrobIntTester {
          g9  = BrobInt.valueOf( long02 );
          g10 = BrobInt.valueOf( long03 );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + Long.MAX_VALUE + "\n" +
                              "        and got: " + g8.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: " + Long.MIN_VALUE + "\n" +
                              "        and got: " + g9.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: 1234567890\n" +
                              "        and got: " + g10.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n\n    TESTING ADD() METHOD:\n" +
                           "    =======================================" );
@@ -229,72 +229,72 @@ public class BrobIntTester {
          System.out.println( "\n    Test 013: Making an eleventh and twelfth new BrobInt, calling add method: "  );
          g11 = new BrobInt( g11String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: 10\n" +
                              "        and got: " + g11.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          g12 = new BrobInt( g12String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: 20\n" +
                              "        and got: " + g12.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 014: Adding g11 and g12: " );
          System.out.println( "      expecting: 30 and got " + g11.add( g12 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 015: Making a thirteenth new BrobInt, calling add method: "  );
       try {
          g13 = new BrobInt( g13String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: 234567\n" +
                              "        and got: " + g13.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 016: Adding g11 and g13 [10 + 234567]: " );
          System.out.println( "      expecting: 234577 and got " + g11.add( g13 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 017: Adding g13 and g11 [234567 + 10]: " );
          System.out.println( "      expecting: 234577 and got " + g13.add( g11 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 018: Making a fourteenth new BrobInt, calling add method: "  );
       try {
          g14 = new BrobInt( g14String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: -234567\n" +
                              "        and got: " + g14.toString() );
          System.out.println( "\n    Test 019: Making a fifteenth new BrobInt, calling add method: "  );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          g15 = new BrobInt( g15String );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "      expecting: -10\n" +
@@ -306,13 +306,13 @@ public class BrobIntTester {
          System.out.println( "    Test 020: Adding g14 and g15 [-234567 + -10]: " );
          System.out.println( "      expecting: -234577 and got " + g14.add( g15 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 021: Adding g15 and g14 [-10 + -234567]: " );
          System.out.println( "      expecting: -234577 and got " + g15.add( g14 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 022: Making a sixteenth new BrobInt, calling add method: "  );
       try {
@@ -320,26 +320,26 @@ public class BrobIntTester {
          System.out.println( "      expecting: -999999\n" +
                              "        and got: " + g16.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 023: Adding g14 and g16 [-234567 + -999999]: " );
          System.out.println( "      expecting: -1234566 and got " + g14.add( g16 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "    Test 024: Adding g16 and g14 [-999999 + -234567]: " );
          System.out.println( "      expecting: -1234566 and got " + g16.add( g14 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n      Test 025: Adding g1 and g4 using bytes: " );
          System.out.println( "      expecting: 144127909719725076806064402568842359092656528233967026820237074760\n" +
                              "        and got: " + g1.add( g4 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n\n    TESTING COMPARETO() METHOD:\n" +
                           "    ===========================" );
@@ -347,25 +347,25 @@ public class BrobIntTester {
          System.out.println( "\n    Test 026: Checking compareTo() method on g1 and g2: "  );
          System.out.println( "      expecting: 0 and got: " + g1.compareTo( g2 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 027: Checking compareTo() method on g2 and g1: "  );
          System.out.println( "      expecting: 0 and got: " + g2.compareTo( g1 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 028: Checking compareTo() method on g1 and g3: "  );
          System.out.println( "      expecting: positive value and got: " + g1.compareTo( g3 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 029: Checking compareTo() method on g3 and g1: "  );
          System.out.println( "      expecting: negative value and got: " + g3.compareTo( g1 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 030: Checking compareTo() method on g3 and g4: "  );
@@ -377,43 +377,43 @@ public class BrobIntTester {
          System.out.println( "\n    Test 031: Checking compareTo() method on g14 and g16: "  );
          System.out.println( "      expecting: positive value and got: " + g14.compareTo( g16 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 032: Checking compareTo() method on g16 and g14: "  );
          System.out.println( "      expecting: negative value and got: " + g16.compareTo( g14 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 032a: Checking compareTo() method on 123456789.compareTo 234: "  );
          System.out.println( "      expecting: positive value and got: " + (new BrobInt("123456789").compareTo( new BrobInt("234"))) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 032b: Checking compareTo() method on 123.compareTo 123456789: "  );
          System.out.println( "      expecting: neogative value and got: " + (new BrobInt("123").compareTo( new BrobInt("123456789"))) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 032c: Checking compareTo() method on g3.compareTo 999: "  );
          System.out.println( "      expecting: positive value and got: " + g3.compareTo( new BrobInt( "999" ) ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 032d: Checking compareTo() method on -g2.compareTo -g3: "  );
          System.out.println( "      expecting: negative value and got: " + (new BrobInt("-" + g02String).compareTo( new BrobInt( "-" + g03String ))) );
       } 
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       try {
          System.out.println( "\n    Test 032e: Checking compareTo() method on -g2.compareTo -g1: "  );
          System.out.println( "      expecting: positive and got: " + (new BrobInt("-" + g03String).compareTo( new BrobInt( "-" + g02String ))) );
       } 
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
 
 
@@ -426,7 +426,7 @@ public class BrobIntTester {
          System.out.println( "      expecting: 234557\n" +
                              "        and got: " + g13.subtract( g11 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 034: Subtracting g11 take away g13 [10 - 234567] using bytes: " );
       try {
@@ -440,35 +440,43 @@ public class BrobIntTester {
          System.out.println( "      expecting: 234577\n" +
                              "        and got: " + g13.subtract( g15 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 036: Subtracting g15 take away g13 [(-10) - 234567] using bytes: " );
       try {
          System.out.println( "      expecting: -234577\n" +
                              "        and got: " + g15.subtract( g13 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 037: Subtracting g14 take away g16 [(-234567) - (-999999)] using bytes: " );
       try {
          System.out.println( "      expecting: 765432\n" +
                              "        and got: " + g14.subtract( g16 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 038: Subtracting g16 take away g14 [(-999999) - (-234567)] using bytes: " );
       try {
          System.out.println( "      expecting: -765432\n" +
                              "        and got: " + g16.subtract( g14 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 039: Subtracting g1 take away g1 [too long to list] using bytes: " );
       try {
-         System.out.println( "      expecting: 000000000000000000000000000000000000000000000000000000000000000000\n" +
+         System.out.println( "      expecting: 0\n" +
                              "        and got: " + g1.subtract( g1 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
+
+      System.out.println( "\n      Test 039a: Subtracting 37 from 56721: " );
+      try {
+         System.out.println( "      expecting: 56684\n" +
+                             "        and got: " + new BrobInt("56721").subtract( new BrobInt("37") ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
+
 
       System.out.println( "\n\n    TESTING MULTIPLY() METHOD:\n" +
                           "    ==========================" );
@@ -477,7 +485,7 @@ public class BrobIntTester {
          System.out.println( "      expecting: 200\n" +
                              "        and got: " + g7.multiply( g12 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 041: Making a seventeenth new BrobInt: "  );
       try {
@@ -485,7 +493,7 @@ public class BrobIntTester {
          System.out.println( "      expecting: 765\n" +
                              "        and got: " + g17.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 042: Making a eightteenth new BrobInt: "  );
       try {
@@ -493,7 +501,7 @@ public class BrobIntTester {
          System.out.println( "      expecting: 23\n" +
                              "        and got: " + g18.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 043: Making a nineteenth new BrobInt: "  );
       try {
@@ -501,7 +509,7 @@ public class BrobIntTester {
          System.out.println( "      expecting: 56789\n" +
                              "        and got: " + g19.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n    Test 044: Making a twentieth new BrobInt: "  );
       try {
@@ -509,14 +517,14 @@ public class BrobIntTester {
          System.out.println( "      expecting: 37\n" +
                              "        and got: " + g20.toString() );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 045: Multiplying g17 by g18 [765 * 23]: " );
       try {
          System.out.println( "      expecting: 17595\n" +
                              "        and got: " + g17.multiply( g18 ) );
       }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e ); }
 
       System.out.println( "\n      Test 046: Multiplying g18 by g20 [23 * 37]: " );
       try {
@@ -546,12 +554,35 @@ public class BrobIntTester {
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
 
+      System.out.println( "\n      Test 049a: Multiplying g17 by -g19 [765 * -56789]: " );
+      try {
+         System.out.println( "      expecting: -43443585\n" +
+                             "        and got: " + g17.multiply( new BrobInt("-" + g19String ) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 049b: Multiplying -g17 by -g19 [-765 * -56789]: " );
+      try {
+         System.out.println( "      expecting: 43443585\n" +
+                             "        and got: " + (new BrobInt ("-" + g17String)).multiply( new BrobInt("-" + g19String ) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+
       System.out.println( "\n      Test 050: Multiplying g20 by g19 [37 * 56789]: " );
       try {
          System.out.println( "      expecting: 2101193\n" +
                              "        and got: " + g20.multiply( g19 ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 050a: Multiplying 0 by g19 [37 * 56789]: " );
+      try {
+         System.out.println( "      expecting: 0\n" +
+                             "        and got: " + (new BrobInt("0")).multiply( g19 ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
 
       System.out.println( "\n\n    TESTING DIVIDE() METHOD:\n" +
                           "    ========================" );
@@ -561,6 +592,30 @@ public class BrobIntTester {
                              "        and got: " + g19.divide( g20 ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 051a: Dividing -g19 by g20 [-56789 / 37]: " );
+      try {
+         System.out.println( "      expecting: -1534\n" +
+                             "        and got: " + ( new BrobInt("-" + g19String) ).divide( g20 ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 051b: Dividing g19 by -g20 [56789 / -37]: " );
+      try {
+         System.out.println( "      expecting: -1534\n" +
+                             "        and got: " + g19.divide( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 051c: Dividing -g19 by -g20 [-56789 / -37]: " );
+      try {
+         System.out.println( "      expecting: 1534\n" +
+                             "        and got: " + ( new BrobInt("-" + g19String) ).divide( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+
+
 
       System.out.println( "\n      Test 052: Dividing g17 by g20 [765 / 37]: " );
       try {
@@ -584,6 +639,42 @@ public class BrobIntTester {
                              "        and got: " + g19.remainder( g20 ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 054a: Modding -g19 by g20 [-56789 % 37]: " );
+      try {
+         System.out.println( "      expecting: 31\n" +
+                             "        and got: " + ( new BrobInt("-" + g19String) ).remainder( g20 ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 054b: Modding g19 by -g20 [56789 % -37]: " );
+      try {
+         System.out.println( "      expecting: 31\n" +
+                             "        and got: " + g19.remainder( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 054c: Modding -g19 by -g20 [-56789 % -37]: " );
+      try {
+         System.out.println( "      expecting: 31\n" +
+                             "        and got: " + ( new BrobInt("-" + g19String) ).remainder( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 054d: Modding 0 by -g20 [0 % -37]: " );
+      try {
+         System.out.println( "      expecting: 0\n" +
+                             "        and got: " + ( new BrobInt("0") ).remainder( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
+      System.out.println( "\n      Test 054e: Modding 36 by -g20 [36 % -37]: " );
+      try {
+         System.out.println( "      expecting: 0\n" +
+                             "        and got: " + ( new BrobInt("36") ).remainder( new BrobInt("-" + g20String) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
 
       System.exit( 0 );
 

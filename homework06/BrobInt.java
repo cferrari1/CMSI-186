@@ -1,8 +1,8 @@
-/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/**
  * File name  :  BrobInt.java
  * Purpose    :  Learning exercise to implement arbitrarily large numbers and their operations
- * @author    :  B.J. Johnson
- * Date       :  2017-04-04
+ * @author    :  Christopher Ferrari
+ * Date       :  2018-04-18
  * Description:  @see <a href='http://bjohnson.lmu.build/cmsi186web/homework06.html'>Assignment Page</a>
  * Notes      :  None
  * Warnings   :  None
@@ -12,13 +12,10 @@
  * ================
  *   Ver      Date     Modified by:  Reason for change or modification
  *  -----  ----------  ------------  ---------------------------------------------------------------------
- *  1.0.0  2017-04-04  B.J. Johnson  Initial writing and begin coding
- *  1.1.0  2017-04-13  B.J. Johnson  Completed addByt, addInt, compareTo, equals, toString, Constructor,
- *                                     validateDigits, two reversers, and valueOf methods; revamped equals
- *                                     and compareTo methods to use the Java String methods; ready to
- *                                     start work on subtractByte and subtractInt methods
+ *  1.0.0  2017-04-18  C. Ferrari    Initial writing and begin coding
  *
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+*/
+
 import java.util.Arrays;
 
 public class BrobInt {
@@ -221,11 +218,11 @@ public class BrobInt {
 
     }
 
-    /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /** 
     *  Method to subtract the value of a BrobInt passed as argument to this BrobInt using bytes
     *  @param  g2         BrobInt to subtract from this
     *  @return BrobInt that is the difference of the value of this BrobInt and the one passed in
-    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    */
     public BrobInt subtract( BrobInt g2 ) {
 
         // 18 - 18 = 0, -18 - (-18) = 0
@@ -289,11 +286,13 @@ public class BrobInt {
         for (int i = 0; i < subbedArray.length; i++) {
             
             if ( (topArray[i] - botArray[i] + carry) < 0) {
-                carry = -1;
                 subbedArray[i] = (byte)((topArray[i] + 10) - botArray[i] + carry);
+                carry = -1;
+
             } else {
-                carry = 0;
                 subbedArray[i] = (byte)(topArray[i] - botArray[i] + carry);
+                carry = 0;
+
             }
 
         }
@@ -311,38 +310,159 @@ public class BrobInt {
         return new BrobInt(stringVer);
     }
 
-    /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /**
     *  Method to multiply the value of a BrobIntk passed as argument to this BrobInt
     *  @param  g2         BrobInt to multiply by this
     *  @return BrobInt that is the product of the value of this BrobInt and the one passed in
-    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    */
     public BrobInt multiply( BrobInt g2 ) {
-        throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
+        if (this.equals(ZERO) || g2.equals(ZERO)) {
+            return ZERO;
+        }
+
+        BrobInt posInt1;
+        BrobInt posInt2;
+        String g1array[] = new String[(int)(byteVersion.length * ( Math.log(10) / Math.log(2) ) + 2)];
+        BrobInt g2array[] = new BrobInt[(int)(byteVersion.length * ( Math.log(10) / Math.log(2) ) + 2)];
+        BrobInt added = ZERO;
+
+        if (this.sign == 0) {
+            posInt1 = new BrobInt(this.internalValue);
+        } else {
+            posInt1 = new BrobInt(this.internalValue.substring(1));
+        }
+
+        if (g2.sign == 0) {
+            posInt2 = new BrobInt(g2.internalValue);
+        } else {
+            posInt2 = new BrobInt(g2.internalValue.substring(1));
+        }
+
+        g1array[0] = posInt1.toString();
+        g2array[0] = posInt2;
+
+        for (int i = 1; i < g1array.length; i++) {
+            g1array[i] = Halver.halve( g1array[i-1].toString() );
+            if (g1array[i].equals("")) {
+                break;
+            }
+        }
+
+
+        for (int i = 1; i < g2array.length; i++) {
+            g2array[i] = g2array[i-1].add( g2array[i-1] );
+            if (g1array[i+1].equals("")) {
+                break;
+            }
+        }
+
+        char lastIndex = '0';
+
+        for (int i = 0; i < g1array.length; i++) {
+            if (g1array[i].equals("")) {
+                break;
+            }
+
+            lastIndex =  g1array[i].charAt(g1array[i].length() - 1) ;
+            if ( lastIndex == '1' || lastIndex == '3' || lastIndex == '5' || lastIndex == '7' || lastIndex == '9' ) {
+                added = added.add(g2array[i]);
+            }
+        }
+
+        if (this.sign == 0 && g2.sign == 1) {
+            added = new BrobInt("-" + added.toString());
+        } else if (this.sign == 1 && g2.sign == 0) {
+            added = new BrobInt("-" + added.toString());
+        }
+
+        return added;
     }
 
-    /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /** 
     *  Method to divide the value of this BrobIntk by the BrobInt passed as argument
     *  @param  g2         BrobInt to divide this by
     *  @return BrobInt that is the dividend of this BrobInt divided by the one passed in
-    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    */
     public BrobInt divide( BrobInt g2 ) {
-        throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
+        if (g2.equals(ZERO)) {
+            throw new ArithmeticException( "\n         You cannot divide by zero." );
+        } else if (this.equals(ZERO)) {
+            return ZERO;
+        }
+
+        BrobInt counter = ZERO;
+        BrobInt track1;
+        BrobInt track2; 
+
+        if (this.sign == 0) {
+            track1 = new BrobInt( this.toString() );
+        } else {
+            track1 = new BrobInt( this.toString().substring(1) );
+        }
+
+        if (g2.sign == 0) {
+            track2 = new BrobInt( g2.toString() );
+        } else {
+            track2 = new BrobInt( g2.toString().substring(1) );
+
+        }
+
+        while (true) {
+            if (track1.compareTo(track2) < 0) {
+                break;
+            }
+
+            track1 = track1.subtract(track2);
+            counter = counter.add(ONE);
+        }
+
+        if (this.sign == 0 && g2.sign == 1) {
+            counter = new BrobInt("-" + counter.internalValue);
+        } else if (this.sign == 1 && g2.sign == 0) {
+            counter = new BrobInt("-" + counter.internalValue);
+        }
+
+        return counter;
     }
 
-    /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /**
     *  Method to get the remainder of division of this BrobInt by the one passed as argument
+    *  NOTE: This method will only return positive values for the remainder
+    *
     *  @param  g2         BrobInt to divide this one by
     *  @return BrobInt that is the remainder of division of this BrobInt by the one passed in
-    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    *
+    */
     public BrobInt remainder( BrobInt g2 ) {
-        throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
+        if (this.divide(g2).equals(ZERO)) {
+            return ZERO;
+        }
+
+        BrobInt first;
+        BrobInt second;
+
+        if (this.sign == 0) {
+            first = this;
+        } else {
+            first = new BrobInt(this.internalValue.substring(1));
+        }
+
+        if (g2.sign == 0) {
+            second = g2;
+        } else {
+            second = new BrobInt(g2.internalValue.substring(1));
+        }
+
+        return first.subtract( second.multiply( first.divide(second) ) );
+
+
     }
 
-    /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /**
     *  Method to compare a BrobInt passed as argument to this BrobInt
     *  @param  g2  BrobInt to add to this
     *  @return int   that is one of -1/0/1 if this BrobInt precedes/equals/follows the argument
-    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    */
     public int compareTo( BrobInt g2 ) {
         if ( this.sign == 0 && g2.sign == 1 ) {
             return 1;
@@ -417,6 +537,7 @@ public class BrobInt {
 
     /**
     *  Method to display an Array representation of this BrobInt as its bytes
+    *  @param  d  byte array to be shown as a String representation
     */
     public void toArray( byte[] d ) {
         System.out.println( Arrays.toString( d ) );
