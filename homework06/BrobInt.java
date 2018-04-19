@@ -341,17 +341,38 @@ public class BrobInt {
     /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     *  Method to compare a BrobInt passed as argument to this BrobInt
     *  @param  g2  BrobInt to add to this
-    *  @return int   that is one of neg/0/pos if this BrobInt precedes/equals/follows the argument
-    *  NOTE: this method performs a lexicographical comparison using the java String "compareTo()" method
-    *        THAT was easy.....
+    *  @return int   that is one of -1/0/1 if this BrobInt precedes/equals/follows the argument
     *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     public int compareTo( BrobInt g2 ) {
-        if (this.sign != 0 && g2.sign != 0) {
-            return (toString().compareTo( g2.toString() )) * (-1);
+        if ( this.sign == 0 && g2.sign == 1 ) {
+            return 1;
+        } else if ( this.sign == 1 && g2.sign == 0 ) {
+            return (-1);
         }
 
-        return (toString().compareTo( g2.toString() ));
+        int val = 0;
 
+        if ( this.byteVersion.length > g2.byteVersion.length ) {
+            val = 1;
+        } else if ( this.byteVersion.length < g2.byteVersion.length ) {
+            val = (-1);
+        } else {
+            for (int i = this.byteVersion.length - 1; i >= 0; i--) {
+                if ( this.byteVersion[i] > g2.byteVersion[i] ) {
+                    val = 1;
+                    break;
+                } else if ( this.byteVersion[i] < g2.byteVersion[i] ) {
+                    val = (-1);
+                    break;
+                }
+            }
+        }
+
+        if (this.sign == 1 && g2.sign == 1) {
+            val *= (-1);
+        }
+
+        return val;
     }
 
     /**

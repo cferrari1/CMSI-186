@@ -385,6 +385,38 @@ public class BrobIntTester {
       }
       catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
 
+      try {
+         System.out.println( "\n    Test 032a: Checking compareTo() method on 123456789.compareTo 234: "  );
+         System.out.println( "      expecting: positive value and got: " + (new BrobInt("123456789").compareTo( new BrobInt("234"))) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+
+      try {
+         System.out.println( "\n    Test 032b: Checking compareTo() method on 123.compareTo 123456789: "  );
+         System.out.println( "      expecting: neogative value and got: " + (new BrobInt("123").compareTo( new BrobInt("123456789"))) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+
+      try {
+         System.out.println( "\n    Test 032c: Checking compareTo() method on g3.compareTo 999: "  );
+         System.out.println( "      expecting: positive value and got: " + g3.compareTo( new BrobInt( "999" ) ) );
+      }
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+
+      try {
+         System.out.println( "\n    Test 032d: Checking compareTo() method on -g2.compareTo -g3: "  );
+         System.out.println( "      expecting: negative value and got: " + (new BrobInt("-" + g02String).compareTo( new BrobInt( "-" + g03String ))) );
+      } 
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+
+      try {
+         System.out.println( "\n    Test 032e: Checking compareTo() method on -g2.compareTo -g1: "  );
+         System.out.println( "      expecting: positive and got: " + (new BrobInt("-" + g03String).compareTo( new BrobInt( "-" + g02String ))) );
+      } 
+      catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
+
+
+
 
 
       System.out.println( "\n\n    TESTING SUBTRACT() METHOD:\n" +
