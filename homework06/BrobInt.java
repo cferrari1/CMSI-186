@@ -434,9 +434,11 @@ public class BrobInt {
     *
     */
     public BrobInt remainder( BrobInt g2 ) {
-        if (this.divide(g2).equals(ZERO)) {
+        if (this.equals(ZERO)) {
             return ZERO;
         }
+
+        
 
         BrobInt first;
         BrobInt second;
@@ -452,6 +454,11 @@ public class BrobInt {
         } else {
             second = new BrobInt(g2.internalValue.substring(1));
         }
+
+        if (first.compareTo(second) < 0) {
+            return first;
+        }
+
 
         return first.subtract( second.multiply( first.divide(second) ) );
 
