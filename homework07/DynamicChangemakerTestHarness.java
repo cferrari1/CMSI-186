@@ -169,7 +169,7 @@ public class DynamicChangemakerTestHarness {
       System.out.println( "\n\n  TESTING TO FIND OPTIMAL SOLUTION USING NON-STANDARD DENOMINATIONS" );
       System.out.println( "  =================================================================" );
       int[] newDenominations  = new int[] { 2, 3 };
-      System.out.println( "\n    Test" + makeTwoDigits() + ": testing optimal solution for 6 cents using " + Arrays.toString( newDenominations ) + ": " );
+      System.out.println( "\n    Test" + makeTwoDigits() + ": testing optimal solution for 5 cents using " + Arrays.toString( newDenominations ) + ": " );
       result = DynamicChangeMaker.makeChangeWithDynamicProgramming( newDenominations, 5 );
       try {
          System.out.print( "      expecting Tuple: <1,1>: " );
