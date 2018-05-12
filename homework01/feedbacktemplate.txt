@@ -1,0 +1,25 @@
+Hello Christopher ---
+
+Here is the evaluation of your homework02, the CalendarStuff exercise.
+
+If all the following items work properly, each line item is worth one point:
+
+1)  class CalendarStuff exists and compiles no errors:  you got 1 point
+2)  CalendarStuff.isLeapYear() works for all tests:     you got 1 point
+3)  CalendarStuff.daysInMonth() works for all tests:    you got 1 point
+4)  CalendarStuff.isValidDate() works for all tests:    you got 1 point
+5)  CalendarStuff.dateEquals() works for all tests:     you got 1 point
+6)  CalendarStuff.compareDate() works for all tests:    you got 1 point
+7)  CalendarStuff.daysBetween() works for all tests:    you got 1 point
+8)  CountTheDays program exists and compiles no errors: you got 1 point
+9)  Files commited to Git:                              you got 1 point
+10) Coding Style, indentation, variable names, etc.:    you got 1 point
+11) Test code written and working [freebie for this):   everybody got 1 point
+
+Your total points is:  11.00 out of 11.00 = 100% which is an A-plus
+
+Nice work!
+
+Regards,
+Professor Johnson
+
